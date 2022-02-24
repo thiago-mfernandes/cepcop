@@ -1,0 +1,56 @@
+.config-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    padding: 10% 2.5%;
+    gap: 16px;
+}
+
+.config-page-card {
+    background-color: $cinza-claro;
+    border-radius: 16px;
+    box-shadow: 0 4px 50px 0 rgba(0,0,0,.1);
+    padding: 2% 5% 7.5%;
+
+    //posicionamento de cada filho no desktop:
+    &:first-of-type{
+        grid-column: 1 / 2;
+        grid-row: 1 / 5;
+    }
+
+    &:nth-of-type(2) {
+        grid-column: 1 / 2;
+        grid-row: 5 / 8;
+    }
+
+    &:nth-of-type(3) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+    }
+
+    &:nth-of-type(4) {
+        grid-column: 2 / 3;
+        grid-row: 4 / 7;
+    }
+
+    &:last-of-type {
+        grid-column: 2 / 3;
+        grid-row: 7 / 9;
+    }
+
+    &__header {
+        @include display-flexDirection(flex, row);
+        @include alignItens-justifyContent(center, space-between);
+        margin-top: 5%;
+
+        &___titulo {
+            font-family: 'Fjalla One';
+            @include color-fontSize($cinza-escuro, 1.1rem);
+        }
+    }
+
+    &__input-box {
+        @include display-flexDirection(flex, row);
+        margin: 5% 0;
+    }
+}

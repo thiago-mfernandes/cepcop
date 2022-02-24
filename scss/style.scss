@@ -53,8 +53,11 @@ $amarelo-padrao: rgba(251, 255, 64, .70);
     font-style: $fontStyle;
     font-weight: $fontWeight;
 }
-
+//importação dos componentes
 @import '../scss/componentes/botaoAdicionarNovo', '../scss/componentes/bloco-adicionarBuscar';
-@import 'tabela';
+@import '../scss/componentes/users-card', '../scss/componentes/config-card', '../scss/componentes/circle';
+@import '../scss/componentes/material-icons';
+//importação das folhas de estilo
+@import 'tabela', 'config';
 @import 'header', 'home-infoCards', 'estatisticas';
 
