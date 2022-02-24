@@ -1,0 +1,60 @@
+/*a tabela com max-width 768px recebe
+thead - display:none;
+tabela, tbody, tr e td - display: block; width 100%;
+*/
+
+.tabela-container {
+    background-color: rgba(231, 231, 233, .7);
+    border-radius: 8px;
+    box-shadow: 4px 4px 5px 0 rgba(0,0,0,.15);
+    margin: 1.5% 5% 5%;
+    max-width: 90%;
+    min-width: 50%;
+    overflow: hidden;
+}
+
+.tabela__header {
+    background-color: rgba(18, 18, 224, .7);
+    border-radius: 15px;
+    font-family: 'Fjalla One', sans-serif;
+    height: 3.5vh;
+    
+    &___tr {
+        color: $branco-bg;
+        border-radius: 16px 16px 0 0;
+        padding: 1.5%;       
+        text-align: left;
+    }
+
+    &___th {
+        padding: 1%;  
+        vertical-align: middle;
+    }
+}
+
+.tabela__body {
+
+    &___tr {
+        @include color-fontSize($azul-medio-brilhante, 1rem);
+        border-bottom: 1px solid $cinza-medio;
+        font-family: 'Montserrat', sans-serif;
+        &:hover {
+            color: $azul-escuro-fosco;
+            font-weight: bold;
+        }
+    }
+    
+    &___tr:nth-of-type(even) {
+        color: $cinza-escuro;
+    }
+    
+    &___td {
+        font-size: .9rem;
+        padding: 1%;
+        text-align: middle;
+        border-right: 1px solid $cinza-medio;
+        &:last-of-type{
+            border-right: none;
+        }
+    }
+}
