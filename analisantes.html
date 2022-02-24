@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>CepCop - Home</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__container-info">
+                <h1 class="header__container-info___title">Painel Administrativo</h1>
+                <p class="header__container-info___greeting">olá, <span>Hudson</span></p>
+            </div>
+            
+            <div class="circle-4">
+                <div class="circle-3">
+                    <div class="circle-2">
+                        <div class="circle-1">
+                            <img class="header__img" src="img/vince-fleming2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>            
+
+        </div><!--foto do usuario-->
+        <nav>
+            <ul class="header__menu">
+                <li class="header__menu___item">
+                    <i class="material-icons">home</i>
+                    <a href="home.html">Home</a>
+                </li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">people</i>
+                    <a href="coordenadores.html">Coordenadores</a
+                        li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">groups</i>
+                    <a href="supervisores.html">Supervisores</a>
+                </li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">school</i>
+                    <a href="estagiarios.html">Estagiários</a>
+                </li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">description</i>
+                    <a href="analisantes.html">Analisantes</a>
+                </li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">reorder</i>
+                    <a href="atendimentos.html">Atendimentos</a>
+                </li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">people</i>
+                    <a href="turmas.html">Turmas</a>
+                </li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">class</i>
+                    <a href="cursos.html">Cursos</a>
+                </li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">settings</i>
+                    <a href="configuracoes.html">Configurações</a>
+                </li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">logout</i><span>Sair</span></li>        
+            </ul>
+        </nav>
+        <!--colocar aqui as bolinhas de marcação da nav-->
+    </header>
+
+    <main>
+       <section class="home-Card">
+        <div class="bloco-adicionarBuscar">
+            <div class="bloco-adicionarBuscar__container">
+                <h2 class="bloco-adicionarBuscar__container___titulo">Coordenadores</h2>
+                <button class="botao-adicionar-novo">Adicionar</button>
+            </div>
+
+            <hr class="bloco-adicionarBuscar__linha">
+
+            <input class="bloco-adicionarBuscar__input" type="text" placeholder="Pesquise...">
+            <div class="bloco-adicionarBuscar__container">
+                <p class="bloco-adicionarBuscar__container___conteudo">Mostrar</p>
+                <div class="bloco-adicionarBuscar__container___output">10</div>
+                <p class="bloco-adicionarBuscar__container___conteudo">entradas</p>
+            </div>
+        </div>
+
+        <table class="tabela-container">
+            <thead class="tabela__header">
+                <tr class="tabela__header___tr">
+                    <th class="tabela__header___th">Nome</th>
+                    <th class="tabela__header___th">Email</th>
+                    <th class="tabela__header___th">CPF</th>
+                    <th class="tabela__header___th">Celular</th>
+                    <th class="tabela__header___th">Curso</th>
+                    <th class="tabela__header___th">Permissão</th>
+                    <th class="tabela__header___th">Data de Cadastro</th>
+                    <th class="tabela__header___th">Ação</th>
+                </tr>
+            </thead>
+            <tbody class="tabela__body">
+                <tr class="tabela__body__tr">
+                    <td class="tabela__body___td info-nome" data-label="Nome">Hudson Bonomo</td>
+                    <td class="tabela__body___td info-email" data-label="Email">hudson@gmail.com</td>
+                    <td class="tabela__body___td info-cpf" data-label="CPF">000.000.000-00</td>
+                    <td class="tabela__body___td info-celular" data-label="Celular">(21)00000-0000</td>
+                    <td class="tabela__body___td info-curso" data-label="Curso">Clinica Psicanalítica Freud-Lacan</td>
+                    <td class="tabela__body___td info-permissao" data-label="Permissão">Gerenciar Supervisores: SIM</td>
+                    <td class="tabela__body___td info-data" data-label="Data de Cadastro">02/02/2022</td>
+                    <td class="tabela__body___td info-acao" data-label="Ação">deletar / Editar</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

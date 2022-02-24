@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>CepCop - Home</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__container-info">
+                <h1 class="header__container-info___title">Painel Administrativo</h1>
+                <p class="header__container-info___greeting">olá, <span>Hudson</span></p>
+            </div>
+            
+            <div class="circle-4">
+                <div class="circle-3">
+                    <div class="circle-2">
+                        <div class="circle-1">
+                            <img class="header__img" src="img/vince-fleming2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>            
+
+        </div><!--foto do usuario-->
+        <nav>
+            <ul class="header__menu">
+                <li class="header__menu___item">
+                    <i class="material-icons">home</i>
+                    <a href="home.html">Home</a>
+                </li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">people</i>
+                    <a href="coordenadores.html">Coordenadores</a
+                        li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">groups</i>
+                    <a href="supervisores.html">Supervisores</a>
+                </li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">school</i>
+                    <a href="estagiarios.html">Estagiários</a>
+                </li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">description</i>
+                    <a href="analisantes.html">Analisantes</a>
+                </li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">reorder</i>
+                    <a href="atendimentos.html">Atendimentos</a>
+                </li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">people</i>
+                    <a href="turmas.html">Turmas</a>
+                </li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">class</i>
+                    <a href="cursos.html">Cursos</a>
+                </li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">settings</i>
+                    <a href="configuracoes.html">Configurações</a>
+                </li> 
+                <li class="header__menu___item">
+                    <i class="material-icons">logout</i><span>Sair</span></li>        
+            </ul>
+        </nav>
+        <!--colocar aqui as bolinhas de marcação da nav-->
+    </header>
+
+    <main>
+       <section class="home-Card">
+           <div class="card-cadHoje">
+               <h2 class="card-cadHoje__titulo">Cadastros hoje:</h2>
+               <div class="card-cadHoje__containerInfo">
+                   <div class="card-cadHoje__containerData">
+                       <p class="card-cadHoje__data">02/02/2022</p>
+                       <p class="card-cadHoje__diaSemana">Sexta-feira</p>
+                   </div>
+                   <div class="card-cadHoje__containerTotal">
+                       <p class="card-cadHoje__totalCadastros">21</p>
+                       <i class="material-icons">checklist</i>
+                   </div>
+               </div>
+               <hr class="card-cadHoje__separador">
+               <p class="card-cadHoje__pessoa">1- João da Silva</p>
+               <p class="card-cadHoje__pessoa">1- João da Silva</p>
+               <p class="card-cadHoje__pessoa">1- João da Silva</p>
+               <p class="card-cadHoje__pessoa">1- João da Silva</p>
+               <button class="card-cadHoje__botao"><a href="analisantes.html">Ver Analisantes</a></button>
+           </div>
+           
+           <div class="card-filaEspera">
+               <h2 class="card-filaEspera__titulo">Fila de espera:</h2>
+               <div class="card-filaEspera__box">
+                   <i class="material-icons">hourglass_bottom</i>
+                   <p class="card-filaEspera__quantidade">16</p>
+               </div>
+               <div class="card-filaEspera__box">
+                   <p class="card-filaEspera__pessoa">1 - João da Silva</p>
+               </div>
+            </div>
+            
+            <div class="card-atendidos">
+                <h2 class="card-atendidos__titulo">Atendidos:</h2>
+                <div class="card-atendidos__box">
+                    <i class="material-icons">done</i>
+                    <p class="card-atendidos__valor">09</p>
+                </div>
+            </div>
+            
+            <div class="card-naoAtendidos">
+                <h2 class="card-naoAtendidos__titulo">Não Atendidos:</h2>
+                <div class="card-naoAtendidos__box">
+                    <i class="material-icons">cancel</i>
+                    <p class="card-naoAtendidos__valor">02</p>
+                </div>
+            </div>
+            
+            <div class="card-totalAnalisantes">
+                <h2 class="card-totalAnalisantes__titulo">Total de Analisantes:</h2>
+                <div class="card-totalAnalisantes__box">
+                    <i class="material-icons">view_list</i>
+                    <p class="card-totalAnalisantes__valor">31</p>
+                </div>
+                <div class="card-totalAnalisantes__box total">
+                    <p class="card-totalAnalisantes__totalNaoAtendido">Total de analisantes que não estão na fila:</p>
+                    <div class="card-totalAnalisantes__box-n">
+                        <i class="material-icons">view_list</i>
+                        <p class="card-totalAnalisantes__valor">31</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-turmas">
+                <h2 class="card-turmas__titulo">Turmas</h2>
+                <p class="card-turmas__valor">02</p>
+            </div> 
+
+            <section class="estatisticas">
+                <h2 class="estatisticas__titulo">Cadastros este mês e no mês passado:</h2>
+                
+                <div class="estatisticas__container-legenda">
+                    <div class="estatisticas__container-legenda___box">
+                        <p class="estatisticas__container-legenda___mes">Mês anterior:</p>
+                        <span class="estatisticas__container-legenda___indicador"></span>
+                    </div>
+                    <div class="estatisticas__container-legenda___box">
+                        <p class="estatisticas__container-legenda___mes">Este mês:</p>
+                        <span class="estatisticas__container-legenda___indicador verde"></span>
+                    </div>
+                </div>
+    
+                <div class="estatisticas__container-grafico">
+                    <div class="estatisticas__container-grafico___box">
+                        <div class="estatisticas__container-grafico___mesAtual"></div>
+                        <div class="estatisticas__container-grafico___mesAnterior"></div>
+                    </div>
+                    <h3 class="estatisticas__container-grafico___nomeMes">Janeiro</h3>
+                </div>
+    
+                
+                <img class="estatisticas__arrow" src="img/icon-arrow.svg" alt="Arrow Down">
+            </section>
+        </section>
+
+</body>
+</html>

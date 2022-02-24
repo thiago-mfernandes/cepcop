@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: rgb(231, 231, 233);
+}
+//cores
+$cinza-claro: rgb(231, 231, 233);
+$cinza-medio: #C4C4C4;
+$cinza-escuro: rgb(120, 120, 135);
+$branco: #FFFFFF;
+$branco-bg: #FAFEFD;
+$azul-escuro-fosco: rgb(10, 10, 132);
+$azul-medio-brilhante: rgb(18, 18, 224);
+$vermelho-padrao: rgb(244, 124, 87);
+$verde-padrao: rgb(109, 225, 149);
+$amarelo-padrao: rgba(251, 255, 64, .70);
+
+//font-family: 'Fjalla One', sans-serif;
+//font-family: 'Lato', sans-serif;
+//font-family: 'Montserrat', sans-serif;
+
+@mixin color-fontSize($color, $fontSize) {
+    color: $color;
+    font-size: $fontSize;
+}
+
+@mixin height-width($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin display-flexDirection($display, $flexDirection) {
+    display: $display;
+    flex-direction: $flexDirection;
+}
+
+@mixin alignItens-justifyContent($align, $justify) {
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin fontStyle-fontWeight($fontStyle, $fontWeight) {
+    font-style: $fontStyle;
+    font-weight: $fontWeight;
+}
+
+@import '../scss/componentes/botaoAdicionarNovo', '../scss/componentes/bloco-adicionarBuscar';
+@import 'tabelaCoordenadores';
+@import 'header', 'home-infoCards', 'estatisticas';
+
