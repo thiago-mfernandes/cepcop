@@ -25,6 +25,14 @@ body {
   height: 6vh;
   width: 15%;
 }
+.botao-adicionar-novo:hover {
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  height: 6vh;
+  width: 17.5%;
+  border: 1px solid #0a0a84;
+  transition: all 0.3s ease-in-out;
+}
 
 .bloco-adicionarBuscar {
   background-color: rgba(231, 231, 233, 0.7);
@@ -89,6 +97,10 @@ body {
   font-family: "Montserrat", sans-serif;
   padding-left: 2.5%;
   margin: 1.5% 0 0 5%;
+}
+.bloco-adicionarBuscar__input:focus {
+  border: 1px solid #0a0a84;
+  outline: none;
 }
 .bloco-adicionarBuscar___alerta-config {
   color: #787887;
@@ -178,6 +190,20 @@ body {
   padding: 0;
 }
 
+.material-icons.edit {
+  color: #6de195;
+  font-size: 1.5rem;
+}
+
+.material-icons.delete {
+  color: #f47c57;
+  font-size: 1.5rem;
+}
+
+.material-icons.edit, .material-icons.delete:hover {
+  cursor: pointer;
+}
+
 .botao-salvar {
   height: 8vh;
   width: 100%;
@@ -218,7 +244,7 @@ tabela, tbody, tr e td - display: block; width 100%;
   color: #FAFEFD;
   border-radius: 16px 16px 0 0;
   padding: 1.5%;
-  text-align: left;
+  text-align: center;
 }
 .tabela__header___th {
   padding: 1%;
@@ -231,10 +257,6 @@ tabela, tbody, tr e td - display: block; width 100%;
   border-bottom: 1px solid #C4C4C4;
   font-family: "Montserrat", sans-serif;
 }
-.tabela__body___tr:hover {
-  color: #0a0a84;
-  font-weight: bold;
-}
 .tabela__body___tr:nth-of-type(even) {
   color: #787887;
 }
@@ -246,6 +268,10 @@ tabela, tbody, tr e td - display: block; width 100%;
 }
 .tabela__body___td:last-of-type {
   border-right: none;
+}
+.tabela__body___td.info-acao {
+  display: flex;
+  flex-direction: row;
 }
 
 .config-page {
@@ -419,6 +445,8 @@ tabela, tbody, tr e td - display: block; width 100%;
 .card-cadHoje {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.15);
   border-radius: 24px;
@@ -429,16 +457,18 @@ tabela, tbody, tr e td - display: block; width 100%;
 .card-cadHoje__titulo {
   color: #e7e7e9;
   font-size: 1rem;
+  height: 10vh;
+  width: 100%;
   background-color: #787887;
   border-radius: 24px 24px 0 0;
   text-align: center;
-  height: 10vh;
   margin-bottom: 7.5%;
-  padding: 10%;
+  padding: 10% 0;
 }
 .card-cadHoje__containerInfo {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .card-cadHoje__containerData {
   display: flex;

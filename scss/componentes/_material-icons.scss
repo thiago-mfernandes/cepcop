@@ -11,3 +11,15 @@
     @include color-fontSize($cinza-escuro, 1.5rem);
     padding: 0;
 }
+
+.material-icons.edit {
+    @include color-fontSize($verde-padrao, 1.5rem);
+}
+
+.material-icons.delete {
+    @include color-fontSize($vermelho-padrao, 1.5rem);
+}
+
+.material-icons.edit, .material-icons.delete:hover {
+    cursor: pointer;
+}

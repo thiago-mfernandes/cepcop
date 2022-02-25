@@ -13,6 +13,7 @@
 
 .card-cadHoje {
     @include display-flexDirection(flex, column);
+    @include alignItens-justifyContent(center, space-between);
     background-color: $branco;
     box-shadow: 0px 4px 50px 0px rgba(0,0,0,.15);
     border-radius: 24px;
@@ -22,16 +23,17 @@
     
     &__titulo {
         @include color-fontSize($cinza-claro, 1rem);
+        @include height-width(10vh, 100%);
         background-color: $cinza-escuro;
         border-radius: 24px 24px 0 0;
         text-align: center;
-        height:10vh;
         margin-bottom: 7.5%;
-        padding: 10%;
+        padding: 10% 0;
     }
 
     &__containerInfo {
         @include display-flexDirection(flex, column);
+        width: 100%;
     }
 
     &__containerData {

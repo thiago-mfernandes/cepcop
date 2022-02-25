@@ -23,7 +23,7 @@ tabela, tbody, tr e td - display: block; width 100%;
         color: $branco-bg;
         border-radius: 16px 16px 0 0;
         padding: 1.5%;       
-        text-align: left;
+        text-align: center;
     }
 
     &___th {
@@ -38,10 +38,6 @@ tabela, tbody, tr e td - display: block; width 100%;
         @include color-fontSize($azul-medio-brilhante, 1rem);
         border-bottom: 1px solid $cinza-medio;
         font-family: 'Montserrat', sans-serif;
-        &:hover {
-            color: $azul-escuro-fosco;
-            font-weight: bold;
-        }
     }
     
     &___tr:nth-of-type(even) {
@@ -56,5 +52,10 @@ tabela, tbody, tr e td - display: block; width 100%;
         &:last-of-type{
             border-right: none;
         }
+    }
+
+    &___td.info-acao {
+        @include display-flexDirection(flex, row);
+        
     }
 }

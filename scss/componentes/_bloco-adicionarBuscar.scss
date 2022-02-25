@@ -57,6 +57,10 @@
         font-family: 'Montserrat', sans-serif;
         padding-left: 2.5%;
         margin: 1.5% 0 0 5%;
+        &:focus {
+            border: 1px solid $azul-escuro-fosco;
+            outline: none;
+        }
     }
     &___alerta-config {
         @include color-fontSize($cinza-escuro, 1rem);

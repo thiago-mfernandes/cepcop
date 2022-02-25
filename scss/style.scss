@@ -54,10 +54,10 @@ $amarelo-padrao: rgba(251, 255, 64, .70);
     font-weight: $fontWeight;
 }
 //importação dos componentes
-@import '../scss/componentes/botaoAdicionarNovo', '../scss/componentes/bloco-adicionarBuscar';
+@import '../scss/componentes/botao-adicionar-novo', '../scss/componentes/bloco-adicionarBuscar';
 @import '../scss/componentes/users-card', '../scss/componentes/config-card', '../scss/componentes/circle';
 @import '../scss/componentes/material-icons', '../scss/componentes/botao-salvar';
 //importação das folhas de estilo
-@import 'tabela', 'config';
-@import 'header', 'home-infoCards', 'estatisticas';
+@import 'tabela', 'configuracoes';
+@import 'header', 'home-card', 'estatisticas';
 

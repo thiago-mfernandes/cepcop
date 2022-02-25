@@ -7,4 +7,10 @@
     margin-left: 10%;
     @include color-fontSize($branco, .75rem);
     @include height-width(6vh, 15%);
+    &:hover {
+        @include color-fontSize($branco, .95rem);
+        @include height-width(6vh, 17.5%);
+        border: 1px solid $azul-escuro-fosco;
+        transition: all .3s ease-in-out;
+    }
 }
