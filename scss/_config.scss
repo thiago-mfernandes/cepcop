@@ -7,10 +7,13 @@
 }
 
 .config-page-card {
+    @include display-flexDirection(flex, column);
+    @include alignItens-justifyContent(flex-start, space-evenly);
     background-color: $cinza-claro;
     border-radius: 16px;
     box-shadow: 0 4px 50px 0 rgba(0,0,0,.1);
     padding: 2% 5% 7.5%;
+    font-family: 'Fjalla One';
 
     //posicionamento de cada filho no desktop:
     &:first-of-type{
@@ -42,15 +45,32 @@
         @include display-flexDirection(flex, row);
         @include alignItens-justifyContent(center, space-between);
         margin-top: 5%;
+        width: 100%;
 
         &___titulo {
-            font-family: 'Fjalla One';
-            @include color-fontSize($cinza-escuro, 1.1rem);
+            @include color-fontSize($cinza-escuro, 1.25rem);
         }
     }
 
     &__input-box {
         @include display-flexDirection(flex, row);
+        @include alignItens-justifyContent(center, space-between);
         margin: 5% 0;
+        width: 100%;
+
+        &___label {
+            @include color-fontSize($cinza-escuro, 1rem);            
+        }
+
+        &___input {
+            @include height-width(5vh, 65%);
+            @include color-fontSize($cinza-escuro, 0.75rem);
+            @include fontStyle-fontWeight(italic, lighter);
+            border: none;
+            border-radius: 16px;
+            padding-left: 5%;
+            font-family: 'Montserrat', sans-serif;
+            
+        }
     }
 }

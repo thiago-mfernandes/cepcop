@@ -75,6 +75,7 @@ body {
   margin: 2% 0;
   opacity: 0.35;
   size: 1px;
+  width: 100%;
 }
 .bloco-adicionarBuscar__input {
   height: 6.5vh;
@@ -177,6 +178,22 @@ body {
   padding: 0;
 }
 
+.botao-salvar {
+  height: 8vh;
+  width: 100%;
+  color: #FAFEFD;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 48px;
+  background: linear-gradient(90deg, #1212e0 0%, #6de195 100%);
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 4px 10px 20px 0px rgba(18, 18, 224, 0.35);
+}
+
+.botao-salvar.config {
+  margin-top: 6.5%;
+}
+
 /*a tabela com max-width 768px recebe
 thead - display:none;
 tabela, tbody, tr e td - display: block; width 100%;
@@ -240,10 +257,15 @@ tabela, tbody, tr e td - display: block; width 100%;
 }
 
 .config-page-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
   background-color: #e7e7e9;
   border-radius: 16px;
   box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.1);
   padding: 2% 5% 7.5%;
+  font-family: "Fjalla One";
 }
 .config-page-card:first-of-type {
   grid-column: 1/2;
@@ -271,16 +293,35 @@ tabela, tbody, tr e td - display: block; width 100%;
   align-items: center;
   justify-content: space-between;
   margin-top: 5%;
+  width: 100%;
 }
 .config-page-card__header___titulo {
-  font-family: "Fjalla One";
   color: #787887;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
 }
 .config-page-card__input-box {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   margin: 5% 0;
+  width: 100%;
+}
+.config-page-card__input-box___label {
+  color: #787887;
+  font-size: 1rem;
+}
+.config-page-card__input-box___input {
+  height: 5vh;
+  width: 65%;
+  color: #787887;
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: lighter;
+  border: none;
+  border-radius: 16px;
+  padding-left: 5%;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header__menu___item, .circle-1, .circle-2, .circle-3, .circle-4 {
