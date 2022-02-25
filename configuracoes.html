@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de atendimento do  CepCop">
+    <meta name="keywords" content="Cepcop, Cliníca de Psícanálise, Psicanálise, Freud, Lacan, Psicólogo, Psicologia, Atendimento Psicológico">
     <link rel="stylesheet" href="scss/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="scss/style.css">
@@ -27,7 +29,7 @@
                 </div>
             </div>            
 
-        </div><!--foto do usuario-->
+        </div>
         <nav>
             <ul class="header__menu">
                 <li class="header__menu___item">
@@ -78,7 +80,6 @@
             <div class="bloco-adicionarBuscar">
                 <div class="bloco-adicionarBuscar__container config">
                     <h2 class="bloco-adicionarBuscar__container___titulo">Configurações</h2>
-                    <!--adicionar o icone aqui-->
                     <i class="material-icons config-icon">settings</i>
                 </div>
 
@@ -90,7 +91,6 @@
                 </div>
             </div>
 
-            <!--aqui vai as caixas das configurações dentro de um grid-->
             <section class="config-page">
 
                 <div class="config-page-card">
@@ -138,9 +138,11 @@
 
                     <div class="config-page-card__input-box">
                         <label class="config-page-card__input-box___label" for="nome">Editar Imagem</label>
-                        <input class="config-page-card__input-box___input" type="text" placeholder="Ativo/Inativo" name="nome">
+                        <div class="config-page-card__input-button-box">
+                            <input class="config-page-card__input-button-box___input" type="text" placeholder="Ativo/Inativo" name="nome">
+                            <button class="config-page-card__input-button-box___button">Escolher Arquivo</button>
+                        </div>
                     </div>
-                    <button>Escolher Arquivo</button>
                 </div>
 
                 <div class="config-page-card">

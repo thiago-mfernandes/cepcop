@@ -8,7 +8,7 @@
 
 .config-page-card {
     @include display-flexDirection(flex, column);
-    @include alignItens-justifyContent(flex-start, space-evenly);
+    @include alignItens-justifyContent(center, space-evenly);
     background-color: $cinza-claro;
     border-radius: 16px;
     box-shadow: 0 4px 50px 0 rgba(0,0,0,.1);
@@ -71,6 +71,36 @@
             padding-left: 5%;
             font-family: 'Montserrat', sans-serif;
             
+        }
+    }
+
+    &__input-button-box {
+        @include display-flexDirection(flex, row-reverse);
+        width: 75%;
+
+        &___button {
+            @include height-width(5vh, 35%);
+            @include color-fontSize($branco-bg, 0.65rem);
+            @include fontStyle-fontWeight(italic, lighter);
+            border: none;
+            border-radius: 16px 0 0 16px;
+            background-color: $azul-medio-brilhante;
+            font-family: 'Montserrat', sans-serif;
+            &:hover {
+                cursor: pointer;
+                box-shadow: 4px 0px 10px 3px rgba(18, 18, 224,.5);
+            }
+
+        }
+
+        &___input {
+            @include height-width(5vh, 65%);
+            @include color-fontSize($cinza-escuro, 0.75rem);
+            @include fontStyle-fontWeight(italic, lighter);
+            border: none;
+            border-radius: 0 16px 16px 0;
+            padding-left: 5%;
+            font-family: 'Montserrat', sans-serif;
         }
     }
 }

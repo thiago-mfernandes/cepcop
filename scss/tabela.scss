@@ -7,9 +7,8 @@ tabela, tbody, tr e td - display: block; width 100%;
     background-color: rgba(231, 231, 233, .7);
     border-radius: 8px;
     box-shadow: 4px 4px 5px 0 rgba(0,0,0,.15);
-    margin: 1.5% 5% 5%;
-    max-width: 90%;
-    min-width: 50%;
+    margin: 1.5% 1.5% 5%;
+    min-width: 90%;
     overflow: hidden;
 }
 
@@ -56,6 +55,5 @@ tabela, tbody, tr e td - display: block; width 100%;
 
     &___td.info-acao {
         @include display-flexDirection(flex, row);
-        
     }
 }

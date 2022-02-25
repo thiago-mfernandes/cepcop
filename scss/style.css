@@ -219,6 +219,12 @@ body {
 .botao-salvar.config {
   margin-top: 6.5%;
 }
+.botao-salvar.config:hover {
+  color: #FFFFFF;
+  font-size: 1.35rem;
+  border: 1px solid #0a0a84;
+  transition: all 0.3s ease-in-out;
+}
 
 /*a tabela com max-width 768px recebe
 thead - display:none;
@@ -228,9 +234,8 @@ tabela, tbody, tr e td - display: block; width 100%;
   background-color: rgba(231, 231, 233, 0.7);
   border-radius: 8px;
   box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.15);
-  margin: 1.5% 5% 5%;
-  max-width: 90%;
-  min-width: 50%;
+  margin: 1.5% 1.5% 5%;
+  min-width: 90%;
   overflow: hidden;
 }
 
@@ -285,7 +290,7 @@ tabela, tbody, tr e td - display: block; width 100%;
 .config-page-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-evenly;
   background-color: #e7e7e9;
   border-radius: 16px;
@@ -346,6 +351,39 @@ tabela, tbody, tr e td - display: block; width 100%;
   font-weight: lighter;
   border: none;
   border-radius: 16px;
+  padding-left: 5%;
+  font-family: "Montserrat", sans-serif;
+}
+.config-page-card__input-button-box {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 75%;
+}
+.config-page-card__input-button-box___button {
+  height: 5vh;
+  width: 35%;
+  color: #FAFEFD;
+  font-size: 0.65rem;
+  font-style: italic;
+  font-weight: lighter;
+  border: none;
+  border-radius: 16px 0 0 16px;
+  background-color: #1212e0;
+  font-family: "Montserrat", sans-serif;
+}
+.config-page-card__input-button-box___button:hover {
+  cursor: pointer;
+  box-shadow: 4px 0px 10px 3px rgba(18, 18, 224, 0.5);
+}
+.config-page-card__input-button-box___input {
+  height: 5vh;
+  width: 65%;
+  color: #787887;
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: lighter;
+  border: none;
+  border-radius: 0 16px 16px 0;
   padding-left: 5%;
   font-family: "Montserrat", sans-serif;
 }
