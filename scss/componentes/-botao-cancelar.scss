@@ -1,8 +1,8 @@
-.botao-adicionar-novo {
-    background: linear-gradient(90deg, rgba(18,18,224,1) 0%, rgba(109,225,149,1) 100%);   
+.botao-cancelar {
+    background: $vermelho-padrao;   
     border: none;
     border-radius: 24px;
-    box-shadow: 4px 10px 20px 0 rgba(10, 10, 132, .35);
+    box-shadow: 4px 10px 20px 0 rgba(244, 124, 87, .2);
     font-family: 'Montserrat', sans-serif;
     margin-left: 10%;
     transition: all .3s ease-in-out;
@@ -10,8 +10,7 @@
     @include height-width(6vh, 15%);
     &:hover {
         @include color-fontSize($branco, .95rem);
-        @include height-width(6vh, 17.5%);
-        border: 1px solid $azul-escuro-fosco;
+        border: 1px solid darkred;
         transition: all .3s ease-in-out;
     }
 }

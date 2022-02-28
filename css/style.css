@@ -20,6 +20,7 @@ body {
   box-shadow: 4px 10px 20px 0 rgba(10, 10, 132, 0.35);
   font-family: "Montserrat", sans-serif;
   margin-left: 10%;
+  transition: all 0.3s ease-in-out;
   color: #FFFFFF;
   font-size: 0.75rem;
   height: 6vh;
@@ -204,6 +205,16 @@ body {
   cursor: pointer;
 }
 
+.material-icons.modadAddNovo-icon {
+  color: #FFFFFF;
+  font-size: 0.75rem;
+}
+
+.material-icons.titulo-modal {
+  color: #787887;
+  font-size: 1.75rem;
+}
+
 .botao-salvar {
   height: 8vh;
   width: 100%;
@@ -223,6 +234,163 @@ body {
   color: #FFFFFF;
   font-size: 1.35rem;
   border: 1px solid #0a0a84;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-container {
+  background-color: #C4C4C4;
+}
+
+.modalAddNovo-Card-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+.modalAddNovo {
+  width: 95%;
+  background-color: #e7e7e9;
+  border-radius: 16px;
+  box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.15);
+  padding: 5%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+}
+.modalAddNovo__title-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #C4C4C4;
+  padding-bottom: 5%;
+}
+.modalAddNovo__title-box___titulo {
+  color: #787887;
+  font-size: 1.75rem;
+  font-family: "Fjalla One", sans-serif;
+}
+.modalAddNovo__input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.modalAddNovo__input-box {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+.modalAddNovo__input-box___label {
+  color: #787887;
+  font-size: 1.1rem;
+  font-family: "Fjalla One", sans-serif;
+  margin: 5% 0;
+}
+.modalAddNovo__input-box___input {
+  color: #787887;
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: lighter;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 24px;
+  height: 6vh;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+.modalAddNovo__card-add-tel {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  margin-right: 4%;
+  background-color: #C4C4C4;
+  border-radius: 16px;
+}
+.modalAddNovo__card-add-tel > .modalAddNovo__input-box {
+  width: 90%;
+  margin: 5% auto;
+}
+.modalAddNovo__card-add-tel > .botao-adicionar-novo {
+  height: 6.5vh;
+  width: 80%;
+  border-radius: 8px;
+  margin-bottom: 5%;
+}
+.modalAddNovo__card-add-tel--titleBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #787887;
+  border-radius: 16px 16px 0 0;
+  padding: 3%;
+  font-family: "Fjalla One", sans-serif;
+}
+.modalAddNovo__card-add-tel--titleBox___titulo {
+  color: #FAFEFD;
+  font-size: 1rem;
+}
+.modalAddNovo__card-permissoes {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  background-color: #C4C4C4;
+  border-radius: 16px;
+}
+.modalAddNovo__card-permissoes-box {
+  text-align: center;
+  border-bottom: 1px solid rgba(120, 120, 135, 0.5);
+  margin: 2.5% 0;
+}
+.modalAddNovo__card-permissoes-box:last-of-type {
+  border-bottom: none;
+}
+.modalAddNovo__card-permissoes-box___titulo {
+  font-family: "Fjalla One", sans-serif;
+  color: #787887;
+  font-size: 0.95rem;
+  margin: 2.5% 0;
+}
+.modalAddNovo__card-permissoes-box___label {
+  font-family: "Montserrat", sans-serif;
+  color: #787887;
+  font-size: 0.85rem;
+}
+.modalAddNovo__card-permissoes-box___input {
+  margin-bottom: 2.5%;
+}
+.modalAddNovo__botoes-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.modalAddNovo__botoes-container > .botao-adicionar-novo, .modalAddNovo__botoes-container .botao-cancelar {
+  width: 40%;
+  margin-left: 0;
+  margin: 0 5%;
+}
+
+.botao-cancelar {
+  background: #f47c57;
+  border: none;
+  border-radius: 24px;
+  box-shadow: 4px 10px 20px 0 rgba(244, 124, 87, 0.2);
+  font-family: "Montserrat", sans-serif;
+  margin-left: 10%;
+  transition: all 0.3s ease-in-out;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  height: 6vh;
+  width: 15%;
+}
+.botao-cancelar:hover {
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  border: 1px solid darkred;
   transition: all 0.3s ease-in-out;
 }
 

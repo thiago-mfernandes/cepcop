@@ -1,0 +1,134 @@
+.modal-container {
+    background-color: $cinza-medio;
+}
+
+.modalAddNovo-Card-container {
+    @include display-flexDirection(flex, row);
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.modalAddNovo {
+    width: 95%; //deifnir o tamanho depois do position
+    background-color: $cinza-claro;
+    border-radius: 16px;
+    box-shadow: 0 4px 50px 0 rgba(0,0,0,.15);
+    padding: 5%;
+    flex-wrap: wrap;
+    @include display-flexDirection(flex, row);
+
+    &__title-box {
+        @include display-flexDirection(flex, row);
+        @include alignItens-justifyContent(center, space-between);
+        width: 100%;
+        border-bottom: 1px solid $cinza-medio;
+        padding-bottom: 5%;
+
+        &___titulo {
+            @include color-fontSize($cinza-escuro, 1.75rem);
+            font-family: 'Fjalla One', sans-serif;
+        }
+    }
+
+    &__input-container {
+        @include display-flexDirection(flex, row);
+        @include alignItens-justifyContent(center, space-between);
+        flex-wrap: wrap;
+    }
+
+    &__input-box {
+        @include display-flexDirection(flex, column);
+        width: 48%;
+        
+        &___label {
+            @include color-fontSize($cinza-escuro, 1.1rem);
+            font-family: 'Fjalla One', sans-serif;
+            margin: 5% 0;
+        }
+
+        &___input {
+            @include color-fontSize($cinza-escuro, .75rem);
+            @include  fontStyle-fontWeight(italic, lighter);
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+            border-radius: 24px;
+            height: 6vh;
+            padding: 5%;
+            margin-bottom: 5%;
+        }
+    }
+
+    &__card-add-tel {
+        @include display-flexDirection(flex, column);
+        width: 48%;
+        margin-right: 4%;
+        background-color: $cinza-medio;
+        border-radius: 16px;
+        //configuração especial para este input
+        & > .modalAddNovo__input-box {
+            width: 90%;
+            margin: 5% auto
+        }
+        & > .botao-adicionar-novo {
+            @include height-width(6.5vh, 80%);
+            border-radius: 8px;
+            margin-bottom: 5%;
+        }
+    }
+
+    &__card-add-tel--titleBox {
+        @include display-flexDirection(flex, row);
+        @include alignItens-justifyContent(center, space-between);
+        background-color: $cinza-escuro;
+        border-radius: 16px 16px 0 0;
+        padding: 3%;
+        font-family: 'Fjalla One', sans-serif;
+
+        &___titulo {
+            @include color-fontSize($branco-bg, 1rem);
+        }
+    }
+
+    &__card-permissoes {
+        @include display-flexDirection(flex, column);
+        width: 48%;
+        background-color: $cinza-medio;
+        border-radius: 16px;
+        
+    }
+
+    &__card-permissoes-box {
+        text-align: center;
+        border-bottom: 1px solid rgba(120, 120, 135,.5);
+        margin: 2.5% 0;
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        &___titulo {
+            font-family: 'Fjalla One', sans-serif;
+            @include color-fontSize($cinza-escuro, .95rem);
+            margin: 2.5% 0;
+        }
+
+        &___label {
+            font-family: 'Montserrat', sans-serif;
+            @include color-fontSize($cinza-escuro, .85rem);
+        }
+
+        &___input {
+            margin-bottom: 2.5%;
+        }
+    }
+
+    &__botoes-container {
+        @include display-flexDirection(flex, row);
+        width: 100%;
+
+        & > .botao-adicionar-novo, .botao-cancelar {
+            width: 40%;
+            margin-left: 0;
+            margin: 0 5%;
+        }
+    }
+}
