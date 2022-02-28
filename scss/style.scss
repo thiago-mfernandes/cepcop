@@ -53,12 +53,12 @@ $amarelo-padrao: rgba(251, 255, 64, .70);
     font-style: $fontStyle;
     font-weight: $fontWeight;
 }
+
 //importação dos componentes
 @import '../scss/componentes/botao-adicionar-novo', '../scss/componentes/bloco-adicionarBuscar';
 @import '../scss/componentes/users-card', '../scss/componentes/config-card', '../scss/componentes/circle';
 @import '../scss/componentes/material-icons', '../scss/componentes/botao-salvar', '../scss/componentes/modalAddNovo';
-@import '../scss/componentes/-botao-cancelar.scss';
+@import '../scss/componentes/-botao-cancelar.scss', '../scss/componentes/botao-fechar-modal';
 //importação das folhas de estilo
 @import 'tabela', 'configuracoes';
 @import 'header', 'home-card', 'estatisticas';
-

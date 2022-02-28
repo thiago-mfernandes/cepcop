@@ -1,5 +1,35 @@
 .modal-container {
-    background-color: $cinza-medio;
+    //container do modal com display none inicialmente
+    @include display-flexDirection(none, row);
+    @include alignItens-justifyContent(center, center);
+    @include height-width(100vh, 100vw);
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+        left: 0px;
+        top: 0px;
+    z-index: 10;
+}
+
+//animação para mostrar o modal
+@keyframes exibe-modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -80px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+//quando a classe for adicionada, o modal é exibido mudando display
+.mostrar-modal {
+    @include display-flexDirection(flex, row);
+}
+
+//quando o modal é exibidido, a propriedade de animação é inserida no modal
+.mostrar-modal .modalAddNovo {
+    animation: exibe-modal .9s ease-in-out;
 }
 
 .modalAddNovo-Card-container {
@@ -9,7 +39,11 @@
 }
 
 .modalAddNovo {
-    width: 95%; //deifnir o tamanho depois do position
+    position: relative;
+    width: 70%; 
+    height: 80vh;
+    overflow: auto;
+    min-width: 650px;
     background-color: $cinza-claro;
     border-radius: 16px;
     box-shadow: 0 4px 50px 0 rgba(0,0,0,.15);
@@ -55,6 +89,10 @@
             height: 6vh;
             padding: 5%;
             margin-bottom: 5%;
+            &:focus {
+                border: 1px solid $azul-escuro-fosco;
+                outline: none;
+            }
         }
     }
 

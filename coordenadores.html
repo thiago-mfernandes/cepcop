@@ -93,10 +93,6 @@
                 </div>
             </div>
 
-            <article class="modal">
-                <div class="caixa-teste"></div>
-            </article>
-
             <table class="tabela-container">
                 <thead class="tabela__header">
                     <tr class="tabela__header___tr">
@@ -129,9 +125,10 @@
             </table>
         </section> 
         
-        <section>
-            <div class="modal-container">
+        <form>
+            <div class="modal-container" id="modal-container">
                 <div class="modalAddNovo">
+                    <button class="botao-fechar-modal">X</button>
                     <div class="modalAddNovo__title-box">
                         <h2 class="modalAddNovo__title-box___titulo">Novo Coordenador</h2>
                         <i class="material-icons titulo-modal">add</i>
@@ -140,31 +137,31 @@
                     <div class="modalAddNovo__input-container">
                         <div class="modalAddNovo__input-box">
                             <label class="modalAddNovo__input-box___label" for="coordenador">Coordenador</label>
-                            <input class="modalAddNovo__input-box___input" type="text" name="coordenador" placeholder="Informe...">
+                            <input id="addNovo-coordenador" class="modalAddNovo__input-box___input" type="text" name="coordenador" placeholder="Informe...">
                         </div>
                         <div class="modalAddNovo__input-box">
                             <label class="modalAddNovo__input-box___label" for="nome">Nome</label>
-                            <input class="modalAddNovo__input-box___input" type="text" name="nome" placeholder="Nome Completo">
+                            <input id="addNovo-nome" class="modalAddNovo__input-box___input" type="text" name="nome" placeholder="Nome Completo">
                         </div>
                         <div class="modalAddNovo__input-box">
                             <label class="modalAddNovo__input-box___label" for="cpf">CPF</label>
-                            <input class="modalAddNovo__input-box___input" type="text" name="cpf" placeholder="000.000.000-00">
+                            <input id="addNovo-cpf" class="modalAddNovo__input-box___input" type="text" name="cpf" placeholder="000.000.000-00">
                         </div>
                         <div class="modalAddNovo__input-box">
                             <label class="modalAddNovo__input-box___label" for="email">Email</label>
-                            <input class="modalAddNovo__input-box___input" type="email" name="email" placeholder="nome@dominio.com">
+                            <input id="addNovo-email" class="modalAddNovo__input-box___input" type="email" name="email" placeholder="nome@dominio.com">
                         </div>
                         <div class="modalAddNovo__input-box">
                             <label class="modalAddNovo__input-box___label" for="senha">Senha</label>
-                            <input class="modalAddNovo__input-box___input" type="password" name="senha" placeholder="********">
+                            <input id="addNovo-senha" class="modalAddNovo__input-box___input" type="password" name="senha" placeholder="********">
                         </div>
                         <div class="modalAddNovo__input-box">
                             <label class="modalAddNovo__input-box___label" for="contato residencial">Contato Residencial</label>
-                            <input class="modalAddNovo__input-box___input" type="text" name="contato residencial" placeholder="Rua Exemplo da Silva, 000">
+                            <input id="addNovo-contatoResidencial" class="modalAddNovo__input-box___input" type="text" name="contato residencial" placeholder="Rua Exemplo da Silva, 000">
                         </div>
                         <div class="modalAddNovo__input-box">
                             <label class="modalAddNovo__input-box___label" for="contato comercial">Contato Comercial</label>
-                            <input class="modalAddNovo__input-box___input" type="text" name="contato comercial" placeholder="Rua Exemplo da Silva, 000">
+                            <input id="addNovo-contatoComercial" class="modalAddNovo__input-box___input" type="text" name="contato comercial" placeholder="Rua Exemplo da Silva, 000">
                         </div>
                     </div>
 
@@ -176,7 +173,7 @@
                             </div>
                             <div class="modalAddNovo__input-box">
                                 <label class="modalAddNovo__input-box___label" for="telefone">Telefone</label>
-                                <input class="modalAddNovo__input-box___input" type="text" name="telefone" placeholder="(XX)XXXXX-XXXX">
+                                <input id="addNovo-telefone" class="modalAddNovo__input-box___input" type="text" name="telefone" placeholder="(XX)XXXXX-XXXX">
                             </div>
                             <button class="botao-adicionar-novo">Adicionar</button>
                         </div>
@@ -188,45 +185,48 @@
                             <div class="modalAddNovo__card-permissoes-box">
                                 <h2 class="modalAddNovo__card-permissoes-box___titulo">Gerenciar Supervisores?</h2>
                                 <label class="modalAddNovo__card-permissoes-box___label" for="sim">Sim</label>
-                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="sim">
+                                <input id="addNovo-permissaSupervisores-Sim" class="modalAddNovo__card-permissoes-box___input" type="radio" name="sim" value="sim">
                                 <label class="modalAddNovo__card-permissoes-box___label" for="nao">Não</label>
-                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="nao">
+                                <input id="addNovo-permissaoSupervisores-Nao" class="modalAddNovo__card-permissoes-box___input" type="radio" name="nao" value="nao">
                             </div>
                             <div class="modalAddNovo__card-permissoes-box">
                                 <h2 class="modalAddNovo__card-permissoes-box___titulo">Gerenciar Estagiários?</h2>
                                 <label class="modalAddNovo__card-permissoes-box___label" for="sim">Sim</label>
-                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="sim">
+                                <input id="addNovo-permissaoEstagiarios-Sim" class="modalAddNovo__card-permissoes-box___input" type="radio" name="sim" value="sim">
                                 <label class="modalAddNovo__card-permissoes-box___label" for="nao">Não</label>
-                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="nao">
+                                <input id="addNovo-permissaoEstagiario-Nao" class="modalAddNovo__card-permissoes-box___input" type="radio" name="nao" value="nao">
                             </div>
                             <div class="modalAddNovo__card-permissoes-box">
                                 <h2 class="modalAddNovo__card-permissoes-box___titulo">Gerenciar Analisantes?</h2>
                                 <label class="modalAddNovo__card-permissoes-box___label" for="sim">Sim</label>
-                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="sim">
+                                <input id="addNovo-permissaoAnalisante-Sim" class="modalAddNovo__card-permissoes-box___input" type="radio" name="sim" value="sim">
                                 <label class="modalAddNovo__card-permissoes-box___label" for="nao">Não</label>
-                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="nao">
+                                <input id="addNovo-permissaoAnalisante-Nao" class="modalAddNovo__card-permissoes-box___input" type="radio" name="nao" value="nao">
                             </div>
                             <div class="modalAddNovo__card-permissoes-box">
                                 <h2 class="modalAddNovo__card-permissoes-box___titulo">Gerenciar Atendimentos?</h2>
                                 <label class="modalAddNovo__card-permissoes-box___label" for="sim">Sim</label>
-                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="sim">
+                                <input id="addNovo-permissaoAtendimento-Sim" class="modalAddNovo__card-permissoes-box___input" type="radio" name="sim" value="sim">
                                 <label class="modalAddNovo__card-permissoes-box___label" for="nao">Não</label>
-                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="nao">
+                                <input id="addNovo-permissaoAtendimento-Nao" class="modalAddNovo__card-permissoes-box___input" type="radio" name="nao" value="nao">
                             </div>
                         </div>
                     </div>
 
                     <div class="modalAddNovo__botoes-container">
-                        <button class="botao-adicionar-novo">Adicionar</button>
+                        <button id="botao-add" class="botao-adicionar-novo">Adicionar</button>
                         <button class="botao-cancelar">Cancelar</button>
                     </div>
 
                 </div>
             </div>
-        </section>
+        </form>
     </main>
 
     <footer>        
     </footer>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/adicionarNovoPaciente.js"></script>
 </body>
 </html>

@@ -238,7 +238,36 @@ body {
 }
 
 .modal-container {
-  background-color: #C4C4C4;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+}
+
+@keyframes exibe-modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -80px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.mostrar-modal {
+  display: flex;
+  flex-direction: row;
+}
+
+.mostrar-modal .modalAddNovo {
+  animation: exibe-modal 0.9s ease-in-out;
 }
 
 .modalAddNovo-Card-container {
@@ -249,7 +278,11 @@ body {
 }
 
 .modalAddNovo {
-  width: 95%;
+  position: relative;
+  width: 70%;
+  height: 80vh;
+  overflow: auto;
+  min-width: 650px;
   background-color: #e7e7e9;
   border-radius: 16px;
   box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.15);
@@ -301,6 +334,10 @@ body {
   height: 6vh;
   padding: 5%;
   margin-bottom: 5%;
+}
+.modalAddNovo__input-box___input:focus {
+  border: 1px solid #0a0a84;
+  outline: none;
 }
 .modalAddNovo__card-add-tel {
   display: flex;
@@ -392,6 +429,22 @@ body {
   font-size: 0.95rem;
   border: 1px solid darkred;
   transition: all 0.3s ease-in-out;
+}
+
+.botao-fechar-modal {
+  height: 50px;
+  width: 50px;
+  color: #FAFEFD;
+  font-size: 1rem;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 50%;
+  border: 2px solid #FAFEFD;
+  background-color: #787887;
+  box-shadow: -3px 5px 15px 0px rgba(0, 0, 0, 0.45);
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
 }
 
 /*a tabela com max-width 768px recebe
