@@ -9,7 +9,7 @@ botaoAdd.addEventListener("click", function(event) {
     var paciente = obtemPacienteDoFormulario(formulario);
     //add o paciente na tabela
     adicionaPacienteNaTabela(paciente);
-    
+
     //fecha o modal
     fechaModal();
     formulario.reset();
@@ -78,6 +78,7 @@ function montaTr(formValue){
     pacienteLinha.appendChild(montaTd(formValue.curso, "tabela__body___td"));
     pacienteLinha.appendChild(montaTd(formValue.permissao, "tabela__body___td"));
     pacienteLinha.appendChild(montaTd(formValue.data, "tabela__body___td"));
+    pacienteLinha.appendChild(botoesDeAcao());
     //disponibilizo o pacienteLinha
     return pacienteLinha;
 }
@@ -109,26 +110,61 @@ function obterDataHora() {
     var data = new Date();
 
     var dia = data.getDate();
-    var mes = data.getMonth();
-    var ano = data.getFullYear();    
-    var stringData = `${dia}-${mes}-${ano}`;
+    var mes = data.getMonth() + 1;
+    var ano = data.getFullYear(); 
+    
+    dia = formataTempo(dia);
+    mes = formataTempo(mes);
+
+    var stringData = `${dia}/${mes}/${ano}`;
 
     var hora = data.getHours();
     var minutos = data.getMinutes();
     var segundos = data.getSeconds();
-    var stringHora = `${hora}-${minutos}-${segundos}`;
 
-    var dataHora = `${stringData} - ${stringHora}`;
+    hora = formataTempo(hora);
+    minutos = formataTempo(minutos);
+    segundos = formataTempo(segundos);
+    
+    var stringHora = `${hora}:${minutos}:${segundos}`;
+
+    var dataHora = `${stringData}\n${stringHora}`;
     return dataHora;
 }
 
-//function botoesDeAcao() {
-    //criar uma tr e colocar a classe
+//função verifica se o tempo é menor que 10:
+//se for, será colocado um 0 string para exibir a informação formatada
+function formataTempo(tempo) {
+    if (tempo < 10) {
+        tempo = '0' + tempo;
+        return tempo;
+    } else {
+        return tempo;
+    }
+}
 
-    //criar uma td i 
-    //aplicar nessa td i a classe
+function botoesDeAcao() {
+    //criar uma td botoesAcao e colocar a classe
+    const botoesAcao = document.createElement("td");
+    botoesAcao.classList.add("tabela__body___td");
 
-//}
+    //criar botoes e classes
+    const botaoEditar = document.createElement("i");
+    botaoEditar.classList.add("material-icons");
+    botaoEditar.classList.add("edit");
+    botaoEditar.textContent = "edit";
+
+    const botaoDeletar = document.createElement("i");
+    botaoDeletar.classList.add("material-icons");
+    botaoDeletar.classList.add("delete");
+    botaoDeletar.textContent = "delete";
+    
+    //inserir na tr
+    botoesAcao.appendChild(botaoEditar);
+    botoesAcao.appendChild(botaoDeletar);
+
+    return botoesAcao;
+}
 
    
     
