@@ -23,3 +23,11 @@
 .material-icons.edit, .material-icons.delete:hover {
     cursor: pointer;
 }
+
+.material-icons.modadAddNovo-icon{
+    @include color-fontSize($branco, .75rem);
+}
+
+.material-icons.titulo-modal {
+    @include color-fontSize($cinza-escuro, 1.75rem);
+}

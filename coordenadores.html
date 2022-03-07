@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sistema de atendimento do  CepCop">
     <meta name="keywords" content="Cepcop, Cliníca de Psícanálise, Psicanálise, Freud, Lacan, Psicólogo, Psicologia, Atendimento Psicológico">
-    <link rel="stylesheet" href="scss/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>CepCop - Home</title>
 </head>
 <body>
@@ -119,17 +119,106 @@
                             <i class="material-icons edit">edit</i>
                             <i class="material-icons delete">delete</i>
                         </td>
-                    </tr>
-                    
+                    </tr>                   
                     
                 </tbody>
             </table>
+        </section> 
+        
+        <form id="form-adiciona">
+            <div class="modal-container" id="modal-container">
+                <div class="modalAddNovo">
+                    <button class="botao-fechar-modal">X</button>
+                    <div class="modalAddNovo__title-box">
+                        <h2 class="modalAddNovo__title-box___titulo">Novo Coordenador</h2>
+                        <i class="material-icons titulo-modal">add</i>
+                    </div>
+                    
+                    <div class="modalAddNovo__input-container">
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="nome">Nome</label>
+                            <input class="modalAddNovo__input-box___input js-input-nome" type="text" name="nome" placeholder="Nome Completo">
+                        </div>
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="coordenador">Curso</label>
+                            <input class="modalAddNovo__input-box___input js-input-curso" type="text" name="curso" placeholder="Informe...">
+                        </div>
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="cpf">CPF</label>
+                            <input class="modalAddNovo__input-box___input js-input-cpf" type="text" name="cpf" placeholder="000.000.000-00">
+                        </div>
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="email">Email</label>
+                            <input class="modalAddNovo__input-box___input js-input-email" type="email" name="email" placeholder="nome@dominio.com">
+                        </div>
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="senha">Senha</label>
+                            <input class="modalAddNovo__input-box___input js-input-senha" type="password" name="senha" placeholder="********">
+                        </div>
+                    </div>
 
-        </section>        
+                    <div class="modalAddNovo-Card-container">
+                        <div class="modalAddNovo__card-add-tel">
+                            <div class="modalAddNovo__card-add-tel--titleBox">
+                                <h2 class="modalAddNovo__card-add-tel--titleBox___titulo">Adicionar Novo Telefone</h2>
+                                <i class="material-icons modadAddNovo-icon">add</i>
+                            </div>
+                            <div class="modalAddNovo__input-box">
+                                <label class="modalAddNovo__input-box___label" for="telefone">Telefone</label>
+                                <input class="modalAddNovo__input-box___input js-input-telefone" type="text" name="telefone" placeholder="(XX)XXXXX-XXXX">
+                            </div>
+                            <button class="botao-adicionar-novo">Adicionar</button>
+                        </div>
+                        <div class="modalAddNovo__card-permissoes">
+                            <div class="modalAddNovo__card-add-tel--titleBox">
+                                <h2 class="modalAddNovo__card-add-tel--titleBox___titulo">Permissões</h2>
+                                <i class="material-icons modadAddNovo-icon">lock_open</i>
+                            </div>
+                            <div class="modalAddNovo__card-permissoes-box">
+                                <h2 class="modalAddNovo__card-permissoes-box___titulo">Gerenciar Supervisores?</h2>
+                                <label class="modalAddNovo__card-permissoes-box___label" for="sim">Sim</label>
+                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="supervisor" value="Sim">
+                                <label class="modalAddNovo__card-permissoes-box___label" for="nao">Não</label>
+                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="supervisor" value="Não">
+                            </div>
+                            <div class="modalAddNovo__card-permissoes-box">
+                                <h2 class="modalAddNovo__card-permissoes-box___titulo">Gerenciar Estagiários?</h2>
+                                <label class="modalAddNovo__card-permissoes-box___label" for="sim">Sim</label>
+                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="estagiario" value="Sim">
+                                <label class="modalAddNovo__card-permissoes-box___label" for="nao">Não</label>
+                                <input lass="modalAddNovo__card-permissoes-box___input" type="radio" name="estagiario" value="Não">
+                            </div>
+                            <div class="modalAddNovo__card-permissoes-box">
+                                <h2 class="modalAddNovo__card-permissoes-box___titulo">Gerenciar Analisantes?</h2>
+                                <label class="modalAddNovo__card-permissoes-box___label" for="sim">Sim</label>
+                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="analisantes" value="Sim">
+                                <label class="modalAddNovo__card-permissoes-box___label" for="nao">Não</label>
+                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="analisantes" value="Não">
+                            </div>
+                            <div class="modalAddNovo__card-permissoes-box">
+                                <h2 class="modalAddNovo__card-permissoes-box___titulo">Gerenciar Atendimentos?</h2>
+                                <label class="modalAddNovo__card-permissoes-box___label" for="sim">Sim</label>
+                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="atendimentos" value="Sim">
+                                <label class="modalAddNovo__card-permissoes-box___label" for="nao">Não</label>
+                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="atendimentos" value="Não">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modalAddNovo__botoes-container">
+                        <button id="botao-add" class="botao-adicionar-novo" type="submit">Adicionar</button>
+                        <button class="botao-cancelar">Cancelar</button>
+                    </div>
+
+                </div>
+            </div>
+        </form>
     </main>
 
-    <footer>
-        
+    <footer>        
     </footer>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/adicionarNovoPaciente.js"></script>
 </body>
 </html>
