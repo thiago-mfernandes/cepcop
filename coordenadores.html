@@ -107,6 +107,7 @@
                     </tr>
                 </thead>
                 <tbody class="tabela__body">
+                    <!---->
                     <tr class="tabela__body___tr">
                         <td class="tabela__body___td info-nome" data-label="Nome">Hudson Bonomo</td>
                         <td class="tabela__body___td info-email" data-label="Email">hudson@gmail.com</td>
@@ -116,11 +117,12 @@
                         <td class="tabela__body___td info-permissao" data-label="Permissão">Gerenciar Supervisores: SIM</td>
                         <td class="tabela__body___td info-data" data-label="Data de Cadastro">02/02/2022</td>
                         <td class="tabela__body___td info-acao" data-label="Ação">
-                            <i class="material-icons edit">edit</i>
-                            <i class="material-icons delete">delete</i>
+                            <i id="edit" class="material-icons edit">edit</i>
+                            <i id="delete" class="material-icons delete">delete</i>
                         </td>
+                        
                     </tr>                   
-                    
+                
                 </tbody>
             </table>
         </section> 
@@ -206,7 +208,7 @@
                     </div>
 
                     <div class="modalAddNovo__botoes-container">
-                        <button id="botao-add" class="botao-adicionar-novo" type="submit">Adicionar</button>
+                        <button id="botao-add" class="botao-adicionar-novo js-editar-form" type="submit">Adicionar</button>
                         <button class="botao-cancelar">Cancelar</button>
                     </div>
 
@@ -220,5 +222,7 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/adicionarNovoPaciente.js"></script>
+    <script src="./js/deletarPaciente.js"></script>
+    <script src="./js/editarPaciente.js"></script>
 </body>
 </html>

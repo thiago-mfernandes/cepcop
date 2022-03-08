@@ -1,3 +1,5 @@
+//import { deletarLinha } from './deletarPaciente.js'
+
 //execução do preenchimento do modal
 const botaoAdd = document.querySelector('#botao-add');
 botaoAdd.addEventListener("click", function(event) {
@@ -137,7 +139,6 @@ function formataTempo(tempo) {
         return tempo;
     } else {
         tempo = '0' + String(tempo);
-        console.log(tempo);
         return tempo;
     }
 }
@@ -149,12 +150,17 @@ function botoesDeAcao() {
 
     //criar botoes e classes
     const botaoEditar = document.createElement("i");
+    botaoEditar.id = "edit"
     botaoEditar.classList.add("material-icons", "edit");
     botaoEditar.textContent = "edit";
+    //botaoEditar.addEventListener('click', editarLinha);
+    
 
     const botaoDeletar = document.createElement("i");
+    botaoDeletar.id = "delete";
     botaoDeletar.classList.add("material-icons", "delete");
     botaoDeletar.textContent = "delete";
+    botaoDeletar.addEventListener('click', deletarLinha);
     
     //inserir na tr
     botoesAcao.appendChild(botaoEditar);
