@@ -7,6 +7,7 @@ botaoAdd.addEventListener("click", function(event) {
     
     //pego o form preenchido pelo usuario
     var formulario = document.querySelector('#form-adiciona');
+
     //coloco as informações em uma var paciente
     var paciente = obtemPacienteDoFormulario(formulario);
     //add o paciente na tabela

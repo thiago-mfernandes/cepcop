@@ -15,23 +15,15 @@
     <header class="header">
         <div class="header__container">
             <div class="header__container-info">
-                <h1 class="header__container-info___title">Painel Administrativo</h1>
-                <p class="header__container-info___greeting">olá, <span>Hudson</span></p>
-            </div>
-            
-            <div class="circle-4">
-                <div class="circle-3">
-                    <div class="circle-2">
-                        <div class="circle-1">
-                            <img class="header__img" src="img/vince-fleming2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>            
-
+                <h1 class="header__container-info___title">Painel Administrativo</h1>               
+            </div>       
         </div>
         <nav>
             <ul class="header__menu">
+                <li class="header__menu___item">
+                    <img class="header__img" src="img/vince-fleming2.jpg" alt="">
+                    <p class="header__menu___nome">Hudson Bonomo</p>
+                </li>
                 <li class="header__menu___item">
                     <i class="material-icons">home</i>
                     <a href="home.html">Home</a>
@@ -96,39 +88,160 @@
             <table class="tabela-container">
                 <thead class="tabela__header">
                     <tr class="tabela__header___tr">
-                        <th class="tabela__header___th">Nome</th>
-                        <th class="tabela__header___th">Email</th>
-                        <th class="tabela__header___th">CPF</th>
-                        <th class="tabela__header___th">Celular</th>
-                        <th class="tabela__header___th">Curso</th>
-                        <th class="tabela__header___th">Permissão</th>
-                        <th class="tabela__header___th">Data de Cadastro</th>
+                        <th class="tabela__header___th">Estagiário</th>
+                        <th class="tabela__header___th">Analisante</th>
+                        <th class="tabela__header___th">Data</th>
+                        <th class="tabela__header___th">Horario</th>
+                        <th class="tabela__header___th">Status</th>
+                        <th class="tabela__header___th">Descrição</th>
                         <th class="tabela__header___th">Ação</th>
                     </tr>
                 </thead>
                 <tbody class="tabela__body">
+                    <!---->
                     <tr class="tabela__body___tr">
-                        <td class="tabela__body___td info-nome" data-label="Nome">Hudson Bonomo</td>
-                        <td class="tabela__body___td info-email" data-label="Email">hudson@gmail.com</td>
-                        <td class="tabela__body___td info-cpf" data-label="CPF">000.000.000-00</td>
-                        <td class="tabela__body___td info-celular" data-label="Celular">(21)00000-0000</td>
-                        <td class="tabela__body___td info-curso" data-label="Curso">Clinica Psicanalítica Freud-Lacan</td>
-                        <td class="tabela__body___td info-permissao" data-label="Permissão">Gerenciar Supervisores: SIM</td>
-                        <td class="tabela__body___td info-data" data-label="Data de Cadastro">02/02/2022</td>
-                        <td class="tabela__body___td info-acao" data-label="Ação">
-                            <i class="material-icons edit">edit</i>
-                            <i class="material-icons delete">delete</i>
-                        </td>
-                    </tr>
+                                                
+                    </tr>                   
+                
                 </tbody>
             </table>
+        </section> 
+        
+        <form id="form-adiciona">
+            <div class="modal-container" id="modal-container">
+                <div class="modalAddNovo">
+                    <button class="botao-fechar-modal">X</button>
+                    <div class="modalAddNovo__title-box">
+                        <h2 class="modalAddNovo__title-box___titulo">Novo</h2>
+                        <i class="material-icons titulo-modal">add</i>
+                    </div>
+                    
+                    <div class="modalAddNovo__input-container">
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="nome">Nome</label>
+                            <input class="modalAddNovo__input-box___input js-input-nome" type="text" name="nome" placeholder="Nome Completo">
+                        </div>
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="coordenador">Curso</label>
+                            <input class="modalAddNovo__input-box___input js-input-curso" type="text" name="curso" placeholder="Informe...">
+                        </div>
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="cpf">CPF</label>
+                            <input class="modalAddNovo__input-box___input js-input-cpf" type="text" name="cpf" placeholder="000.000.000-00">
+                        </div>
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="email">Email</label>
+                            <input class="modalAddNovo__input-box___input js-input-email" type="email" name="email" placeholder="nome@dominio.com">
+                        </div>
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="senha">Senha</label>
+                            <input class="modalAddNovo__input-box___input js-input-senha" type="password" name="senha" placeholder="********">
+                        </div>
+                    </div>
 
-        </section>        
+                    <div class="modalAddNovo-Card-container">
+                        <div class="modalAddNovo__card-add-tel">
+                            <div class="modalAddNovo__card-add-tel--titleBox">
+                                <h2 class="modalAddNovo__card-add-tel--titleBox___titulo">Adicionar Novo Telefone</h2>
+                                <i class="material-icons modadAddNovo-icon">add</i>
+                            </div>
+                            <div class="modalAddNovo__input-box">
+                                <label class="modalAddNovo__input-box___label" for="telefone">Telefone</label>
+                                <input class="modalAddNovo__input-box___input js-input-telefone" type="text" name="telefone" placeholder="(XX)XXXXX-XXXX">
+                            </div>
+                            <button class="botao-adicionar-novo">Adicionar</button>
+                        </div>
+                        <div class="modalAddNovo__card-permissoes">
+                            <div class="modalAddNovo__card-add-tel--titleBox">
+                                <h2 class="modalAddNovo__card-add-tel--titleBox___titulo">Permissões</h2>
+                                <i class="material-icons modadAddNovo-icon">lock_open</i>
+                            </div>
+                            <div class="modalAddNovo__card-permissoes-box">
+                                <h2 class="modalAddNovo__card-permissoes-box___titulo">Gerenciar Supervisores?</h2>
+                                <label class="modalAddNovo__card-permissoes-box___label" for="sim">Sim</label>
+                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="supervisor" value="Sim">
+                                <label class="modalAddNovo__card-permissoes-box___label" for="nao">Não</label>
+                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="supervisor" value="Não">
+                            </div>
+                            <div class="modalAddNovo__card-permissoes-box">
+                                <h2 class="modalAddNovo__card-permissoes-box___titulo">Gerenciar Estagiários?</h2>
+                                <label class="modalAddNovo__card-permissoes-box___label" for="sim">Sim</label>
+                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="estagiario" value="Sim">
+                                <label class="modalAddNovo__card-permissoes-box___label" for="nao">Não</label>
+                                <input lass="modalAddNovo__card-permissoes-box___input" type="radio" name="estagiario" value="Não">
+                            </div>
+                            <div class="modalAddNovo__card-permissoes-box">
+                                <h2 class="modalAddNovo__card-permissoes-box___titulo">Gerenciar Analisantes?</h2>
+                                <label class="modalAddNovo__card-permissoes-box___label" for="sim">Sim</label>
+                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="analisantes" value="Sim">
+                                <label class="modalAddNovo__card-permissoes-box___label" for="nao">Não</label>
+                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="analisantes" value="Não">
+                            </div>
+                            <div class="modalAddNovo__card-permissoes-box">
+                                <h2 class="modalAddNovo__card-permissoes-box___titulo">Gerenciar Atendimentos?</h2>
+                                <label class="modalAddNovo__card-permissoes-box___label" for="sim">Sim</label>
+                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="atendimentos" value="Sim">
+                                <label class="modalAddNovo__card-permissoes-box___label" for="nao">Não</label>
+                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="atendimentos" value="Não">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modalAddNovo__botoes-container">
+                        <button id="botao-add" class="botao-adicionar-novo js-editar-form" type="submit">Adicionar</button>
+                        <button class="botao-cancelar">Cancelar</button>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+        <section class="modal-excluir-container">
+            <div class="modal-excluir">
+                <h2 class="modal-excluir__titulo">Você deseja realmente excluir?</h2>
+                <div class="modal-excluir-containerBotao">
+                    <button class="botao-adicionar-novo sim">Sim</button>
+                    <button class="botao-cancelar nao">Não</button>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="rodape">  
+            <div class="rodape__container">
+
+                <p class="rodape__info">Mostrando</p>
+
+                <div class="caixa-exibir">
+                    <p class="rodape__info">1</p>
+                </div>
+
+                <p class="rodape__info">de</p>
+
+                <div class="caixa-exibir">
+                    <p class="rodape__info">5</p>
+                </div>
+
+                <p class="rodape__info">entradas</p>
+
+            </div>  
+            <div class="rodape__container">
+                <button class="botao-rodape-navegacao">
+                    <i class="material-icons arrow-back">arrow_back</i>
+                </button>
+                <div class="caixa-exibir">
+                    <p class="rodape__info">5</p>
+                </div>
+                <button class="botao-rodape-navegacao">
+                    <i class="material-icons arrow-forward">arrow_forward</i>
+                </button>
+            </div>   
+        </footer>
     </main>
 
-    <footer>
-        
-    </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/adicionarNovoPaciente.js"></script>
+    <script src="./js/deletarPaciente.js"></script>
+    <script src="./js/editarPaciente.js"></script>
+    <script src="./js/adicionarNovoTelefone.js"></script>
 </body>
 </html>

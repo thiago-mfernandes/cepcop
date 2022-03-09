@@ -10,12 +10,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 15% 85%;
     background-color: rgb(231, 231, 233);
 }
 //cores
 $cinza-claro: rgb(231, 231, 233);
-$cinza-medio: #C4C4C4;
+$cinza-medio: rgb(196, 196, 196);
 $cinza-escuro: rgb(120, 120, 135);
 $branco: #FFFFFF;
 $branco-bg: #FAFEFD;
@@ -56,9 +56,9 @@ $amarelo-padrao: rgba(251, 255, 64, .70);
 
 //importação dos componentes
 @import '../scss/componentes/botao-adicionar-novo', '../scss/componentes/bloco-adicionarBuscar';
-@import '../scss/componentes/users-card', '../scss/componentes/config-card', '../scss/componentes/circle';
+@import '../scss/componentes/users-card', '../scss/componentes/config-card';
 @import '../scss/componentes/material-icons', '../scss/componentes/botao-salvar', '../scss/componentes/modalAddNovo';
-@import '../scss/componentes/-botao-cancelar.scss', '../scss/componentes/botao-fechar-modal';
+@import '../scss/componentes/-botao-cancelar.scss', '../scss/componentes/botao-fechar-modal', '../scss/componentes/modal-excluir', '../scss/componentes/botao-rodape-navegacao';
 //importação das folhas de estilo
 @import 'tabela', 'configuracoes';
-@import 'header', 'home-card', 'estatisticas';
+@import 'header', 'home-card', 'estatisticas', 'rodape';

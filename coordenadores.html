@@ -15,23 +15,15 @@
     <header class="header">
         <div class="header__container">
             <div class="header__container-info">
-                <h1 class="header__container-info___title">Painel Administrativo</h1>
-                <p class="header__container-info___greeting">olá, <span>Hudson</span></p>
-            </div>
-            
-            <div class="circle-4">
-                <div class="circle-3">
-                    <div class="circle-2">
-                        <div class="circle-1">
-                            <img class="header__img" src="img/vince-fleming2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>            
-
+                <h1 class="header__container-info___title">Painel Administrativo</h1>               
+            </div>       
         </div>
         <nav>
             <ul class="header__menu">
+                <li class="header__menu___item">
+                    <img class="header__img" src="img/vince-fleming2.jpg" alt="">
+                    <p class="header__menu___nome">Hudson Bonomo</p>
+                </li>
                 <li class="header__menu___item">
                     <i class="material-icons">home</i>
                     <a href="home.html">Home</a>
@@ -132,7 +124,7 @@
                 <div class="modalAddNovo">
                     <button class="botao-fechar-modal">X</button>
                     <div class="modalAddNovo__title-box">
-                        <h2 class="modalAddNovo__title-box___titulo">Novo Coordenador</h2>
+                        <h2 class="modalAddNovo__title-box___titulo">Novo</h2>
                         <i class="material-icons titulo-modal">add</i>
                     </div>
                     
@@ -169,7 +161,7 @@
                                 <label class="modalAddNovo__input-box___label" for="telefone">Telefone</label>
                                 <input class="modalAddNovo__input-box___input js-input-telefone" type="text" name="telefone" placeholder="(XX)XXXXX-XXXX">
                             </div>
-                            <button class="botao-adicionar-novo">Adicionar</button>
+                            <button id="botaoAdd-tel" class="botao-adicionar-novo telefone">Adicionar Telefone</button>
                         </div>
                         <div class="modalAddNovo__card-permissoes">
                             <div class="modalAddNovo__card-add-tel--titleBox">
@@ -215,14 +207,56 @@
                 </div>
             </div>
         </form>
+
+        <section class="modal-excluir-container">
+            <div class="modal-excluir">
+                <h2 class="modal-excluir__titulo">Você deseja realmente excluir?</h2>
+                <div class="modal-excluir-containerBotao">
+                    <button class="botao-adicionar-novo sim">Sim</button>
+                    <button class="botao-cancelar nao">Não</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="rodape">  
+            <div class="rodape__container">
+
+                <p class="rodape__info">Mostrando</p>
+
+                <div class="caixa-exibir">
+                    <p class="rodape__info">1</p>
+                </div>
+
+                <p class="rodape__info">de</p>
+
+                <div class="caixa-exibir">
+                    <p class="rodape__info">5</p>
+                </div>
+
+                <p class="rodape__info">entradas</p>
+
+            </div>  
+            <div class="rodape__container">
+                <button class="botao-rodape-navegacao">
+                    <i class="material-icons arrow-back">arrow_back</i>
+                </button>
+                <div class="caixa-exibir">
+                    <p class="rodape__info">5</p>
+                </div>
+                <button class="botao-rodape-navegacao">
+                    <i class="material-icons arrow-forward">arrow_forward</i>
+                </button>
+            </div>   
+        </footer>
+
     </main>
 
-    <footer>        
-    </footer>
+    
 
     <script src="./js/modal.js"></script>
     <script src="./js/adicionarNovoPaciente.js"></script>
     <script src="./js/deletarPaciente.js"></script>
     <script src="./js/editarPaciente.js"></script>
+    <script src="./js/adicionarNovoTelefone.js"></script>
 </body>
 </html>

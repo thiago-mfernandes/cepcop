@@ -31,3 +31,10 @@
 .material-icons.titulo-modal {
     @include color-fontSize($cinza-escuro, 1.75rem);
 }
+
+.material-icons.arrow-back, .material-icons.arrow-forward {
+    @include color-fontSize($cinza-escuro, .75rem);
+    &:hover{
+        @include color-fontSize($azul-escuro-fosco, .95rem);
+    }
+}

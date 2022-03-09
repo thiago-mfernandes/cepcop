@@ -1,0 +1,35 @@
+.rodape{
+    grid-column: 2 / 3;
+    @include display-flexDirection(flex, row);
+    @include alignItens-justifyContent(center, space-between);
+    @include height-width(8vh, 100%);
+    background-color: rgba(196, 196, 196, .7);
+
+    &__container {
+        @include display-flexDirection(flex, row);
+        @include height-width(100%, 30%);
+        @include alignItens-justifyContent(center, flex-end);
+        padding: 0 2%;
+
+        &:first-of-type{
+            @include height-width(100%,50%);
+            @include alignItens-justifyContent(center, flex-start);
+        }
+    }
+    &__info {
+        @include color-fontSize($cinza-escuro, .75rem);
+        @include fontStyle-fontWeight(italic, lighter);
+        font-family: 'Montserrat', sans-serif;
+        margin: 0 2%;
+    }
+}
+
+
+.caixa-exibir {
+    background-color: $branco;
+    border-radius: 16px;
+    border: none;
+    @include height-width(4vh, 20%);
+    @include display-flexDirection(flex, row);
+    @include alignItens-justifyContent(center, center);
+}

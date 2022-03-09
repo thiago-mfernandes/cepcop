@@ -7,8 +7,9 @@ botaoEditar.addEventListener("click", function(event) {
     
     var formulario = document.querySelector('#form-adiciona');
 
-    const tituloForm = formulario.querySelector('.modalAddNovo__title-box___titulo').textContent;
-    trocaTituloFormulario(tituloForm);
+    const tituloBloco = document.querySelector('.bloco-adicionarBuscar__container___titulo').textContent;
+    
+    trocaTituloFormulario(tituloBloco);
     trocaBotao();
     
 })
@@ -25,34 +26,32 @@ function trocaBotao() {
 
 //analisa dinamicamente o formulario e adequa o titulo ao contexto do formulario:
 function trocaTituloFormulario(tituloFormulario) {
+    console.log(tituloFormulario);
     //pego o formulario que esta sendo analisado
     var formulario = document.querySelector('#form-adiciona');
     //verifico se ele nao esta vazio
     if(tituloFormulario != "") {
         switch(tituloFormulario) {
-            case "Novo Coordenador":
+            case "Coordenadores":
                 formulario.querySelector(".modalAddNovo__title-box___titulo").textContent = 'Editar Coordenador';
                 break;
-            case "Novo Supervisor":
+            case "Supervisores":
                 formulario.querySelector(".modalAddNovo__title-box___titulo").textContent = 'Editar Supervisor';
                 break;
-            case "Novo Supervisor":
-                formulario.querySelector(".modalAddNovo__title-box___titulo").textContent = 'Editar Supervisor';
-                break;
-            case "Novo Estagiário":
+            case "Estagiários":
                 formulario.querySelector(".modalAddNovo__title-box___titulo").textContent = 'Editar Estagiário';
                 break;
-            case "Novo Analisante":
+            case "Analisantes":
                 formulario.querySelector(".modalAddNovo__title-box___titulo").textContent = 'Editar Analisante';
                 break;
-            case "Novo Atendimento":
+            case "Atendimentos":
                 formulario.querySelector(".modalAddNovo__title-box___titulo").textContent = 'Editar Atendimento';
                 break;
-            case "Nova Turma":
+            case "Turmas":
                 formulario.querySelector(".modalAddNovo__title-box___titulo").textContent = 'Editar Turma';
                 break;
-            case "Novo Curso":
-                formulario.querySelector(".modalAddNovo__title-box___titulo").textContent = 'Editar Supervisor';
+            case "Cursos":
+                formulario.querySelector(".modalAddNovo__title-box___titulo").textContent = 'Editar Curso';
                 break;
             default:
                 console.log("Houve um problema na troca de titulo do formulario.");
