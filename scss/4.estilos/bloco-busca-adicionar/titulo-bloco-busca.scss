@@ -1,0 +1,5 @@
+.titulo-bloco-busca {
+    @include color-fontSize($cinza-escuro, 1.75rem);
+    @extend %fjala;
+    padding-left: 5%
+}

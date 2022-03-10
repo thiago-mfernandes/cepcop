@@ -1,0 +1,106 @@
+.config-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    padding: 10% 2.5%;
+    gap: 16px;
+}
+
+.config-page-card {
+    @include display-flexDirection(flex, column);
+    @include alignItens-justifyContent(center, space-evenly);
+    background-color: $cinza-claro;
+    border-radius: 16px;
+    box-shadow: 0 4px 50px 0 rgba(0,0,0,.1);
+    padding: 2% 5% 7.5%;
+    font-family: 'Fjalla One';
+
+    //posicionamento de cada filho no desktop:
+    &:first-of-type{
+        grid-column: 1 / 2;
+        grid-row: 1 / 5;
+    }
+
+    &:nth-of-type(2) {
+        grid-column: 1 / 2;
+        grid-row: 5 / 8;
+    }
+
+    &:nth-of-type(3) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+    }
+
+    &:nth-of-type(4) {
+        grid-column: 2 / 3;
+        grid-row: 4 / 7;
+    }
+
+    &:last-of-type {
+        grid-column: 2 / 3;
+        grid-row: 7 / 9;
+    }
+
+    &__header {
+        @include display-flexDirection(flex, row);
+        @include alignItens-justifyContent(center, space-between);
+        margin-top: 5%;
+        width: 100%;
+
+        &___titulo {
+            @include color-fontSize($cinza-escuro, 1.25rem);
+        }
+    }
+
+    &__input-box {
+        @include display-flexDirection(flex, row);
+        @include alignItens-justifyContent(center, space-between);
+        margin: 5% 0;
+        width: 100%;
+
+        &___label {
+            @include color-fontSize($cinza-escuro, 1rem);            
+        }
+
+        &___input {
+            @include height-width(5vh, 65%);
+            @include color-fontSize($cinza-escuro, 0.75rem);
+            @include fontStyle-fontWeight(italic, lighter);
+            border: none;
+            border-radius: 16px;
+            padding-left: 5%;
+            font-family: 'Montserrat', sans-serif;
+            
+        }
+    }
+
+    &__input-button-box {
+        @include display-flexDirection(flex, row-reverse);
+        width: 75%;
+
+        &___button {
+            @include height-width(5vh, 35%);
+            @include color-fontSize($branco-bg, 0.65rem);
+            @include fontStyle-fontWeight(italic, lighter);
+            border: none;
+            border-radius: 16px 0 0 16px;
+            background-color: $azul-medio-brilhante;
+            font-family: 'Montserrat', sans-serif;
+            &:hover {
+                cursor: pointer;
+                box-shadow: 4px 0px 10px 3px rgba(18, 18, 224,.5);
+            }
+
+        }
+
+        &___input {
+            @include height-width(5vh, 65%);
+            @include color-fontSize($cinza-escuro, 0.75rem);
+            @include fontStyle-fontWeight(italic, lighter);
+            border: none;
+            border-radius: 0 16px 16px 0;
+            padding-left: 5%;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+}

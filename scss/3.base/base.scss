@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    @extend %mont;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    background-color: $cinza-claro;
+}

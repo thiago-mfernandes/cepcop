@@ -1,0 +1,6 @@
+.link-menu-nav, span {
+    @extend %lato;
+    text-decoration: none;
+    width: 100%;
+    @include color-fontSize($cinza-escuro, 1rem);    
+}

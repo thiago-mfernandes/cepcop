@@ -1,0 +1,40 @@
+.material-icons {
+    @include color-fontSize($cinza-escuro, .8rem);
+    padding: 0 7.5%;
+
+    &.config-icon {
+        @include color-fontSize($cinza-escuro, 2.25rem);
+    }
+}
+
+.material-icons--config {
+    @include color-fontSize($cinza-escuro, 1.5rem);
+    padding: 0;
+}
+
+.material-icons.edit {
+    @include color-fontSize($verde-padrao, 1.5rem);
+}
+
+.material-icons.delete {
+    @include color-fontSize($vermelho-padrao, 1.5rem);
+}
+
+.material-icons.edit, .material-icons.delete:hover {
+    cursor: pointer;
+}
+
+.material-icons.modadAddNovo-icon{
+    @include color-fontSize($branco, .75rem);
+}
+
+.material-icons.titulo-modal {
+    @include color-fontSize($cinza-escuro, 1.75rem);
+}
+
+.material-icons.arrow-back, .material-icons.arrow-forward {
+    @include color-fontSize($cinza-escuro, .75rem);
+    &:hover{
+        @include color-fontSize($azul-escuro-fosco, .95rem);
+    }
+}

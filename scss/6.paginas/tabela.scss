@@ -1,0 +1,35 @@
+.tabela-container {
+    background-color: rgba(231, 231, 233, .7);
+    border-radius: 12px 12px 0 0;
+    box-shadow: 4px 4px 5px 0 rgba(0,0,0,.15);
+    margin: 1.5% 1.5% 5%;
+    width: 97%;
+    table-layout: fixed;
+    word-wrap: break-word;
+    //overflow para o border-radius aparecer; 
+    overflow: hidden;
+}
+
+.tabela__header {
+    height: 5vh;           
+    
+    &___tr {
+        @include color-fontSize($branco-bg, .75rem);
+        background-color: rgba(18, 18, 224, .7);
+        text-align: center;
+    }    
+}
+
+.tabela__body {
+    
+    &___tr {
+        //linha impar, cor azul
+        @include color-fontSize($azul-medio-brilhante, 1rem);
+        border-bottom: 1px solid $cinza-medio;
+        @extend %mont;
+    }
+    //linha par, cor cinza
+    &___tr:nth-of-type(even) {
+        color: $cinza-escuro;
+    }    
+}

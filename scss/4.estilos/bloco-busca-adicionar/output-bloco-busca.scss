@@ -1,0 +1,10 @@
+.output-bloco-busca {
+    @include color-fontSize($cinza-escuro, .75rem);
+    @include fontStyle-fontWeight(italic, lighter);
+    @include height-width(4vh, 10%);
+    background-color: $branco;
+    border-radius: 16px;
+    margin: 0 5%;
+    padding: 0.75%;
+    text-align: center;
+}

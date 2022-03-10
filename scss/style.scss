@@ -1,64 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+//importação dos arquivos gerais;
+@import '../scss/1.variaveis/import-all-variaveis';
 
-*{
-    box-sizing: border-box;
-}
+@import '../scss/2.carregamentosExternos/import-all-carregamentos-externos';
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    display: grid;
-    grid-template-columns: 15% 85%;
-    background-color: rgb(231, 231, 233);
-}
-//cores
-$cinza-claro: rgb(231, 231, 233);
-$cinza-medio: rgb(196, 196, 196);
-$cinza-escuro: rgb(120, 120, 135);
-$branco: #FFFFFF;
-$branco-bg: #FAFEFD;
-$azul-escuro-fosco: rgb(10, 10, 132);
-$azul-medio-brilhante: rgb(18, 18, 224);
-$vermelho-padrao: rgb(244, 124, 87);
-$verde-padrao: rgb(109, 225, 149);
-$amarelo-padrao: rgba(251, 255, 64, .70);
+@import '../scss/3.base/import-all-base';
 
-//font-family: 'Fjalla One', sans-serif;
-//font-family: 'Lato', sans-serif;
-//font-family: 'Montserrat', sans-serif;
+@import '../scss/4.estilos/import-all-estilos';
 
-@mixin color-fontSize($color, $fontSize) {
-    color: $color;
-    font-size: $fontSize;
-}
+@import '../scss/5.componentes/import-all-componentes';
 
-@mixin height-width($height, $width) {
-    height: $height;
-    width: $width;
-}
+@import '../scss/6.paginas/import-all-paginas';
 
-@mixin display-flexDirection($display, $flexDirection) {
-    display: $display;
-    flex-direction: $flexDirection;
-}
-
-@mixin alignItens-justifyContent($align, $justify) {
-    align-items: $align;
-    justify-content: $justify;
-}
-
-@mixin fontStyle-fontWeight($fontStyle, $fontWeight) {
-    font-style: $fontStyle;
-    font-weight: $fontWeight;
-}
-
-//importação dos componentes
-@import '../scss/componentes/botao-adicionar-novo', '../scss/componentes/bloco-adicionarBuscar';
-@import '../scss/componentes/users-card', '../scss/componentes/config-card';
-@import '../scss/componentes/material-icons', '../scss/componentes/botao-salvar', '../scss/componentes/modalAddNovo';
-@import '../scss/componentes/-botao-cancelar.scss', '../scss/componentes/botao-fechar-modal', '../scss/componentes/modal-excluir', '../scss/componentes/botao-rodape-navegacao';
-//importação das folhas de estilo
-@import 'tabela', 'configuracoes';
-@import 'header', 'home-card', 'estatisticas', 'rodape';
+@import '../scss/7.temas/import-all-temas';
