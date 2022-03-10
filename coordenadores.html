@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sistema de atendimento do  CepCop">
     <meta name="keywords" content="Cepcop, Cliníca de Psícanálise, Psicanálise, Freud, Lacan, Psicólogo, Psicologia, Atendimento Psicológico">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="scss/3.base/reset.scss">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.css">
     <title>CepCop - Home</title>
 </head>
 <body>
@@ -26,39 +26,39 @@
                 </li>
                 <li class="header__menu___item">
                     <i class="material-icons">home</i>
-                    <a href="home.html">Home</a>
+                    <a class="link-menu-nav" href="home.html">Home</a>
                 </li> 
                 <li class="header__menu___item">
                     <i class="material-icons">people</i>
-                    <a href="coordenadores.html">Coordenadores</a
+                    <a class="link-menu-nav" href="coordenadores.html">Coordenadores</a
                         li> 
                 <li class="header__menu___item">
                     <i class="material-icons">groups</i>
-                    <a href="supervisores.html">Supervisores</a>
+                    <a class="link-menu-nav" href="supervisores.html">Supervisores</a>
                 </li> 
                 <li class="header__menu___item">
                     <i class="material-icons">school</i>
-                    <a href="estagiarios.html">Estagiários</a>
+                    <a class="link-menu-nav" href="estagiarios.html">Estagiários</a>
                 </li> 
                 <li class="header__menu___item">
                     <i class="material-icons">description</i>
-                    <a href="analisantes.html">Analisantes</a>
+                    <a class="link-menu-nav" href="analisantes.html">Analisantes</a>
                 </li> 
                 <li class="header__menu___item">
                     <i class="material-icons">reorder</i>
-                    <a href="atendimentos.html">Atendimentos</a>
+                    <a class="link-menu-nav" href="atendimentos.html">Atendimentos</a>
                 </li> 
                 <li class="header__menu___item">
                     <i class="material-icons">people</i>
-                    <a href="turmas.html">Turmas</a>
+                    <a class="link-menu-nav" href="turmas.html">Turmas</a>
                 </li> 
                 <li class="header__menu___item">
                     <i class="material-icons">class</i>
-                    <a href="cursos.html">Cursos</a>
+                    <a class="link-menu-nav" href="cursos.html">Cursos</a>
                 </li> 
                 <li class="header__menu___item">
                     <i class="material-icons">settings</i>
-                    <a href="configuracoes.html">Configurações</a>
+                    <a class="link-menu-nav" href="configuracoes.html">Configurações</a>
                 </li> 
                 <li class="header__menu___item">
                     <i class="material-icons">logout</i><span>Sair</span></li>        
@@ -71,16 +71,16 @@
 
             <div class="bloco-adicionarBuscar">
                 <div class="bloco-adicionarBuscar__container">
-                    <h2 class="bloco-adicionarBuscar__container___titulo">Coordenadores</h2>
+                    <h2 class="titulo-bloco-busca">Coordenadores</h2>
                     <button class="botao-adicionar-novo">Adicionar</button>
                 </div>
 
-                <hr class="bloco-adicionarBuscar__linha">
+                <hr class="linha">
 
-                <input class="bloco-adicionarBuscar__input" type="text" placeholder="Pesquise...">
+                <input class="input-bloco-busca" type="text" placeholder="Pesquise...">
                 <div class="bloco-adicionarBuscar__container">
                     <p class="bloco-adicionarBuscar__container___conteudo">Mostrar</p>
-                    <div class="bloco-adicionarBuscar__container___output">10</div>
+                    <div class="output-bloco-busca">10</div>
                     <p class="bloco-adicionarBuscar__container___conteudo">entradas</p>
                 </div>
             </div>
@@ -88,27 +88,27 @@
             <table class="tabela-container">
                 <thead class="tabela__header">
                     <tr class="tabela__header___tr">
-                        <th class="tabela__header___th">Nome</th>
-                        <th class="tabela__header___th">Email</th>
-                        <th class="tabela__header___th">CPF</th>
-                        <th class="tabela__header___th">Celular</th>
-                        <th class="tabela__header___th">Curso</th>
-                        <th class="tabela__header___th">Permissão</th>
-                        <th class="tabela__header___th">Data de Cadastro</th>
-                        <th class="tabela__header___th">Ação</th>
+                        <th class="tabela-header-th">Nome</th>
+                        <th class="tabela-header-th">Email</th>
+                        <th class="tabela-header-th">CPF</th>
+                        <th class="tabela-header-th">Celular</th>
+                        <th class="tabela-header-th">Curso</th>
+                        <th class="tabela-header-th">Permissão</th>
+                        <th class="tabela-header-th">Data de Cadastro</th>
+                        <th class="tabela-header-th">Ação</th>
                     </tr>
                 </thead>
                 <tbody class="tabela__body">
                     <!---->
                     <tr class="tabela__body___tr">
-                        <td class="tabela__body___td info-nome" data-label="Nome">Hudson Bonomo</td>
-                        <td class="tabela__body___td info-email" data-label="Email">hudson@gmail.com</td>
-                        <td class="tabela__body___td info-cpf" data-label="CPF">000.000.000-00</td>
-                        <td class="tabela__body___td info-celular" data-label="Celular">(21)00000-0000</td>
-                        <td class="tabela__body___td info-curso" data-label="Curso">Clinica Psicanalítica Freud-Lacan</td>
-                        <td class="tabela__body___td info-permissao" data-label="Permissão">Gerenciar Supervisores: SIM</td>
-                        <td class="tabela__body___td info-data" data-label="Data de Cadastro">02/02/2022</td>
-                        <td class="tabela__body___td info-acao" data-label="Ação">
+                        <td class="tabela-body-td info-nome" data-label="Nome">Hudson Bonomo</td>
+                        <td class="tabela-body-td info-email" data-label="Email">hudson@gmail.com</td>
+                        <td class="tabela-body-td info-cpf" data-label="CPF">000.000.000-00</td>
+                        <td class="tabela-body-td info-celular" data-label="Celular">(21)00000-0000</td>
+                        <td class="tabela-body-td info-curso" data-label="Curso">Clinica Psicanalítica Freud-Lacan</td>
+                        <td class="tabela-body-td info-permissao" data-label="Permissão">Gerenciar Supervisores: SIM</td>
+                        <td class="tabela-body-td info-data" data-label="Data de Cadastro">02/02/2022</td>
+                        <td class="tabela-body-td info-acao" data-label="Ação">
                             <i id="edit" class="material-icons edit">edit</i>
                             <i id="delete" class="material-icons delete">delete</i>
                         </td>
@@ -117,6 +117,7 @@
                 
                 </tbody>
             </table>
+
         </section> 
         
         <form id="form-adiciona">
