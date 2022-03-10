@@ -1,0 +1,26 @@
+.card-turmas {
+    @include display-flexDirection(flex, column);
+    @extend %mont;
+    background-color: $verde-padrao;
+    border-radius: 24px;
+    box-shadow: 0px 4px 50px 0px rgba(109, 225, 149, .6);
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    width: 100%;
+
+    &__titulo {
+        @include color-fontSize($cinza-escuro, 1rem);
+        background-color: rgba(231, 231, 233, .5);
+        border-radius: 24px 24px 0 0;
+        height: 10vh;
+        padding: 12.5% 0;
+        text-align: center;
+    }
+
+    &__valor {
+        @include color-fontSize($cinza-escuro, 2.75rem);
+        align-self: center;
+        font-weight: 700;
+        margin-top: 7.5%;
+    }
+}

@@ -1,0 +1,70 @@
+.card-cadHoje {
+    @include display-flexDirection(flex, column);
+    @include alignItens-justifyContent(center, space-between);
+    @extend %mont;
+    background-color: $branco;
+    box-shadow: 0px 4px 50px 0px rgba(0,0,0,.15);
+    border-radius: 24px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    width: 100%;
+    
+    &__titulo {
+        @include color-fontSize($cinza-claro, 1rem);
+        @include height-width(10vh, 100%);
+        background-color: $cinza-escuro;
+        border-radius: 24px 24px 0 0;
+        text-align: center;
+        margin-bottom: 7.5%;
+        padding-top: 12.5%;
+        vertical-align: baseline;
+    }
+
+    &__containerInfo {
+        @include display-flexDirection(flex, column);
+        width: 100%;
+    }
+
+    &__containerData {
+        @include display-flexDirection(flex, column);
+        padding: 0 5%;
+        width: 100%;
+        border-bottom: 1px solid $cinza-medio;
+    }
+
+    &__data {
+        @include color-fontSize($cinza-escuro, .5rem);
+        @include fontStyle-fontWeight(italic, lighter);
+        padding: 5% 0%;
+    }
+
+    &__diaSemana {
+        @include color-fontSize($cinza-escuro, 1rem);
+        @include fontStyle-fontWeight(italic, lighter);
+        padding: 5% 0% 10%;
+    }
+
+    &__containerTotal {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 5% 0;
+    }
+
+    &__totalCadastros {
+        @extend %lato;
+        @include color-fontSize($cinza-escuro, 2rem);
+        font-weight: bold;
+    }
+
+    &__containerTotal .material-icons{
+        font-size: 2rem;
+        padding: 0 0;
+    }
+
+    &__pessoa {
+        @include color-fontSize($cinza-escuro, .9rem);
+        padding: 2.5% 0;
+        margin: 0 7.5%;
+    }
+}

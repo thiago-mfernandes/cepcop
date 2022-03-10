@@ -1,0 +1,47 @@
+.card-filaEspera {
+    @include display-flexDirection(flex, column);
+    @extend %mont;
+    background-color: $amarelo-padrao;
+    border-radius: 24px;
+    box-shadow: 0px 4px 50px 0px rgba(251, 255, 64,.6);
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    width: 100%;
+
+    &__titulo {
+        @include color-fontSize($cinza-escuro, 1rem);
+        background-color: rgba(231, 231, 233, .5);
+        border-radius: 24px 24px 0 0;
+        height: 10vh;
+        padding: 10% 0;
+        text-align: center;
+    }
+
+    &__box {
+        @include display-flexDirection(flex, row);
+        @include alignItens-justifyContent(center, flex-start);
+        @include height-width(5vh, 100%);
+        margin: 2.5% 0;
+        padding: 7.5% 0;
+        border-bottom: 1px solid $cinza-medio;
+        &:last-of-type{
+            border-bottom: none;
+            padding: 5%;
+        }
+
+        & .material-icons {
+            @include color-fontSize($cinza-escuro, 2rem);
+            font-weight: 700;
+            padding: 0 5%;
+        }
+    }
+
+    &__quantidade {
+        @include color-fontSize($cinza-escuro, 2rem);
+        font-weight: 700;
+    }
+
+    &__pessoa {
+        @include color-fontSize($cinza-escuro, .75rem);
+    }
+}

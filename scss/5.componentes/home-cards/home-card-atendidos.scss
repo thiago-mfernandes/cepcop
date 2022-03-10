@@ -1,0 +1,37 @@
+.card-atendidos {
+    @include display-flexDirection(flex, column);
+    @extend %mont;
+    background-color: $verde-padrao;
+    border-radius: 24px;
+    box-shadow: 0px 4px 50px 0px rgba(109, 225, 149, .6);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 100%;
+
+    &__titulo {
+        @include color-fontSize($cinza-escuro, 1rem);
+        background-color: rgba(231, 231, 233, .5);
+        border-radius: 24px 24px 0 0;
+        height: 10vh;
+        padding: 10% 0;
+        text-align: center;
+    }
+
+    &__box {
+        @include display-flexDirection(flex, row);
+        @include alignItens-justifyContent(center, space-around);
+        margin: auto 0;
+        padding: 5% 0;
+
+        & .material-icons {
+            @include color-fontSize($cinza-escuro, 1.5rem);
+            font-weight: 700;
+            padding: 0 0;
+        }
+    }
+
+    &__valor {
+        @include color-fontSize($cinza-escuro, 1.5rem);
+        font-weight: 700;
+    }
+}
