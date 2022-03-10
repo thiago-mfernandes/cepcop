@@ -1,5 +1,4 @@
 const botaoAddNovoTel = document.querySelector("#botaoAdd-tel");
-console.log(botaoAddNovoTel);
 botaoAddNovoTel.addEventListener("click", () => {
     
     const inputTelefone = document.querySelector('.js-input-telefone').value;
