@@ -39,7 +39,6 @@ function obtemPacienteDoFormulario(formulario) {
      `Gerenciar Estagiários: ${permissoaoEstagiarioValue}\n` +
       `Gerenciar Analisantes: ${permissoaoAnalisantesValue}\n` +
        `Gerenciar Atendimentos: ${permissoaoAtendimentosValue}`;
-
     
     //crio um objeto formValue preenchido com as informações do formulário
     var formValue = {
@@ -71,13 +70,13 @@ function montaTr(formValue){
     pacienteLinha.classList.add("tabela__body___tr");    
     
     //paciente linha insere dentro dele cada novo valor do paciente
-    pacienteLinha.appendChild(montaTd(formValue.nome, "tabela__body___td"));
-    pacienteLinha.appendChild(montaTd(formValue.email, "tabela__body___td"));
-    pacienteLinha.appendChild(montaTd(formValue.cpf, "tabela__body___td"));
-    pacienteLinha.appendChild(montaTd(formValue.telefone, "tabela__body___td"));
-    pacienteLinha.appendChild(montaTd(formValue.curso, "tabela__body___td"));
-    pacienteLinha.appendChild(montaTd(formValue.permissao, "tabela__body___td"));
-    pacienteLinha.appendChild(montaTd(formValue.data, "tabela__body___td"));
+    pacienteLinha.appendChild(montaTd(formValue.nome, "tabela-body-td"));
+    pacienteLinha.appendChild(montaTd(formValue.email, "tabela-body-td"));
+    pacienteLinha.appendChild(montaTd(formValue.cpf, "tabela-body-td"));
+    pacienteLinha.appendChild(montaTd(formValue.telefone, "tabela-body-td"));
+    pacienteLinha.appendChild(montaTd(formValue.curso, "tabela-body-td"));
+    pacienteLinha.appendChild(montaTd(formValue.permissao, "tabela-body-td"));
+    pacienteLinha.appendChild(montaTd(formValue.data, "tabela-body-td"));
     pacienteLinha.appendChild(botoesDeAcao());
     //disponibilizo o pacienteLinha
     return pacienteLinha;
@@ -147,7 +146,7 @@ function formataTempo(tempo) {
 function botoesDeAcao() {
     //criar uma td botoesAcao e colocar a classe
     const botoesAcao = document.createElement("td");
-    botoesAcao.classList.add("tabela__body___td");
+    botoesAcao.classList.add("tabela-body-td");
 
     //criar botoes e classes
     const botaoEditar = document.createElement("i");
