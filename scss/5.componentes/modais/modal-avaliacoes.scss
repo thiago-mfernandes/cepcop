@@ -1,0 +1,47 @@
+.modal-avaliacoes-container {
+    //container do modal com display none inicialmente
+    @include display-flexDirection(none, row);
+    @include alignItens-justifyContent(center, center);
+    @include height-width(100vh, 100vw);
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+        left: 0px;
+        top: 0px;
+    z-index: 10;
+}
+
+.modal-avaliacoes {
+    @include display-flexDirection(flex, column);
+    @include alignItens-justifyContent(center, space-between);
+    @extend %mont;
+    position: relative;
+    width: 70%; 
+    height: 80vh;
+    overflow: auto;
+    min-width: 650px;
+    background-color: $cinza-claro;
+    border-radius: 16px;
+    box-shadow: 0 4px 50px 0 rgba(0,0,0,.15);
+    padding: 5%;
+    flex-wrap: wrap;
+
+
+    &__titulo {
+        @include color-fontSize($cinza-escuro, 2rem);
+        @extend %fjala;
+        margin-bottom: 2.5%;
+        padding-bottom: 1.5%;
+        justify-self: start;
+    }
+}
+
+//a classe criada sobrepoe o display none e exibe o modal:
+//aplicar no container
+.mostrar-modal {
+    @include display-flexDirection(flex, row);
+}
+
+//quando o modal é exibidido, a propriedade de animação é inserida no modal
+.mostrar-modal .modal-avaliacoes {
+    animation: exibe-modal .9s ease-in-out;
+}

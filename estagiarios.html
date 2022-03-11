@@ -100,7 +100,27 @@
                 <tbody class="tabela__body">
                     <!---->
                     <tr class="tabela__body___tr">
-                                                
+                        <td class="tabela-body-td">
+                            Nome: Kelly Cristina dos Santos Alves<br>
+                            Email: teste@teste.com<br>
+                            CPF: 121.313.131-31<br>
+                            Supervisor: Hudson A.R. Bonomo<br>
+                            Coordenador: Hudson A.R. Bonomo
+                        </td>
+                        <td class="tabela-body-td">(21) 9 6011-4774</td>  
+                        <td class="tabela-body-td">Residencial: Rua Modestino Kanto ,166, 101 fds, Jd Sulacap</td>  
+                        <td class="tabela-body-td">
+                            0 Avaliações
+                            <button class="botao-ver-avaliacoes">Ver</button>
+                        </td>  
+                        <td class="tabela-body-td">Gerenciar Analisantes: Sim
+                            Gerenciar Atendimentos: Sim</td>  
+                        <td class="tabela-body-td">29/08/2021 07:53:14</td>  
+                        <td class="tabela-body-td info-acao" data-label="Ação">
+                            <i id="edit" class="material-icons edit">edit</i>
+                            <i id="delete" class="material-icons delete">delete</i>
+                            <i id="ver-mais" class="material-icons ver-mais">add_box</i>
+                        </td>                                                
                     </tr>                   
                 
                 </tbody>
@@ -178,62 +198,95 @@
                                 <label class="modalAddNovo__card-permissoes-box___label" for="nao">Não</label>
                                 <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="atendimentos" value="Não">
                             </div>
-
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="data-de-nascimento">Data de Nascimento</label>
-                                <input class="modalAddNovo__input-box___input js-input-dataNascimento" type="date" name="data-de-nascimento" placeholder="dd/mm/aaaa">
-                            </div>
-
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="turma">Turma</label>
-                                <input class="modalAddNovo__input-box___input js-input-turma" type="text" name="turma" placeholder="0000.0">
-                            </div>
-
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="supervisorAtual">Supervisor Clinico Atual</label>
-                                <input class="modalAddNovo__input-box___input js-input-" type="text" name="supervisorAtual" placeholder="Nome do Supervisor">
-                            </div>
-
-                            <div>
-                                <h2>Supervisores Anteriores</h2>
-                            </div>
-
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="sitaucaoAtual">Situação Atual</label>
-                                <input class="modalAddNovo__input-box___input js-input-" type="text" name="sitaucaoAtual" placeholder="Ex.: Estagiário">
-                            </div>
-
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="inicioEstagio">Inicio do Estágio</label>
-                                <input class="modalAddNovo__input-box___input js-input-" type="date" name="inicioEstagio" placeholder="dd/mm/aaaa">
-                            </div>
-
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="nomeAnalistaPessoal">Nome do Analista Pessoal</label>
-                                <input class="modalAddNovo__input-box___input js-input-" type="text" name="nomeAnalistaPessoal" placeholder="Nome do analista..">
-                            </div>
-
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="sociedadeAnalistaPessoal">Sociedade/escola do Analista Pessoal</label>
-                                <input class="modalAddNovo__input-box___input js-input-" type="text" name="sociedadeAnalistaPessoal" placeholder="Sociedade Psicanalítica..">
-                            </div>
-
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="abordagemAnalistaPessoal">Abordagem do Analista Pessoal</label>
-                                <input class="modalAddNovo__input-box___input js-input-" type="text" name="abordagemAnalistaPessoal" placeholder="Freud e Ferenczi..">
-                            </div>
-
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="historicoAnalises">Histórico de Análises anteriores</label>
-                                <input class="modalAddNovo__input-box___input js-input-" type="text" name="historicoAnalises" placeholder="Ex.: 1noa com 2 sessões semanais">
-                            </div>
+                        </div>                                
+                    </div>
+<!--------------------------------------------modal mais info, daqui até----------->
+                    <div class="modalAddNovo__input-container">
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="data-de-nascimento">Data de Nascimento</label>
+                            <input class="modalAddNovo__input-box___input js-input-dataNascimento" type="date" name="data-de-nascimento" placeholder="dd/mm/aaaa">
                         </div>
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="turma">Turma</label>
+                            <input class="modalAddNovo__input-box___input js-input-turma" type="text" name="turma" placeholder="0000.0">
+                        </div>
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="supervisorAtual">Supervisor Clínico Atual</label>
+                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="supervisorAtual" placeholder="Nome do Supervisor">
+                        </div>
+
+                        <div class="modalAddNovo__card-add-tel supervisores">
+                            <div class="modalAddNovo__card-add-tel--titleBox">
+                                <h2 class="modalAddNovo__card-add-tel--titleBox___titulo">Supervisores Anteriores</h2>
+                                <i class="material-icons supervisor">supervisor_account</i>
+                            </div>
+
+                            <div class="modalAddNovo__box-supervisor-anterior">
+                                <input class="modalAddNovo__box-supervisor-anterior___checkbox" type="checkbox" name="checkbox">
+                                <p class="modalAddNovo__box-supervisor-anterior___nome">Alexandre Viana</p>
+                            </div>
+
+                            <div class="modalAddNovo__box-supervisor-anterior">
+                                <input class="modalAddNovo__box-supervisor-anterior___checkbox" type="checkbox" name="checkbox">
+                                <p class="modalAddNovo__box-supervisor-anterior___nome">Alexandre Viana</p>
+                            </div>
+
+                            <div class="modalAddNovo__box-supervisor-anterior">
+                                <input class="modalAddNovo__box-supervisor-anterior___checkbox" type="checkbox" name="checkbox">
+                                <p class="modalAddNovo__box-supervisor-anterior___nome">Alexandre Viana</p>
+                            </div>
+
+                            <div class="modalAddNovo__box-supervisor-anterior">
+                                <input class="modalAddNovo__box-supervisor-anterior___checkbox" type="checkbox" name="checkbox">
+                                <p class="modalAddNovo__box-supervisor-anterior___nome">Alexandre Viana</p>
+                            </div>
+
+                            <div class="modalAddNovo__box-supervisor-anterior">
+                                <input class="modalAddNovo__box-supervisor-anterior___checkbox" type="checkbox" name="checkbox">
+                                <p class="modalAddNovo__box-supervisor-anterior___nome">Alexandre Viana</p>
+                            </div>
+
+                            <div class="modalAddNovo__box-supervisor-anterior">
+                                <input class="modalAddNovo__box-supervisor-anterior___checkbox" type="checkbox" name="checkbox">
+                                <p class="modalAddNovo__box-supervisor-anterior___nome">Alexandre Viana</p>
+                            </div>
+
+                        </div>
+
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="sitaucaoAtual">Situação Atual</label>
+                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="sitaucaoAtual" placeholder="Ex.: Estagiário">
+                        </div>
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="inicioEstagio">Inicio do Estágio</label>
+                            <input class="modalAddNovo__input-box___input js-input-" type="date" name="inicioEstagio" placeholder="dd/mm/aaaa">
+                        </div>
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="nomeAnalistaPessoal">Nome do Analista Pessoal</label>
+                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="nomeAnalistaPessoal" placeholder="Nome do analista..">
+                        </div>
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="sociedadeAnalistaPessoal">Sociedade/escola do Analista Pessoal</label>
+                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="sociedadeAnalistaPessoal" placeholder="Sociedade Psicanalítica..">
+                        </div>
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="abordagemAnalistaPessoal">Abordagem do Analista Pessoal</label>
+                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="abordagemAnalistaPessoal" placeholder="Freud e Ferenczi..">
+                        </div>
+                        <div class="modalAddNovo__input-box">
+                            <label class="modalAddNovo__input-box___label" for="historicoAnalises">Histórico de Análises anteriores</label>
+                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="historicoAnalises" placeholder="Ex.: 1noa com 2 sessões semanais">
+                        </div>
+<!--------------------------------------------modal mais info, aqui-------------------->
                     </div>
 
                     <div class="modalAddNovo__botoes-container">
                         <button id="botao-add" class="botao-adicionar-novo js-editar-form" type="submit">Adicionar</button>
                         <button class="botao-cancelar">Cancelar</button>
                     </div>
+
+                </div>
+
 
                 </div>
             </div>
@@ -246,6 +299,66 @@
                     <button class="botao-adicionar-novo sim">Sim</button>
                     <button class="botao-cancelar nao">Não</button>
                 </div>
+            </div>
+        </section>
+
+        <section class="modal-mais-info-container">
+            <div class="modal-mais-info">
+                <h2 class="modal-mais-info__titulo">Detalhes</h2>
+                <p class="modal-mais-info__conteudo">Residencial: Rua Modestino Kanto ,166, 101 fds, Jd Sulacap</p>
+                <p class="modal-mais-info__conteudo">Data de Nascimento: 04/04/1979</p>
+                <p class="modal-mais-info__conteudo">Turma: 2019.2</p>
+                <p class="modal-mais-info__conteudo">Supervisor Clínico Atual: Hudson A. R. Bonomo</p>
+                <p class="modal-mais-info__conteudo">Supervisores anteriores: Nenhum</p>
+                <p class="modal-mais-info__conteudo">Situação Atual: Estagiario</p>
+                <p class="modal-mais-info__conteudo">Inicio do estágio: 11/03/2022</p>
+                <p class="modal-mais-info__conteudo">Nome do Analista pessoal: Suely Mograbi Balassiano</p>
+                <p class="modal-mais-info__conteudo">Sociedade/escola do analista pessoal: Sociedade Psicanalitica do Rio de Janeiro</p>
+                <p class="modal-mais-info__conteudo">Abordagem do analista pessoal: Freud e Ferenczi</p>
+                <p class="modal-mais-info__conteudo">Tempo de análise pessoal: 36</p>
+                <p class="modal-mais-info__conteudo">Histórico de análises anteriores: 3 anos, com 2 sessões semanais</p>
+                <button class="botao-ok-modal-detalhes">Ok</button>
+            </div>
+        </section>
+
+        <section class="modal-avaliacoes-container"><!--parte cinza-->
+            <div class="modal-avaliacoes">
+                <h2 class="modal-avaliacoes__titulo">Avaliações</h2>
+                
+            <table class="tabela-container">
+                <thead class="tabela__header">
+                    <tr class="tabela__header___tr">
+                        <th class="tabela-header-th">Dados</th>
+                        <th class="tabela-header-th">Celular</th>
+                        <th class="tabela-header-th">Endereços</th>
+                    </tr>
+                </thead>
+                <tbody class="tabela__body">
+                    <!---->
+                    <tr class="tabela__body___tr">                        
+                        <td class="tabela-body-td">Hudson A.R.Bonomo</td>  
+                        <td class="tabela-body-td">Estagiário maneiro. Café top.</td>
+                        <td class="tabela-body-td">29/08/2021 07:53:14</td>
+                    </tr>  
+                    <tr class="tabela__body___tr">                        
+                        <td class="tabela-body-td">Hudson A.R.Bonomo</td>  
+                        <td class="tabela-body-td">Estagiário maneiro. Café top.</td>
+                        <td class="tabela-body-td">29/08/2021 07:53:14</td>
+                    </tr> 
+                    <tr class="tabela__body___tr">                        
+                        <td class="tabela-body-td">Hudson A.R.Bonomo</td>  
+                        <td class="tabela-body-td">Estagiário maneiro. Café top.</td>
+                        <td class="tabela-body-td">29/08/2021 07:53:14</td>
+                    </tr> 
+                    <tr class="tabela__body___tr">                        
+                        <td class="tabela-body-td">Hudson A.R.Bonomo</td>  
+                        <td class="tabela-body-td">Estagiário maneiro. Café top.</td>
+                        <td class="tabela-body-td">29/08/2021 07:53:14</td>
+                    </tr>                  
+                
+                </tbody>
+            </table>
+            <button class="botao-ok-modal-detalhes">Ok</button>
             </div>
         </section>
 
@@ -286,5 +399,7 @@
     <script src="./js/deletarPaciente.js"></script>
     <script src="./js/editarPaciente.js"></script>
     <script src="./js/adicionarNovoTelefone.js"></script>
+    <script src="./js/mais-info.js"></script>
+    <script src="./js/verAvaliacoes.js"></script>
 </body>
 </html>

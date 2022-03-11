@@ -13,14 +13,14 @@
 }
 
 .material-icons.edit {
-    @include color-fontSize($verde-padrao, 1.5rem);
+    @include color-fontSize($verde-padrao, 1.25rem);
 }
 
 .material-icons.delete {
-    @include color-fontSize($vermelho-padrao, 1.5rem);
+    @include color-fontSize($vermelho-padrao, 1.25rem);
 }
 
-.material-icons.edit, .material-icons.delete:hover {
+.material-icons.edit, .material-icons.delete, .material-icons.ver-mais:hover {
     cursor: pointer;
 }
 
@@ -41,4 +41,8 @@
 
 .material-icons.supervisor {
     @include color-fontSize($branco, 1rem);
+}
+
+.material-icons.ver-mais {
+    @include color-fontSize($cinza-escuro, 1.25rem);
 }
