@@ -38,3 +38,7 @@
         @include color-fontSize($azul-escuro-fosco, .95rem);
     }
 }
+
+.material-icons.supervisor {
+    @include color-fontSize($branco, 1rem);
+}

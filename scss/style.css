@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap");
-.tabela-header-th, .titulo-bloco-busca {
+.modalAddNovo__card-add-tel--titleBox, .tabela-header-th, .titulo-bloco-busca {
   font-family: "Fjalla One", sans-serif;
 }
 
@@ -9,7 +9,7 @@
   font-family: "Lato", sans-serif;
 }
 
-.tabela__body___tr, .estatisticas, .card-turmas, .card-totalAnalisantes, .card-naoAtendidos, .card-atendidos, .card-filaEspera, .card-cadHoje, .input-bloco-busca, body {
+.tabela__body___tr, .estatisticas, .card-turmas, .card-totalAnalisantes, .card-naoAtendidos, .card-atendidos, .card-filaEspera, .card-cadHoje, .modalAddNovo__box-supervisor-anterior___nome, .input-bloco-busca, body {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -60,6 +60,11 @@
 .material-icons.arrow-back:hover, .material-icons.arrow-forward:hover {
   color: #0a0a84;
   font-size: 0.95rem;
+}
+
+.material-icons.supervisor {
+  color: white;
+  font-size: 1rem;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -214,6 +219,11 @@ body {
   width: 17.5%;
   border: 1px solid #0a0a84;
   transition: all 0.3s ease-in-out;
+}
+
+.botao-adicionar-novo.alterar-ordem {
+  margin-left: 5%;
+  width: 20%;
 }
 
 .botao-cancelar {
@@ -444,6 +454,7 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 10%;
 }
 .modalAddNovo__input-box {
   display: flex;
@@ -490,6 +501,11 @@ body {
   border-radius: 8px;
   margin-bottom: 5%;
 }
+.modalAddNovo__card-add-tel.supervisores {
+  width: 100%;
+  margin-right: 0;
+  margin: 10% 0;
+}
 .modalAddNovo__card-add-tel--titleBox {
   display: flex;
   flex-direction: row;
@@ -497,8 +513,8 @@ body {
   justify-content: space-between;
   background-color: #787887;
   border-radius: 16px 16px 0 0;
-  padding: 3%;
-  font-family: "Fjalla One", sans-serif;
+  padding: 3% 3% 3% 10%;
+  width: 100%;
 }
 .modalAddNovo__card-add-tel--titleBox___titulo {
   color: #fafefd;
@@ -542,6 +558,23 @@ body {
   width: 40%;
   margin-left: 0;
   margin: 0 5%;
+}
+.modalAddNovo__box-supervisor-anterior {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #787887;
+}
+.modalAddNovo__box-supervisor-anterior:last-of-type {
+  border-bottom: none;
+}
+.modalAddNovo__box-supervisor-anterior > input[type=checkbox i] {
+  margin: 3%;
+}
+.modalAddNovo__box-supervisor-anterior___nome {
+  color: #787887;
+  font-size: 0.75rem;
 }
 
 .modal-excluir-container {

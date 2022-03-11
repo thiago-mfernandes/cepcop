@@ -50,6 +50,7 @@
     padding: 5%;
     flex-wrap: wrap;
     @include display-flexDirection(flex, row);
+    
 
     &__title-box {
         @include display-flexDirection(flex, row);
@@ -68,6 +69,7 @@
         @include display-flexDirection(flex, row);
         @include alignItens-justifyContent(center, space-between);
         flex-wrap: wrap;
+        margin-bottom: 10%;
     }
 
     &__input-box {
@@ -112,15 +114,22 @@
             border-radius: 8px;
             margin-bottom: 5%;
         }
+        //card de supervisores
+        &.supervisores{
+            @include height-width(null, 100%);
+            margin-right: 0;
+            margin: 10% 0;
+        }
     }
 
     &__card-add-tel--titleBox {
         @include display-flexDirection(flex, row);
         @include alignItens-justifyContent(center, space-between);
+        @extend %fjala;
         background-color: $cinza-escuro;
         border-radius: 16px 16px 0 0;
-        padding: 3%;
-        font-family: 'Fjalla One', sans-serif;
+        padding: 3% 3% 3% 10%;
+        width: 100%;
 
         &___titulo {
             @include color-fontSize($branco-bg, 1rem);
@@ -167,6 +176,25 @@
             width: 40%;
             margin-left: 0;
             margin: 0 5%;
+        }
+    }
+
+    &__box-supervisor-anterior {
+        @include display-flexDirection(flex, row);
+        @include alignItens-justifyContent(center, flex-start);
+        border-bottom: 1px solid $cinza-escuro;
+        &:last-of-type{
+            border-bottom: none;
+        }
+
+        //dentro do box-supervisor, onde tenha um input deste tipo
+        & > input[type="checkbox" i] {
+            margin: 3%;   
+        }
+
+        &___nome {
+            @extend %mont;
+            @include color-fontSize($cinza-escuro, .75rem);
         }
     }
 }
