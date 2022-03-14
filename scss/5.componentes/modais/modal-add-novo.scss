@@ -24,6 +24,10 @@
     @include display-flexDirection(flex, row);
     width: 100%;
     margin-bottom: 10%;
+    //configuração do telefone do form analisantes
+    &.modalAddNovo-Card-container.telefones {
+        margin: 10% 0;
+    }
 }
 
 .modalAddNovo {
@@ -38,6 +42,7 @@
     padding: 5%;
     flex-wrap: wrap;
     @include display-flexDirection(flex, row);
+
     
 
     &__title-box {

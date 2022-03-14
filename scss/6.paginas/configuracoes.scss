@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(8, 1fr);
-    padding: 10% 2.5%;
+    padding: 5% 2.5%;
     gap: 16px;
 }
 
@@ -44,6 +44,8 @@
     &__header {
         @include display-flexDirection(flex, row);
         @include alignItens-justifyContent(center, space-between);
+        border-bottom: 1px solid $cinza-medio;
+        padding-bottom: 2.5%;
         margin-top: 5%;
         width: 100%;
 

@@ -46,3 +46,19 @@
 .material-icons.ver-mais {
     @include color-fontSize($cinza-escuro, 1.25rem);
 }
+
+.material-icons.phone {
+    @include color-fontSize($branco, 1rem);
+}
+
+.material-icons.mouse {
+    @include color-fontSize($cinza-escuro, 1.5rem);
+}
+
+.material-icons.arrow-expand {
+    @include color-fontSize($azul-medio-brilhante, 2.5rem);
+    padding: 0;
+    &:hover {
+        cursor: pointer;
+    }
+}

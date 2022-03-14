@@ -1,0 +1,211 @@
+//Cores
+$light-green: rgb(109, 225, 149);
+//$avocado: rgb(196, 231, 89);
+$dark-grayish-blue: rgb(120, 120, 135);
+$light-grayish-blue: rgb(231, 231, 233);
+
+//reponsividade
+@mixin for-tablet-only {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin for-desktop-only {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+
+
+body {
+    background: linear-gradient(155deg, rgba(85,131,238,1) 0%, rgba(65,216,221,1) 100%);
+}
+
+.card-alerta {
+    @extend %mont;
+    @include color-fontSize($letra-alerta-pagCadastro, 1rem);
+    @include height-width(null, 80%);
+    background-color: $azul-alerta-pagCadastro;
+    border: 1px solid $azul-alerta-borda-pagCadastro;
+    border-radius: 8px;
+    box-shadow: 0px 0px 50px 7px rgba(5, 81, 96, .4);
+    grid-column: 1 / 3;
+    line-height: 1.5rem;
+    margin: 5% auto 1%;
+    padding: 3.5%;
+}
+
+.card-principal {
+    background: $cinza-claro;    
+    border-radius: 8px;
+    box-shadow: 2px 10px 15px 0px rgba(0,0,0,.2);
+    grid-column: 1 / 3; 
+    margin: 5% auto 2.5%;
+    padding: 10% 5%;
+    width: 80%;   
+}
+
+.form {
+    @include display-flexDirection(flex, column);
+    @include alignItens-justifyContent(null, center);
+}
+
+.bloco {
+    border-bottom: 1px solid $cinza-medio;
+    height: 100%;
+    padding: 2.5% 0;
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__titulo-box {
+        @include display-flexDirection(flex, row);
+        @include alignItens-justifyContent(center,space-between);
+        margin: 2% 0;
+    }
+
+    &__titulo {
+        @extend %fjala;
+        @include color-fontSize($cinza-escuro, 1.5rem);
+        opacity: .9;
+    }
+
+    &__arrow {
+        animation: Flashing .8s ease-in alternate infinite;
+        //adicionar um icone do google e estilizar
+    }
+
+    &__conteudo-box {
+        width: 48%;
+        @include display-flexDirection(flex, column);
+    } 
+    
+    &__conteudo-box.telefone{
+        width: 100%;
+    }
+
+    &__label {
+        @extend %fjala;
+        @include color-fontSize($cinza-escuro, 1.1rem);
+        margin: 5% 0;
+        opacity: .7;
+    }
+
+    &__label.telefones {
+        text-align: center;        
+    }
+
+    &__input, .bloco__selecao {
+        @include color-fontSize($cinza-escuro, .75rem);
+        @include fontStyle-fontWeight(italic, lighter);
+        @extend %mont;
+        background-color: $branco;
+        border: none;
+        border-radius: 24px;
+        height: 6vh;
+        padding: 5%;
+        margin-bottom: 5%;
+        text-align: left;
+        &:focus {
+            border: 1px solid $azul-escuro-fosco;
+            outline: none;
+        }
+    }
+
+    &__opcoes {
+        //1.o bloco vai ficar sem aparecer
+        @include display-flexDirection(flex, row);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 3s ease;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+}
+
+.asterisco {
+    color: $vermelho-padrao;
+}
+
+.opcional {
+    color: $light-green;
+}
+
+.container-nascimento, .container-telefone {
+    @include display-flexDirection(flex, column);
+    width: 100%;    
+}
+
+.container-telefone {
+    border-top: 1px solid $cinza-medio;
+    border-bottom: 1px solid $cinza-medio;
+    margin: 7.5% 0;
+}
+
+.botao-addTelefone, .botao-cadastrar {
+    @extend %mont;
+    @include height-width(6vh, 75%);
+    @include color-fontSize($branco, 1rem);
+    @include height-width(8vh, 60%);
+    align-self: center;
+    background: linear-gradient(155deg, rgba(85,131,238,1) 0%, rgba(65,216,221,1) 100%);
+    border: none;
+    border-radius: 24px;
+    box-shadow: 2px 5px 15px 0px rgba(0,0,0,.2);
+    margin: 7.5% 0;    
+    font-weight: 500;    
+    margin: 5% 0 2%;
+    &:hover {
+        border: 1px solid $letra-alerta-pagCadastro;
+        color: $letra-alerta-pagCadastro;
+        font-weight: 700;
+    }
+}
+
+.botao-cadastrar {
+    border-radius: 24px;    
+    @include height-width(8vh, 60%);
+}
+
+.bloco__conteudo-box.nascimento {
+    justify-content: space-between;
+    width: 100%;
+    @include display-flexDirection(flex, row);
+    
+}
+
+
+
+.bloco__conteudo-box.dia-mes-ano {
+    width: 30%;
+}
+
+
+.bloco__opcoes.classe-ativa {
+    //2.quando ativar a classe:
+    max-height: 100%;
+    
+    animation: slide-down 3s linear infinite alternate;
+    overflow: visible;
+}
+
+.arrow-rotate {
+    transform: rotate(180deg);
+    //transition: transform 0.75s ease-out;
+}
+
+.bloco__arrow.arrow-rotate {
+    transition: transform 0.75s ease-out;
+}
+
+.numero-telefone-adicionado {
+    @extend %lato;
+    font-size: 15px;
+    padding: 2.5% 0;
+    text-align: center;
+}
+
+
