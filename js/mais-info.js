@@ -14,7 +14,7 @@ botaoMaisInfo.addEventListener("click", () => {
 if(modalMaisInfo) {
     //adicionar escuta e se o alvo do evento for o botao, exclui a classe que exibe o modal
     modalMaisInfo.addEventListener('click', (event) => {
-        if(event.target.classList == 'botao-ok-modal-detalhes') {
+        if(event.target.classList == 'botao-ok-modal-detalhes' || event.target.classList == 'modal-mais-info-container mostrar-modal') {
             modalMaisInfo.classList.remove('mostrar-modal');
         }
     })

@@ -15,7 +15,7 @@ botaoEditar.addEventListener("click", function(event) {
 })
 
 function trocaTitulo(titulo) {
-    if( titulo == "Novo") {
+    if( titulo == "Novo" || titulo == "Nova") {
         titulo = "Editar";
         
         let tituloDoForm = document.querySelector(".modalAddNovo__title-box___titulo");

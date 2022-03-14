@@ -14,7 +14,7 @@ function deletarLinha(event){
     const modalExcluir = document.querySelector('.modal-excluir-container');
     //..adicionar um evento para o caso de clique em cancelar ou fora do modal
     modalExcluir.addEventListener('click', (event) => {
-        if(event.target.classList == 'modal-excluir-container' || event.target.classList == 'botao-cancelar nao') {
+        if(event.target.classList == 'modal-excluir-container mostrar-modal' || event.target.classList == 'botao-cancelar nao') {
             modalExcluir.classList.remove('mostrar-modal');
         }
     })

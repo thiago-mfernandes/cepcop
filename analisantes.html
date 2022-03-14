@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="scss/3.base/reset.scss">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="scss/style.css">
-    <title>CepCop - Home</title>
+    <title>CepCop - Analisantes</title>
 </head>
 <body>
     <header class="header">
@@ -73,7 +73,7 @@
                 <div class="bloco-adicionarBuscar__container">
                     <h2 class="titulo-bloco-busca">Analisantes</h2>
                     <button class="botao-adicionar-novo">Adicionar</button>
-                    <button class="botao-adicionar-novo alterar-ordem">Alterar Ordem da Fila</button>
+                    <button class="botao-adicionar-novo btn-alterar-ordem">Alterar Ordem da Fila</button>
                 </div>
 
                 <hr class="linha">
@@ -215,51 +215,63 @@
                             <label class="modalAddNovo__input-box___label" for="ocupacao">Ocupação</label>
                             <input class="modalAddNovo__input-box___input js-input-" type="text" name="ocupacao" placeholder="Informe a sua Ocupação atual: ex.: motorista">
                         </div>
-                        <div>
-                            <h2>Endereço Residencial</h2>
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="estado">Estado</label>
-                                <input class="modalAddNovo__input-box___input js-input-" type="text" name="estado" placeholder="Acre">
+                        <!--div dos endereços
+                        <div class="modalAddNovo__card-add-tel--titleBox">
+                                <h2 class="modalAddNovo__card-add-tel--titleBox___titulo">Adicionar Novo Telefone</h2>
+                                <i class="material-icons modadAddNovo-icon">add</i>
+                            </div>-->
+                        <div class="modalAddNovo-Card-container telefones">
+                            <div class="modalAddNovo__card-add-tel">
+                                <div class="modalAddNovo__card-add-tel--titleBox">
+                                    <h2 class="modalAddNovo__card-add-tel--titleBox___titulo">Endereço Residencial</h2>
+                                    <i class="material-icons phone">add_ic_call</i>
+                                </div>
+                                <div class="modalAddNovo__input-box">
+                                    <label class="modalAddNovo__input-box___label" for="estado">Estado</label>
+                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="estado" placeholder="Acre">
+                                </div>
+                                <div class="modalAddNovo__input-box">
+                                    <label class="modalAddNovo__input-box___label" for="cidade">Cidade</label>
+                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="cidade" placeholder="Acrelândia">
+                                </div>
+                                <div class="modalAddNovo__input-box">
+                                    <label class="modalAddNovo__input-box___label" for="bairro">Bairro</label>
+                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="bairro" placeholder="Informe">
+                                </div>
+                                <div class="modalAddNovo__input-box">
+                                    <label class="modalAddNovo__input-box___label" for="endereco">Endereço</label>
+                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="endereco" placeholder="Informe">
+                                </div>
+                                <div class="modalAddNovo__input-box">
+                                    <label class="modalAddNovo__input-box___label" for="complemento">Complemento (Opcional)</label>
+                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="complemento" placeholder="Informe">
+                                </div>
                             </div>
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="cidade">Cidade</label>
-                                <input class="modalAddNovo__input-box___input js-input-" type="text" name="cidade" placeholder="Acrelândia">
-                            </div>
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="bairro">Bairro</label>
-                                <input class="modalAddNovo__input-box___input js-input-" type="text" name="bairro" placeholder="Informe">
-                            </div>
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="endereco">Endereço</label>
-                                <input class="modalAddNovo__input-box___input js-input-" type="text" name="endereco" placeholder="Informe">
-                            </div>
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="complemento">Complemento (Opcional)</label>
-                                <input class="modalAddNovo__input-box___input js-input-" type="text" name="complemento" placeholder="Informe">
-                            </div>
-                        </div>
-
-                        <div>
-                            <h2>Endereço Comercial</h2>
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="estado">Estado</label>
-                                <input class="modalAddNovo__input-box___input js-input-" type="text" name="estado" placeholder="Acre">
-                            </div>
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="cidade">Cidade</label>
-                                <input class="modalAddNovo__input-box___input js-input-" type="text" name="cidade" placeholder="Acrelândia">
-                            </div>
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="bairro">Bairro</label>
-                                <input class="modalAddNovo__input-box___input js-input-" type="text" name="bairro" placeholder="Informe">
-                            </div>
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="endereco">Endereço</label>
-                                <input class="modalAddNovo__input-box___input js-input-" type="text" name="endereco" placeholder="Informe">
-                            </div>
-                            <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="complemento">Complemento (Opcional)</label>
-                                <input class="modalAddNovo__input-box___input js-input-" type="text" name="complemento" placeholder="Informe">
+                            <div class="modalAddNovo__card-add-tel">
+                                <div class="modalAddNovo__card-add-tel--titleBox">
+                                    <h2 class="modalAddNovo__card-add-tel--titleBox___titulo">Endereço Comercial</h2>
+                                    <i class="material-icons phone">add_ic_call</i>
+                                </div>
+                                <div class="modalAddNovo__input-box">
+                                    <label class="modalAddNovo__input-box___label" for="estado">Estado</label>
+                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="estado" placeholder="Acre">
+                                </div>
+                                <div class="modalAddNovo__input-box">
+                                    <label class="modalAddNovo__input-box___label" for="cidade">Cidade</label>
+                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="cidade" placeholder="Acrelândia">
+                                </div>
+                                <div class="modalAddNovo__input-box">
+                                    <label class="modalAddNovo__input-box___label" for="bairro">Bairro</label>
+                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="bairro" placeholder="Informe">
+                                </div>
+                                <div class="modalAddNovo__input-box">
+                                    <label class="modalAddNovo__input-box___label" for="endereco">Endereço</label>
+                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="endereco" placeholder="Informe">
+                                </div>
+                                <div class="modalAddNovo__input-box">
+                                    <label class="modalAddNovo__input-box___label" for="complemento">Complemento (Opcional)</label>
+                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="complemento" placeholder="Informe">
+                                </div>
                             </div>
                         </div>
 
@@ -295,6 +307,54 @@
                     <button class="botao-adicionar-novo sim">Sim</button>
                     <button class="botao-cancelar nao">Não</button>
                 </div>
+            </div>
+        </section>
+
+        <section class="modal-mais-info-container">
+
+            <div class="modal-mais-info analisantes">
+                <h2 class="modal-mais-info__titulo">Informações do Analisante:</h2>
+
+                <p class="modal-mais-info__conteudo">Profissão do pai: Empresário</p>
+                <p class="modal-mais-info__conteudo">Data de Nascimento: 04/04/1979</p>
+                <p class="modal-mais-info__conteudo">Nome da mãe: Regina Aguirre</p>
+                <p class="modal-mais-info__conteudo">Profissão da mãe: Dona de Casa</p>
+                <p class="modal-mais-info__conteudo">Supervisores anteriores: Nenhum</p>
+                <p class="modal-mais-info__conteudo">Nome do responsavel: NI</p>
+                <p class="modal-mais-info__conteudo">Relação de Parentesco Responsável: Outros</p>
+                <p class="modal-mais-info__conteudo">Data de Nascimento: 19-01-1981</p>
+                <p class="modal-mais-info__conteudo">Escolaridade: Ensino Superior Completo</p>
+                <p class="modal-mais-info__conteudo">Profissão: Designer</p>
+                <p class="modal-mais-info__conteudo">Ocupação Atual: Designer</p>
+                <p class="modal-mais-info__conteudo">Endereço Residencial: Rio de Janeiro, Angra dos Reis, Barra da Tijuca, Rua Vilhena de Morais, 240, BL 01 Apt 301</p>
+                <p class="modal-mais-info__conteudo">Endereço Comercial: Não informado.</p>
+                <p class="modal-mais-info__conteudo">Quem indicou? Fulano da Silva</p>
+                <p class="modal-mais-info__conteudo">Horários disponíveis para atendimento: Período da noite entre 19:00 e 22:00</p>
+                <p class="modal-mais-info__conteudo">Protocolo de atendimento:</p>
+                <button class="botao-ok-modal-detalhes">Ok</button>
+            </div>
+        </section>
+
+        <section class="alterar-ordem-container">
+            <div class="alterar-ordem">
+                <div class="modalAddNovo__title-box">
+                    <h2 class="alterar-ordem__titulo">Alterar Ordem na Fila</h2>
+                    <i class="material-icons mouse">mouse</i>
+                </div>
+
+                <h3 class="alterar-ordem__subtitulo">Clique no Analisante e arraste para a posição desejada:</h3>
+                <input class="modalAddNovo__input-box___input js-input-" type="text" name="" placeholder="Fulano da Silva">
+                <input class="modalAddNovo__input-box___input js-input-" type="text" name="" placeholder="Fulano da Silva">
+                <input class="modalAddNovo__input-box___input js-input-" type="text" name="" placeholder="Fulano da Silva">
+                <input class="modalAddNovo__input-box___input js-input-" type="text" name="" placeholder="Fulano da Silva">
+                <input class="modalAddNovo__input-box___input js-input-" type="text" name="" placeholder="Fulano da Silva">
+                <input class="modalAddNovo__input-box___input js-input-" type="text" name="" placeholder="Fulano da Silva">
+                
+                <div class="alterar-ordem__btn-container">
+                    <button class="botao-adicionar-novo sim">Salvar</button>
+                    <button class="botao-cancelar nao">Cancelar</button>
+                </div>                
+
             </div>
         </section>
 
@@ -335,5 +395,7 @@
     <script src="./js/deletarPaciente.js"></script>
     <script src="./js/editarPaciente.js"></script>
     <script src="./js/adicionarNovoTelefone.js"></script>
+    <script src="./js/mais-info.js"></script>
+    <script src="./js/alterarOrdemFila.js"></script>
 </body>
 </html>
