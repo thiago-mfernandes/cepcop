@@ -1,0 +1,74 @@
+.bg-body {
+    background: linear-gradient(155deg, rgba(85,131,238,1) 0%, rgba(65,216,221,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-container {
+    @include height-width(100vh, 100vw);
+    @include display-flexDirection(flex, column);
+    @include alignItens-justifyContent(center, center);
+}
+
+.login-box {
+    @include height-width(80%, 60%);
+    @include display-flexDirection(flex, column);
+    @include alignItens-justifyContent(center, space-between);
+    background-color: $cinza-claro;
+    border-radius: 24px;
+    box-shadow: 0 4px 50px 0 rgba(0,0,0,.5);
+    padding: 2.5%;
+
+    &__titulo {
+        @include color-fontSize($azul-escuro-fosco, 1.5rem);
+        @include height-width(null, 100%);
+        @extend %fjala;
+        text-align: center;
+        padding: 2.5%;
+        border-bottom: 1px solid $cinza-medio;
+        margin-bottom: 5%;
+    }
+
+
+    &__label {
+        @include color-fontSize($cinza-escuro, 1rem);
+        @include height-width(null, 100%);
+        @extend %mont;
+        text-align: left;
+        padding-left: 2.5%
+    }
+
+    &__input {
+        @include height-width(6vh, 100%);
+        border: none;
+        border-radius: 24px;
+        padding: 2.5%;
+        margin-bottom: 2.5%;
+
+    }
+
+    &__btn {
+        @include color-fontSize($branco, .75rem);
+        @include height-width(6vh, 50%);
+        @extend %mont;
+        background: linear-gradient(90deg, rgba(18,18,224,1) 0%, rgba(109,225,149,1) 100%);   
+        border: none;
+        border-radius: 24px;
+        box-shadow: 4px 10px 20px 0 rgba(10, 10, 132, .35);
+        transition: all .3s ease-in-out;
+        &:hover {
+            @include color-fontSize($branco, .95rem);
+            @include height-width(6vh, 60%);
+            border: 1px solid $azul-escuro-fosco;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+.login-box-input {
+    @include display-flexDirection(flex, column);
+    @include alignItens-justifyContent(null, space-between);
+    @include height-width(50%, 100%);
+
+}
+

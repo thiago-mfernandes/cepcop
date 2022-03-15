@@ -57,6 +57,7 @@
 
 .material-icons.arrow-expand {
     @include color-fontSize($azul-medio-brilhante, 2.5rem);
+    animation: Flashing .8s ease-in alternate infinite;
     padding: 0;
     &:hover {
         cursor: pointer;
