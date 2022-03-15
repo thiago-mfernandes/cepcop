@@ -9,7 +9,7 @@ botaoAdicionar.addEventListener("click", () => {
 
 //-------------------------------------------------------------//
 //selecionar o modal
-const modal = document.querySelector('.modal-container');
+const modal = document.querySelector('.modal-add-novo-container');
 
 //se a classe for selecionada sem erro, executa..
 if(modal) {

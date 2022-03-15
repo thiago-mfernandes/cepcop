@@ -2,12 +2,12 @@ const botaoEditar = document.querySelector("#edit");
 botaoEditar.addEventListener("click", function(event) {
     event.preventDefault();    
     
-    const modal = document.querySelector('.modal-container');
+    const modal = document.querySelector('.modal-add-novo-container');
     modal.classList.add('mostrar-modal');
     
     var formulario = document.querySelector('#form-adiciona');
 
-    const tituloBloco = document.querySelector('.modalAddNovo__title-box___titulo').textContent;
+    const tituloBloco = document.querySelector('.titulo-modal').textContent;
 
     trocaTitulo(tituloBloco);
     trocaBotao();
@@ -18,7 +18,7 @@ function trocaTitulo(titulo) {
     if( titulo == "Novo" || titulo == "Nova") {
         titulo = "Editar";
         
-        let tituloDoForm = document.querySelector(".modalAddNovo__title-box___titulo");
+        let tituloDoForm = document.querySelector(".titulo-modal");
 
         tituloDoForm.textContent = titulo;
         return;

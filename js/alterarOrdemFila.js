@@ -1,5 +1,5 @@
 
-const btnAlterarOrdem = document.querySelector('.btn-alterar-ordem');
+const btnAlterarOrdem = document.querySelector('.btn.botao--alterar-ordem');
 const modalAlterarOrdem = document.querySelector('.alterar-ordem-container');
 
 btnAlterarOrdem.addEventListener("click", () => {

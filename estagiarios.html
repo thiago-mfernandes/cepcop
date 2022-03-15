@@ -72,12 +72,12 @@
             <div class="bloco-adicionarBuscar">
                 <div class="bloco-adicionarBuscar__container">
                     <h2 class="titulo-bloco-busca">Estagiários</h2>
-                    <button class="botao-adicionar-novo">Adicionar</button>
+                    <button class="btn botao-adicionar-novo">Adicionar</button>
                 </div>
 
                 <hr class="linha">
 
-                <input class="input-bloco-busca" type="text" placeholder="Pesquise...">
+                <input class="input" type="text" placeholder="Pesquise...">
                 <div class="bloco-adicionarBuscar__container">
                     <p class="bloco-adicionarBuscar__container___conteudo">Mostrar</p>
                     <div class="output-bloco-busca">10</div>
@@ -129,39 +129,39 @@
         </section> 
         
         <form id="form-adiciona">
-            <div class="modal-container" id="modal-container">
+            <div class="modal-add-novo-container" id="modal-container">
                 <div class="modalAddNovo">
                     <button class="botao-fechar-modal">X</button>
                     <div class="modalAddNovo__title-box">
-                        <h2 class="modalAddNovo__title-box___titulo">Novo</h2>
-                        <i class="material-icons titulo-modal">add</i>
+                        <h2 class="titulo-modal">Novo</h2>
+                        <i class="material-icons titulo-modal-icon">add</i>
                     </div>
                     
                     <div class="modalAddNovo__input-container">
 
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="nome">Nome</label>
-                            <input class="modalAddNovo__input-box___input js-input-nome" type="text" name="nome" placeholder="Nome Completo">
+                            <label class="label" for="nome">Nome</label>
+                            <input class="input input--form js-input-nome" type="text" name="nome" placeholder="Nome Completo">
                         </div>                        
 
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="cpf">CPF</label>
-                            <input class="modalAddNovo__input-box___input js-input-cpf" type="text" name="cpf" placeholder="000.000.000-00">
+                            <label class="label" for="cpf">CPF</label>
+                            <input class="input input--form js-input-cpf" type="text" name="cpf" placeholder="000.000.000-00">
                         </div>
 
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="email">Email</label>
-                            <input class="modalAddNovo__input-box___input js-input-email" type="email" name="email" placeholder="nome@dominio.com">
+                            <label class="label" for="email">Email</label>
+                            <input class="input input--form js-input-email" type="email" name="email" placeholder="nome@dominio.com">
                         </div>
 
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="senha">Senha</label>
-                            <input class="modalAddNovo__input-box___input js-input-senha" type="password" name="senha" placeholder="********">
+                            <label class="label" for="senha">Senha</label>
+                            <input class="input input--form js-input-senha" type="password" name="senha" placeholder="********">
                         </div>
 
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="enderecoResidencial">Endereço Residencial</label>
-                            <input class="modalAddNovo__input-box___input js-input-endResidencial" type="text" name="enderecoResidencial" placeholder="Rua João da Silva, 123">
+                            <label class="label" for="enderecoResidencial">Endereço Residencial</label>
+                            <input class="input input--form js-input-endResidencial" type="text" name="enderecoResidencial" placeholder="Rua João da Silva, 123">
                         </div>
 
                     </div>
@@ -173,10 +173,10 @@
                                 <i class="material-icons modadAddNovo-icon">add</i>
                             </div>
                             <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="telefone">Telefone</label>
-                                <input class="modalAddNovo__input-box___input js-input-telefone" type="text" name="telefone" placeholder="(XX)XXXXX-XXXX">
+                                <label class="label" for="telefone">Telefone</label>
+                                <input class="input input--form js-input-telefone" type="text" name="telefone" placeholder="(XX)XXXXX-XXXX">
                             </div>
-                            <button class="botao-adicionar-novo">Adicionar</button>
+                            <button class="btn botao--add-telefone-form">Adicionar</button>
                         </div>
                         <div class="modalAddNovo__card-permissoes">
                             <div class="modalAddNovo__card-add-tel--titleBox">
@@ -187,32 +187,32 @@
                             <div class="modalAddNovo__card-permissoes-box">
                                 <h2 class="modalAddNovo__card-permissoes-box___titulo">Gerenciar Analisantes?</h2>
                                 <label class="modalAddNovo__card-permissoes-box___label" for="sim">Sim</label>
-                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="analisantes" value="Sim">
+                                <input class="input--radio" type="radio" name="analisantes" value="Sim">
                                 <label class="modalAddNovo__card-permissoes-box___label" for="nao">Não</label>
-                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="analisantes" value="Não">
+                                <input class="input--radio" type="radio" name="analisantes" value="Não">
                             </div>
                             <div class="modalAddNovo__card-permissoes-box">
                                 <h2 class="modalAddNovo__card-permissoes-box___titulo">Gerenciar Atendimentos?</h2>
                                 <label class="modalAddNovo__card-permissoes-box___label" for="sim">Sim</label>
-                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="atendimentos" value="Sim">
+                                <input class="input--radio" type="radio" name="atendimentos" value="Sim">
                                 <label class="modalAddNovo__card-permissoes-box___label" for="nao">Não</label>
-                                <input class="modalAddNovo__card-permissoes-box___input" type="radio" name="atendimentos" value="Não">
+                                <input class="input--radio" type="radio" name="atendimentos" value="Não">
                             </div>
                         </div>                                
                     </div>
 <!--------------------------------------------modal mais info, daqui até----------->
                     <div class="modalAddNovo__input-container">
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="data-de-nascimento">Data de Nascimento</label>
-                            <input class="modalAddNovo__input-box___input js-input-dataNascimento" type="date" name="data-de-nascimento" placeholder="dd/mm/aaaa">
+                            <label class="label" for="data-de-nascimento">Data de Nascimento</label>
+                            <input class="input input--form js-input-dataNascimento" type="date" name="data-de-nascimento" placeholder="dd/mm/aaaa">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="turma">Turma</label>
-                            <input class="modalAddNovo__input-box___input js-input-turma" type="text" name="turma" placeholder="0000.0">
+                            <label class="label" for="turma">Turma</label>
+                            <input class="input input--form js-input-turma" type="text" name="turma" placeholder="0000.0">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="supervisorAtual">Supervisor Clínico Atual</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="supervisorAtual" placeholder="Nome do Supervisor">
+                            <label class="label" for="supervisorAtual">Supervisor Clínico Atual</label>
+                            <input class="input input--form js-input-" type="text" name="supervisorAtual" placeholder="Nome do Supervisor">
                         </div>
 
                         <div class="modalAddNovo__card-add-tel supervisores">
@@ -254,37 +254,35 @@
                         </div>
 
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="sitaucaoAtual">Situação Atual</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="sitaucaoAtual" placeholder="Ex.: Estagiário">
+                            <label class="label" for="sitaucaoAtual">Situação Atual</label>
+                            <input class="input input--form js-input-" type="text" name="sitaucaoAtual" placeholder="Ex.: Estagiário">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="inicioEstagio">Inicio do Estágio</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="date" name="inicioEstagio" placeholder="dd/mm/aaaa">
+                            <label class="label" for="inicioEstagio">Inicio do Estágio</label>
+                            <input class="input input--form js-input-" type="date" name="inicioEstagio" placeholder="dd/mm/aaaa">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="nomeAnalistaPessoal">Nome do Analista Pessoal</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="nomeAnalistaPessoal" placeholder="Nome do analista..">
+                            <label class="label" for="nomeAnalistaPessoal">Nome do Analista Pessoal</label>
+                            <input class="input input--form js-input-" type="text" name="nomeAnalistaPessoal" placeholder="Nome do analista..">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="sociedadeAnalistaPessoal">Sociedade/escola do Analista Pessoal</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="sociedadeAnalistaPessoal" placeholder="Sociedade Psicanalítica..">
+                            <label class="label" for="sociedadeAnalistaPessoal">Sociedade/escola do Analista Pessoal</label>
+                            <input class="input input--form js-input-" type="text" name="sociedadeAnalistaPessoal" placeholder="Sociedade Psicanalítica..">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="abordagemAnalistaPessoal">Abordagem do Analista Pessoal</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="abordagemAnalistaPessoal" placeholder="Freud e Ferenczi..">
+                            <label class="label" for="abordagemAnalistaPessoal">Abordagem do Analista Pessoal</label>
+                            <input class="input input--form js-input-" type="text" name="abordagemAnalistaPessoal" placeholder="Freud e Ferenczi..">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="historicoAnalises">Histórico de Análises anteriores</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="historicoAnalises" placeholder="Ex.: 1noa com 2 sessões semanais">
+                            <label class="label" for="historicoAnalises">Histórico de Análises anteriores</label>
+                            <input class="input input--form js-input-" type="text" name="historicoAnalises" placeholder="Ex.: 1 ano com 2 sessões semanais">
                         </div>
-<!--------------------------------------------modal mais info, aqui-------------------->
                     </div>
 
                     <div class="modalAddNovo__botoes-container">
-                        <button id="botao-add" class="botao-adicionar-novo js-editar-form" type="submit">Adicionar</button>
+                        <button id="botao-add" class="btn botao-adicionar-novo js-editar-form" type="submit">Adicionar</button>
                         <button class="botao-cancelar">Cancelar</button>
                     </div>
-
                 </div>
 
 
@@ -294,9 +292,9 @@
 
         <section class="modal-excluir-container">
             <div class="modal-excluir">
-                <h2 class="modal-excluir__titulo">Você deseja realmente excluir?</h2>
+                <h2 class="titulo-modal titulo-modal--excluir">Você deseja realmente excluir?</h2>
                 <div class="modal-excluir-containerBotao">
-                    <button class="botao-adicionar-novo sim">Sim</button>
+                    <button class="btn botao-adicionar-novo sim">Sim</button>
                     <button class="botao-cancelar nao">Não</button>
                 </div>
             </div>
@@ -304,7 +302,7 @@
 
         <section class="modal-mais-info-container">
             <div class="modal-mais-info">
-                <h2 class="modal-mais-info__titulo">Detalhes</h2>
+                <h2 class="titulo-modal titulo-modal--mais-info">Detalhes</h2>
                 <p class="modal-mais-info__conteudo">Residencial: Rua Modestino Kanto ,166, 101 fds, Jd Sulacap</p>
                 <p class="modal-mais-info__conteudo">Data de Nascimento: 04/04/1979</p>
                 <p class="modal-mais-info__conteudo">Turma: 2019.2</p>
@@ -321,9 +319,9 @@
             </div>
         </section>
 
-        <section class="modal-avaliacoes-container"><!--parte cinza-->
+        <section class="modal-avaliacoes-container">
             <div class="modal-avaliacoes">
-                <h2 class="modal-avaliacoes__titulo">Avaliações</h2>
+                <h2 class="titulo-modal titulo-modal--avaliacoes">Avaliações</h2>
                 
             <table class="tabela-container">
                 <thead class="tabela__header">

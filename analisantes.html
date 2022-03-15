@@ -72,13 +72,13 @@
             <div class="bloco-adicionarBuscar">
                 <div class="bloco-adicionarBuscar__container">
                     <h2 class="titulo-bloco-busca">Analisantes</h2>
-                    <button class="botao-adicionar-novo">Adicionar</button>
-                    <button class="botao-adicionar-novo btn-alterar-ordem">Alterar Ordem da Fila</button>
+                    <button class="btn botao-adicionar-novo">Adicionar</button>
+                    <button class="btn botao--alterar-ordem">Alterar Ordem da Fila</button>
                 </div>
 
                 <hr class="linha">
 
-                <input class="input-bloco-busca" type="text" placeholder="Pesquise...">
+                <input class="input" type="text" placeholder="Pesquise...">
                 <div class="bloco-adicionarBuscar__container">
                     <p class="bloco-adicionarBuscar__container___conteudo">Mostrar</p>
                     <div class="output-bloco-busca">10</div>
@@ -123,34 +123,34 @@
         </section> 
         
         <form id="form-adiciona">
-            <div class="modal-container" id="modal-container">
+            <div class="modal-add-novo-container" id="modal-container">
                 <div class="modalAddNovo">
                     <button class="botao-fechar-modal">X</button>
                     <div class="modalAddNovo__title-box">
-                        <h2 class="modalAddNovo__title-box___titulo">Novo</h2>
-                        <i class="material-icons titulo-modal">add</i>
+                        <h2 class="titulo-modal">Novo</h2>
+                        <i class="material-icons titulo-modal-icon">add</i>
                     </div>
                     
                     <div class="modalAddNovo__input-container">
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="nome">Nome</label>
-                            <input class="modalAddNovo__input-box___input js-input-nome" type="text" name="nome" placeholder="Nome Completo">
+                            <label class="label" for="nome">Nome</label>
+                            <input class="input input--form js-input-nome" type="text" name="nome" placeholder="Nome Completo">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="estagiario">Estagiário</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="estagiario" placeholder="Nome">
+                            <label class="label" for="estagiario">Estagiário</label>
+                            <input class="input input--form js-input-" type="text" name="estagiario" placeholder="Nome">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="cpf">CPF</label>
-                            <input class="modalAddNovo__input-box___input js-input-cpf" type="text" name="cpf" placeholder="000.000.000-00">
+                            <label class="label" for="cpf">CPF</label>
+                            <input class="input input--form js-input-cpf" type="text" name="cpf" placeholder="000.000.000-00">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="email">Email</label>
-                            <input class="modalAddNovo__input-box___input js-input-email" type="email" name="email" placeholder="nome@dominio.com">
+                            <label class="label" for="email">Email</label>
+                            <input class="input input--form js-input-email" type="email" name="email" placeholder="nome@dominio.com">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="senha">Senha</label>
-                            <input class="modalAddNovo__input-box___input js-input-senha" type="password" name="senha" placeholder="********">
+                            <label class="label" for="senha">Senha</label>
+                            <input class="input input--form js-input-senha" type="password" name="senha" placeholder="********">
                         </div>
                     </div>
 
@@ -161,65 +161,61 @@
                                 <i class="material-icons modadAddNovo-icon">add</i>
                             </div>
                             <div class="modalAddNovo__input-box">
-                                <label class="modalAddNovo__input-box___label" for="telefone">Telefone</label>
-                                <input class="modalAddNovo__input-box___input js-input-telefone" type="text" name="telefone" placeholder="(XX)XXXXX-XXXX">
+                                <label class="label" for="telefone">Telefone</label>
+                                <input class="input input--form js-input-telefone" type="text" name="telefone" placeholder="(XX)XXXXX-XXXX">
                             </div>
-                            <button class="botao-adicionar-novo">Adicionar</button>
+                            <button class="btn botao--add-telefone-form">Adicionar</button>
                         </div>                        
                     </div>
 
                     <div class="modalAddNovo__input-container">
 
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="statusAtual">Status Atual</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="statusAtual" placeholder="Fila de espera...">
+                            <label class="label" for="statusAtual">Status Atual</label>
+                            <input class="input input--form js-input-" type="text" name="statusAtual" placeholder="Fila de espera...">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="nomeDoPai">Nome do Pai</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="nomeDoPai" placeholder="Informe o nome completo...">
+                            <label class="label" for="nomeDoPai">Nome do Pai</label>
+                            <input class="input input--form js-input-" type="text" name="nomeDoPai" placeholder="Informe o nome completo...">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="profissaoDoPai">Profissão do Pai</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="profissaoDoPai" placeholder="Informe a profissão...">
+                            <label class="label" for="profissaoDoPai">Profissão do Pai</label>
+                            <input class="input input--form js-input-" type="text" name="profissaoDoPai" placeholder="Informe a profissão...">
                         </div>
 
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="nomeDaMae">Nome da Mãe</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="nomeDaMae" placeholder="Informe o nome da Mãe...">
+                            <label class="label" for="nomeDaMae">Nome da Mãe</label>
+                            <input class="input input--form js-input-" type="text" name="nomeDaMae" placeholder="Informe o nome da Mãe...">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="profissaoDaMae">Profissão do Mãe</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="profissaoDaMae" placeholder="Informe a profissão da Mãe...">
+                            <label class="label" for="profissaoDaMae">Profissão do Mãe</label>
+                            <input class="input input--form js-input-" type="text" name="profissaoDaMae" placeholder="Informe a profissão da Mãe...">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="nomeDoResponsavel">Nome do Responsável</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="nomeDoResponsavel" placeholder="Informe o nome...">
+                            <label class="label" for="nomeDoResponsavel">Nome do Responsável</label>
+                            <input class="input input--form js-input-" type="text" name="nomeDoResponsavel" placeholder="Informe o nome...">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="relacaoParentesco">Relação de Parentêsco</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="relacaoParentesco" placeholder="Ex.: Cônjuge">
+                            <label class="label" for="relacaoParentesco">Relação de Parentêsco</label>
+                            <input class="input input--form js-input-" type="text" name="relacaoParentesco" placeholder="Ex.: Cônjuge">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="dataNascimento">Data de Nascimento</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="date" name="dataNascimento" placeholder="dd/mm/aaaa">
+                            <label class="label" for="dataNascimento">Data de Nascimento</label>
+                            <input class="input input--form js-input-" type="date" name="dataNascimento" placeholder="dd/mm/aaaa">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="escolaridade">Escolaridade</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="escolaridade" placeholder="Ensino Fundamental Completo">
+                            <label class="label" for="escolaridade">Escolaridade</label>
+                            <input class="input input--form js-input-" type="text" name="escolaridade" placeholder="Ensino Fundamental Completo">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="profissao">Profissão</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="profissao" placeholder="Informe a sua Profissão/Formação">
+                            <label class="label" for="profissao">Profissão</label>
+                            <input class="input input--form js-input-" type="text" name="profissao" placeholder="Informe a sua Profissão/Formação">
                         </div>
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="ocupacao">Ocupação</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="ocupacao" placeholder="Informe a sua Ocupação atual: ex.: motorista">
+                            <label class="label" for="ocupacao">Ocupação</label>
+                            <input class="input input--form js-input-" type="text" name="ocupacao" placeholder="Informe a sua Ocupação atual: ex.: motorista">
                         </div>
-                        <!--div dos endereços
-                        <div class="modalAddNovo__card-add-tel--titleBox">
-                                <h2 class="modalAddNovo__card-add-tel--titleBox___titulo">Adicionar Novo Telefone</h2>
-                                <i class="material-icons modadAddNovo-icon">add</i>
-                            </div>-->
+                        
                         <div class="modalAddNovo-Card-container telefones">
                             <div class="modalAddNovo__card-add-tel">
                                 <div class="modalAddNovo__card-add-tel--titleBox">
@@ -227,24 +223,24 @@
                                     <i class="material-icons phone">add_ic_call</i>
                                 </div>
                                 <div class="modalAddNovo__input-box">
-                                    <label class="modalAddNovo__input-box___label" for="estado">Estado</label>
-                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="estado" placeholder="Acre">
+                                    <label class="label" for="estado">Estado</label>
+                                    <input class="input input--form js-input-" type="text" name="estado" placeholder="Acre">
                                 </div>
                                 <div class="modalAddNovo__input-box">
-                                    <label class="modalAddNovo__input-box___label" for="cidade">Cidade</label>
-                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="cidade" placeholder="Acrelândia">
+                                    <label class="label" for="cidade">Cidade</label>
+                                    <input class="input input--form js-input-" type="text" name="cidade" placeholder="Acrelândia">
                                 </div>
                                 <div class="modalAddNovo__input-box">
-                                    <label class="modalAddNovo__input-box___label" for="bairro">Bairro</label>
-                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="bairro" placeholder="Informe">
+                                    <label class="label" for="bairro">Bairro</label>
+                                    <input class="input input--form js-input-" type="text" name="bairro" placeholder="Informe">
                                 </div>
                                 <div class="modalAddNovo__input-box">
-                                    <label class="modalAddNovo__input-box___label" for="endereco">Endereço</label>
-                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="endereco" placeholder="Informe">
+                                    <label class="label" for="endereco">Endereço</label>
+                                    <input class="input input--form js-input-" type="text" name="endereco" placeholder="Informe">
                                 </div>
                                 <div class="modalAddNovo__input-box">
-                                    <label class="modalAddNovo__input-box___label" for="complemento">Complemento (Opcional)</label>
-                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="complemento" placeholder="Informe">
+                                    <label class="label" for="complemento">Complemento (Opcional)</label>
+                                    <input class="input input--form js-input-" type="text" name="complemento" placeholder="Informe">
                                 </div>
                             </div>
                             <div class="modalAddNovo__card-add-tel">
@@ -253,46 +249,46 @@
                                     <i class="material-icons phone">add_ic_call</i>
                                 </div>
                                 <div class="modalAddNovo__input-box">
-                                    <label class="modalAddNovo__input-box___label" for="estado">Estado</label>
-                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="estado" placeholder="Acre">
+                                    <label class="label" for="estado">Estado</label>
+                                    <input class="input input--form js-input-" type="text" name="estado" placeholder="Acre">
                                 </div>
                                 <div class="modalAddNovo__input-box">
-                                    <label class="modalAddNovo__input-box___label" for="cidade">Cidade</label>
-                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="cidade" placeholder="Acrelândia">
+                                    <label class="label" for="cidade">Cidade</label>
+                                    <input class="input input--form js-input-" type="text" name="cidade" placeholder="Acrelândia">
                                 </div>
                                 <div class="modalAddNovo__input-box">
-                                    <label class="modalAddNovo__input-box___label" for="bairro">Bairro</label>
-                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="bairro" placeholder="Informe">
+                                    <label class="label" for="bairro">Bairro</label>
+                                    <input class="input input--form js-input-" type="text" name="bairro" placeholder="Informe">
                                 </div>
                                 <div class="modalAddNovo__input-box">
-                                    <label class="modalAddNovo__input-box___label" for="endereco">Endereço</label>
-                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="endereco" placeholder="Informe">
+                                    <label class="label" for="endereco">Endereço</label>
+                                    <input class="input input--form js-input-" type="text" name="endereco" placeholder="Informe">
                                 </div>
                                 <div class="modalAddNovo__input-box">
-                                    <label class="modalAddNovo__input-box___label" for="complemento">Complemento (Opcional)</label>
-                                    <input class="modalAddNovo__input-box___input js-input-" type="text" name="complemento" placeholder="Informe">
+                                    <label class="label" for="complemento">Complemento (Opcional)</label>
+                                    <input class="input input--form js-input-" type="text" name="complemento" placeholder="Informe">
                                 </div>
                             </div>
                         </div>
 
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="indicacao">Quem indicou?</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="indicacao" placeholder="Informe">
+                            <label class="label" for="indicacao">Quem indicou?</label>
+                            <input class="input input--form js-input-" type="text" name="indicacao" placeholder="Informe">
                         </div>   
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="horarios">Horarios disponíveis para atendimento:</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="horarios" placeholder="Informe">
+                            <label class="label" for="horarios">Horarios disponíveis para atendimento:</label>
+                            <input class="input input--form js-input-" type="text" name="horarios" placeholder="Informe">
                         </div> 
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="protocolo">Protocolo de atendimento:</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="protocolo" placeholder="Informe">
+                            <label class="label" for="protocolo">Protocolo de atendimento:</label>
+                            <input class="input input--form js-input-" type="text" name="protocolo" placeholder="Informe">
                         </div>                     
 
                     </div>
                     
 
                     <div class="modalAddNovo__botoes-container">
-                        <button id="botao-add" class="botao-adicionar-novo js-editar-form" type="submit">Adicionar</button>
+                        <button id="botao-add" class="btn botao-adicionar-novo js-editar-form" type="submit">Adicionar</button>
                         <button class="botao-cancelar">Cancelar</button>
                     </div>
 
@@ -302,18 +298,17 @@
 
         <section class="modal-excluir-container">
             <div class="modal-excluir">
-                <h2 class="modal-excluir__titulo">Você deseja realmente excluir?</h2>
+                <h2 class="titulo-modal titulo-modal--excluir">Você deseja realmente excluir?</h2>
                 <div class="modal-excluir-containerBotao">
-                    <button class="botao-adicionar-novo sim">Sim</button>
+                    <button class="btn botao-adicionar-novo sim">Sim</button>
                     <button class="botao-cancelar nao">Não</button>
                 </div>
             </div>
         </section>
 
         <section class="modal-mais-info-container">
-
             <div class="modal-mais-info analisantes">
-                <h2 class="modal-mais-info__titulo">Informações do Analisante:</h2>
+                <h2 class="titulo-modal titulo-modal--mais-info">Informações do Analisante:</h2>
 
                 <p class="modal-mais-info__conteudo">Profissão do pai: Empresário</p>
                 <p class="modal-mais-info__conteudo">Data de Nascimento: 04/04/1979</p>
@@ -335,23 +330,24 @@
             </div>
         </section>
 
+        <!--alterar ordem fila-->
         <section class="alterar-ordem-container">
             <div class="alterar-ordem">
                 <div class="modalAddNovo__title-box">
-                    <h2 class="alterar-ordem__titulo">Alterar Ordem na Fila</h2>
+                    <h2 class="titulo-modal">Alterar Ordem na Fila</h2>
                     <i class="material-icons mouse">mouse</i>
                 </div>
 
                 <h3 class="alterar-ordem__subtitulo">Clique no Analisante e arraste para a posição desejada:</h3>
-                <input class="modalAddNovo__input-box___input js-input-" type="text" name="" placeholder="Fulano da Silva">
-                <input class="modalAddNovo__input-box___input js-input-" type="text" name="" placeholder="Fulano da Silva">
-                <input class="modalAddNovo__input-box___input js-input-" type="text" name="" placeholder="Fulano da Silva">
-                <input class="modalAddNovo__input-box___input js-input-" type="text" name="" placeholder="Fulano da Silva">
-                <input class="modalAddNovo__input-box___input js-input-" type="text" name="" placeholder="Fulano da Silva">
-                <input class="modalAddNovo__input-box___input js-input-" type="text" name="" placeholder="Fulano da Silva">
+                <input class="input input--alterar js-input-" type="text" name="" placeholder="Fulano da Silva">
+                <input class="input input--alterar js-input-" type="text" name="" placeholder="Fulano da Silva">
+                <input class="input input--alterar js-input-" type="text" name="" placeholder="Fulano da Silva">
+                <input class="input input--alterar js-input-" type="text" name="" placeholder="Fulano da Silva">
+                <input class="input input--alterar js-input-" type="text" name="" placeholder="Fulano da Silva">
+                <input class="input input--alterar js-input-" type="text" name="" placeholder="Fulano da Silva">
                 
                 <div class="alterar-ordem__btn-container">
-                    <button class="botao-adicionar-novo sim">Salvar</button>
+                    <button class="btn botao--salvar sim">Salvar</button>
                     <button class="botao-cancelar nao">Cancelar</button>
                 </div>                
 

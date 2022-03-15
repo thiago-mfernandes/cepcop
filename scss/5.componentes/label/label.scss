@@ -1,0 +1,10 @@
+.label {
+    @include color-fontSize($cinza-escuro, 1.1rem);
+    @extend %fjala;
+    margin: 5% 0;
+}
+
+//label específico para a pagina de login:
+.label--login {
+    margin: 2% 0;
+}

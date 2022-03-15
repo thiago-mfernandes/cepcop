@@ -1,44 +1,21 @@
 .alterar-ordem-container {
-    //container do modal com display none inicialmente--trocar
-    @include display-flexDirection(none, row);
-    @include alignItens-justifyContent(center, center);
-    @include height-width(100vh, 100vw);
-    background-color: rgba(0,0,0,.5);
-    position: fixed;
-        left: 0px;
-        top: 0px;
-    z-index: 10;
+    @extend %container-modal;
 }
 
 .alterar-ordem {
-    @include display-flexDirection(flex, column);
-    @extend %mont;
-    position: relative;
-    width: 70%; 
-    height: 90vh;
-    overflow: auto;
-    min-width: 650px;
-    background-color: $cinza-claro;
-    border-radius: 16px;
-    box-shadow: 0 4px 50px 0 rgba(0,0,0,.15);
-    padding: 5%;
-
-    &__titulo {
-        @extend %fjala;
-        @include color-fontSize($cinza-escuro, 1.5rem)
-    }
+    @extend %modal-config;
     
     &__subtitulo {
         @include color-fontSize($cinza-escuro, 1rem);
         @extend %fjala;
-        margin: 5% 0;
-        text-align: center;
+        margin: 2.5% 0;
         padding-bottom: 1.5%;
+        text-align: center;
     }
 
     &__btn-container {
-        @include display-flexDirection(flex, row);
         @include alignItens-justifyContent(center, space-between);
+        @include display-flexDirection(flex, row);
     }
 }
 

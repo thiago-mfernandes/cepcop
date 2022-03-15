@@ -1,0 +1,49 @@
+//input padrão
+.input {
+    @include height-width(6.5vh, 30%);
+    @include color-fontSize($cinza-escuro, .75rem);
+    @include fontStyle-fontWeight(italic, lighter);
+    @extend %mont;
+    border: none;
+    border-radius: 24px;
+    padding-left: 5%;
+    margin: 1.5% 0 0 5%;
+    &:focus {
+        border: 1px solid $azul-escuro-fosco;
+        outline: none;
+    }
+    //input do formulario de adicionar e editar de todas as paginas
+    &.input--form {
+        margin: 0;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+
+    //input do formulario da parte de permissões: radio inputs
+    &.input--radio {
+        margin-bottom: 2.5%;
+    }
+
+    &.input--alterar {
+        margin: 0 auto;
+        margin-bottom: 1%;
+        width: 90%;
+        &:last-of-type {
+            margin-bottom: 5%;
+        }
+    }
+
+    //input da pagna de configurações, do botao escolher arquivo
+    &.input--escolherArquivo {
+        border-radius: 0 24px 24px 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    //input da pagina de login
+    &.input--login {
+        margin: 0;
+        margin-bottom: 2%;
+        width: 100%;
+    }
+}

@@ -72,12 +72,12 @@
             <div class="bloco-adicionarBuscar">
                 <div class="bloco-adicionarBuscar__container">
                     <h2 class="titulo-bloco-busca">Cursos</h2>
-                    <button class="botao-adicionar-novo">Adicionar</button>
+                    <button class="btn botao-adicionar-novo">Adicionar</button>
                 </div>
 
                 <hr class="linha">
 
-                <input class="input-bloco-busca" type="text" placeholder="Pesquise...">
+                <input class="input" type="text" placeholder="Pesquise...">
                 <div class="bloco-adicionarBuscar__container">
                     <p class="bloco-adicionarBuscar__container___conteudo">Mostrar</p>
                     <div class="output-bloco-busca">10</div>
@@ -108,23 +108,23 @@
         </section> 
         
         <form id="form-adiciona">
-            <div class="modal-container" id="modal-container">
+            <div class="modal-add-novo-container" id="modal-container">
                 <div class="modalAddNovo">
                     <button class="botao-fechar-modal">X</button>
                     <div class="modalAddNovo__title-box">
-                        <h2 class="modalAddNovo__title-box___titulo">Novo</h2>
-                        <i class="material-icons titulo-modal">add</i>
+                        <h2 class="titulo-modal">Novo</h2>
+                        <i class="material-icons titulo-modal-icon">add</i>
                     </div>
                     
                     <div class="modalAddNovo__input-container">
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="curso">Curso</label>
-                            <input class="modalAddNovo__input-box___input js-input-nome" type="text" name="curso" placeholder="Curso">
+                            <label class="label" for="curso">Curso</label>
+                            <input class="input input--form js-input-nome" type="text" name="curso" placeholder="Curso">
                         </div>
 
                     </div>
                     <div class="modalAddNovo__botoes-container">
-                        <button id="botao-add" class="botao-adicionar-novo js-editar-form" type="submit">Adicionar</button>
+                        <button id="botao-add" class="btn botao-adicionar-novo js-editar-form" type="submit">Adicionar</button>
                         <button class="botao-cancelar">Cancelar</button>
                     </div>
                 </div>
@@ -133,9 +133,9 @@
 
         <section class="modal-excluir-container">
             <div class="modal-excluir">
-                <h2 class="modal-excluir__titulo">Você deseja realmente excluir?</h2>
+                <h2 class="titulo-modal titulo-modal--excluir">Você deseja realmente excluir?</h2>
                 <div class="modal-excluir-containerBotao">
-                    <button class="botao-adicionar-novo sim">Sim</button>
+                    <button class="btn botao-adicionar-novo sim">Sim</button>
                     <button class="botao-cancelar nao">Não</button>
                 </div>
             </div>

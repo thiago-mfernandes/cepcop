@@ -1,0 +1,19 @@
+.titulo-modal {
+    @include color-fontSize($cinza-escuro, 1.75rem);
+    @extend %fjala;
+}
+
+//titulo do modal de avaliacoes do html de estagiarios e analisantes
+.titulo-modal--avaliacoes, .titulo-modal--mais-info {
+    margin-bottom: 2.5%;
+    padding-bottom: 1.5%;
+}
+
+.titulo-modal--excluir {
+    margin-bottom: 15%;
+}
+
+//titulo do modal de mais informações do html de analisantes
+.titulo-modal--mais-info {
+    border-bottom: 1px solid $cinza-medio;
+}

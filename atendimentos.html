@@ -72,12 +72,12 @@
             <div class="bloco-adicionarBuscar">
                 <div class="bloco-adicionarBuscar__container">
                     <h2 class="titulo-bloco-busca">Atendimentos</h2>
-                    <button class="botao-adicionar-novo">Adicionar</button>
+                    <button class="btn botao-adicionar-novo">Adicionar</button>
                 </div>
 
                 <hr class="linha">
 
-                <input class="input-bloco-busca" type="text" placeholder="Pesquise...">
+                <input class="input" type="text" placeholder="Pesquise...">
                 <div class="bloco-adicionarBuscar__container">
                     <p class="bloco-adicionarBuscar__container___conteudo">Mostrar</p>
                     <div class="output-bloco-busca">10</div>
@@ -131,49 +131,49 @@
         </section> 
         
         <form id="form-adiciona">
-            <div class="modal-container" id="modal-container">
+            <div class="modal-add-novo-container" id="modal-container">
                 <div class="modalAddNovo">
                     <button class="botao-fechar-modal">X</button>
                     <div class="modalAddNovo__title-box">
-                        <h2 class="modalAddNovo__title-box___titulo">Novo</h2>
-                        <i class="material-icons titulo-modal">add</i>
+                        <h2 class="titulo-modal">Novo</h2>
+                        <i class="material-icons titulo-modal-icon">add</i>
                     </div>
                     
                     <div class="modalAddNovo__input-container">
 
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="estagiario">Estagiário</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="estagiario" placeholder="Nome do estagiário">
+                            <label class="label" for="estagiario">Estagiário</label>
+                            <input class="input input--form js-input-" type="text" name="estagiario" placeholder="Nome do estagiário">
                         </div>
 
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="analisante">Analisante</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="analisante" placeholder="Nome do analisante:">
+                            <label class="label" for="analisante">Analisante</label>
+                            <input class="input input--form js-input-" type="text" name="analisante" placeholder="Nome do analisante:">
                         </div>
 
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="status">Status</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="status" placeholder="Atendido/Faltou">
+                            <label class="label" for="status">Status</label>
+                            <input class="input input--form js-input-" type="text" name="status" placeholder="Atendido/Faltou">
                         </div>
 
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="data">Data</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="data" name="data" placeholder="dd/mm/aaaa">
+                            <label class="label" for="data">Data</label>
+                            <input class="input input--form js-input-" type="data" name="data" placeholder="dd/mm/aaaa">
                         </div>
 
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="horario">Horário</label>
-                            <input class="modalAddNovo__input-box___input js-input-senha" type="time" name="horario" placeholder="00:00">
+                            <label class="label" for="horario">Horário</label>
+                            <input class="input input--form js-input-senha" type="time" name="horario" placeholder="00:00">
                         </div>
 
                         <div class="modalAddNovo__input-box">
-                            <label class="modalAddNovo__input-box___label" for="descricao">Descrição</label>
-                            <input class="modalAddNovo__input-box___input js-input-" type="text" name="descricao" placeholder="Justificou a ausência.">
+                            <label class="label" for="descricao">Descrição</label>
+                            <input class="input input--form js-input-" type="text" name="descricao" placeholder="Justificou a ausência.">
                         </div>                        
                     </div>                    
 
                     <div class="modalAddNovo__botoes-container">
-                        <button id="botao-add" class="botao-adicionar-novo js-editar-form" type="submit">Cadastrar</button>
+                        <button id="botao-add" class="btn botao-adicionar-novo js-editar-form" type="submit">Cadastrar</button>
                         <button class="botao-cancelar">Cancelar</button>
                     </div>
 
@@ -183,9 +183,9 @@
 
         <section class="modal-excluir-container">
             <div class="modal-excluir">
-                <h2 class="modal-excluir__titulo">Você deseja realmente excluir?</h2>
+                <h2 class="titulo-modal titulo-modal--excluir">Você deseja realmente excluir?</h2>
                 <div class="modal-excluir-containerBotao">
-                    <button class="botao-adicionar-novo sim">Sim</button>
+                    <button class="btn botao-adicionar-novo sim">Sim</button>
                     <button class="botao-cancelar nao">Não</button>
                 </div>
             </div>

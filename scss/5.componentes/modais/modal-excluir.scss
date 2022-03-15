@@ -1,13 +1,5 @@
 .modal-excluir-container {
-    background-color: rgba(0,0,0,.5);
-    @include height-width(100vh, 100vw);
-    //display esta em none por default
-    @include display-flexDirection(none, row);
-    @include alignItens-justifyContent(center, center);
-    position: fixed;
-        left: 0px;
-        top: 0px;
-    z-index: 10;
+    @extend %container-modal;
 }
 
 //quando a classe for adicionada, o modal é exibido mudando display
@@ -21,27 +13,20 @@
 }
 
 .modal-excluir-containerBotao {
-    width: 80%;
-    @include display-flexDirection(flex, row);
     @include alignItens-justifyContent(center, space-between);
+    @include display-flexDirection(flex, row);
+    width: 80%;
 }
 .modal-excluir {
-    position: relative;
+    @include alignItens-justifyContent(center, center);
+    @include display-flexDirection(flex, column);
+    @include height-width(60%, 40%);    
     background-color: $cinza-claro;
     border-radius: 16px;
-    @include display-flexDirection(flex, column);
-    @include alignItens-justifyContent(center, center);
-    @include height-width(60%, 40%);    
-
-    &__titulo {
-        font-family: 'Fjalla One', sans-serif;
-        @include color-fontSize($cinza-escuro, 1.25rem);
-        margin-bottom: 15%;
-    }
-    
+    position: relative;    
 }
 
 .botao-adicionar-novo.sim, .botao-cancelar.nao {
-    margin-left: 0;
     @include height-width(6vh, 45%);
+    margin-left: 0;
 }

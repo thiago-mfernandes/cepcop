@@ -1,0 +1,23 @@
+.titulo-home-card {
+    @include color-fontSize($cinza-escuro, 1rem);
+    background-color: rgba(231, 231, 233, .5);
+    border-radius: 24px 24px 0 0;
+    height: 10vh;
+    padding: 10% 0;
+    text-align: center;
+}
+
+.titulo-home-card--card-hoje {
+    @include color-fontSize($cinza-claro, 1rem);
+    @include height-width(10vh, 100%);
+    background-color: $cinza-escuro;
+    margin-bottom: 7.5%;
+    padding-top: 12.5%;
+    vertical-align: baseline;
+}
+
+.titulo-home-card--card-total-analisantes {
+    @include color-fontSize($branco, 1rem);
+    background-color: rgba(18, 18, 224, .7);
+    padding: 12.5% 0;
+}

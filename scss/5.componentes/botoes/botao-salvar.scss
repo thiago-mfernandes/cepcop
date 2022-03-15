@@ -1,17 +1,16 @@
-.botao-salvar {
-    @include height-width(8vh, 100%);
-    @include color-fontSize($branco-bg, 1.25rem);
-    border: none;
-    border-radius: 48px;
-    background: linear-gradient(90deg, rgba(18,18,224,1) 0%, rgba(109,225,149,1) 100%);
-    font-family: 'Montserrat', sans-serif;
-    box-shadow: 4px 10px 20px 0px rgba(18, 18, 224,.35);
+.botao--salvar {
+    margin-left: 0;
+    width: 45%;
+
+    &:hover {
+        width:45%;
+    }
 }
 
 .botao-salvar.config {
-    margin-top: 6.5%;
+    margin-left: 0;
+    margin: 6.5% auto 0;
     &:hover {
-        @include color-fontSize($branco, 1.35rem);
         border: 1px solid $azul-escuro-fosco;
         transition: all .3s ease-in-out;
     }

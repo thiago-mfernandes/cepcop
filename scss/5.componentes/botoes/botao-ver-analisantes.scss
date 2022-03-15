@@ -1,14 +1,10 @@
 .botao-ver-analisantes {
-    background: linear-gradient(90deg, rgba(18,18,224,1) 0%, rgba(109,225,149,1) 100%);
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0px 5px 10px 0px rgba(0,0,0,.25);
-    margin: 7.5% auto 15%;
     @include height-width(5vh, 70%);
+    margin: 7.5% auto 15%;
 
     & a{
         @include color-fontSize($branco-bg, .75rem);
-        font-family: 'Montserrat', sans-serif;
+        @extend %mont;
         font-weight: 400;
         text-decoration: none;
     }

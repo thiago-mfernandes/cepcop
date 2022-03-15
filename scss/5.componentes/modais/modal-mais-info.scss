@@ -1,36 +1,11 @@
 .modal-mais-info-container {
-    //container do modal com display none inicialmente--trocar
-    @include display-flexDirection(none, row);
-    @include alignItens-justifyContent(center, center);
-    @include height-width(100vh, 100vw);
-    background-color: rgba(0,0,0,.5);
-    position: fixed;
-        left: 0px;
-        top: 0px;
-    z-index: 10;
+    @extend %container-modal;
 }
 
 .modal-mais-info {
-    @include display-flexDirection(flex, column);
-    @extend %mont;
-    position: relative;
-    width: 70%; 
-    height: 90vh;
-    overflow: auto;
-    min-width: 650px;
-    background-color: $cinza-claro;
-    border-radius: 16px;
-    box-shadow: 0 4px 50px 0 rgba(0,0,0,.15);
-    padding: 5%;
-    flex-wrap: wrap;
+    @include height-width(90vh, 70%);
+    @extend %modal-config;
     
-    &__titulo {
-        @include color-fontSize($cinza-escuro, 2rem);
-        @extend %fjala;
-        border-bottom: 1px solid $cinza-escuro;
-        margin-bottom: 2.5%;
-        padding-bottom: 1.5%;
-    }
     
     &__conteudo {
         @include color-fontSize($cinza-escuro, 1rem);

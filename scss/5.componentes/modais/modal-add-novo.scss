@@ -1,13 +1,5 @@
-.modal-container {
-    //container do modal com display none inicialmente
-    @include display-flexDirection(none, row);
-    @include alignItens-justifyContent(center, center);
-    @include height-width(100vh, 100vw);
-    background-color: rgba(0,0,0,.5);
-    position: fixed;
-        left: 0px;
-        top: 0px;
-    z-index: 10;
+.modal-add-novo-container {
+    @extend %container-modal;
 }
 
 //quando a classe for adicionada, o modal é exibido mudando display
@@ -22,8 +14,8 @@
 
 .modalAddNovo-Card-container {
     @include display-flexDirection(flex, row);
-    width: 100%;
     margin-bottom: 10%;
+    width: 100%;
     //configuração do telefone do form analisantes
     &.modalAddNovo-Card-container.telefones {
         margin: 10% 0;
@@ -31,76 +23,40 @@
 }
 
 .modalAddNovo {
-    position: relative;
-    width: 70%; 
-    height: 80vh;
-    overflow: auto;
-    min-width: 650px;
-    background-color: $cinza-claro;
-    border-radius: 16px;
-    box-shadow: 0 4px 50px 0 rgba(0,0,0,.15);
-    padding: 5%;
-    flex-wrap: wrap;
-    @include display-flexDirection(flex, row);
-
-    
+    @extend %modal-config;
+    @include height-width(80vh, 70%);
 
     &__title-box {
-        @include display-flexDirection(flex, row);
         @include alignItens-justifyContent(center, space-between);
-        width: 100%;
+        @include display-flexDirection(flex, row);
         border-bottom: 1px solid $cinza-medio;
         padding-bottom: 5%;
-
-        &___titulo {
-            @include color-fontSize($cinza-escuro, 1.75rem);
-            font-family: 'Fjalla One', sans-serif;
-        }
+        width: 100%;
     }
 
     &__input-container {
-        @include display-flexDirection(flex, row);
         @include alignItens-justifyContent(center, space-between);
+        @include display-flexDirection(flex, row);
         flex-wrap: wrap;
         margin-bottom: 10%;
+        width: 100%;
     }
 
     &__input-box {
         @include display-flexDirection(flex, column);
-        width: 48%;
-        
-        &___label {
-            @include color-fontSize($cinza-escuro, 1.1rem);
-            font-family: 'Fjalla One', sans-serif;
-            margin: 5% 0;
-        }
-
-        &___input {
-            @include color-fontSize($cinza-escuro, .75rem);
-            @include  fontStyle-fontWeight(italic, lighter);
-            font-family: 'Montserrat', sans-serif;
-            border: none;
-            border-radius: 24px;
-            height: 6vh;
-            padding: 5%;
-            margin-bottom: 5%;
-            &:focus {
-                border: 1px solid $azul-escuro-fosco;
-                outline: none;
-            }
-        }
+        width: 48%;        
     }
 
     &__card-add-tel {
         @include display-flexDirection(flex, column);
-        width: 48%;
-        margin-right: 4%;
         background-color: $cinza-medio;
         border-radius: 16px;
+        margin-right: 4%;
+        width: 48%;
         //configuração especial para este input
         & > .modalAddNovo__input-box {
+            margin: 5% auto;
             width: 90%;
-            margin: 5% auto
         }
         & > .botao-adicionar-novo {
             @include height-width(6.5vh, 80%);
@@ -116,8 +72,8 @@
     }
 
     &__card-add-tel--titleBox {
-        @include display-flexDirection(flex, row);
         @include alignItens-justifyContent(center, space-between);
+        @include display-flexDirection(flex, row);
         @extend %fjala;
         background-color: $cinza-escuro;
         border-radius: 16px 16px 0 0;
@@ -131,33 +87,28 @@
 
     &__card-permissoes {
         @include display-flexDirection(flex, column);
-        width: 48%;
         background-color: $cinza-medio;
         border-radius: 16px;
-        
+        width: 48%;
     }
 
     &__card-permissoes-box {
-        text-align: center;
         border-bottom: 1px solid rgba(120, 120, 135,.5);
         margin: 2.5% 0;
+        text-align: center;
         &:last-of-type {
             border-bottom: none;
         }
 
         &___titulo {
-            font-family: 'Fjalla One', sans-serif;
             @include color-fontSize($cinza-escuro, .95rem);
+            @extend %fjala;
             margin: 2.5% 0;
         }
 
         &___label {
-            font-family: 'Montserrat', sans-serif;
+            @extend %mont;
             @include color-fontSize($cinza-escuro, .85rem);
-        }
-
-        &___input {
-            margin-bottom: 2.5%;
         }
     }
 
@@ -166,15 +117,15 @@
         width: 100%;
 
         & > .botao-adicionar-novo, .botao-cancelar {
-            width: 40%;
             margin-left: 0;
             margin: 0 5%;
+            width: 40%;
         }
     }
 
     &__box-supervisor-anterior {
-        @include display-flexDirection(flex, row);
         @include alignItens-justifyContent(center, flex-start);
+        @include display-flexDirection(flex, row);
         border-bottom: 1px solid $cinza-escuro;
         &:last-of-type{
             border-bottom: none;
@@ -186,8 +137,8 @@
         }
 
         &___nome {
-            @extend %mont;
             @include color-fontSize($cinza-escuro, .75rem);
+            @extend %mont;
         }
     }
 }

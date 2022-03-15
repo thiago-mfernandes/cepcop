@@ -1,6 +1,6 @@
 .card-cadHoje {
-    @include display-flexDirection(flex, column);
     @include alignItens-justifyContent(center, space-between);
+    @include display-flexDirection(flex, column);
     @extend %mont;
     background-color: $branco;
     box-shadow: 0px 4px 50px 0px rgba(0,0,0,.15);
@@ -9,17 +9,6 @@
     grid-row: 1 / 4;
     width: 100%;
     
-    &__titulo {
-        @include color-fontSize($cinza-claro, 1rem);
-        @include height-width(10vh, 100%);
-        background-color: $cinza-escuro;
-        border-radius: 24px 24px 0 0;
-        text-align: center;
-        margin-bottom: 7.5%;
-        padding-top: 12.5%;
-        vertical-align: baseline;
-    }
-
     &__containerInfo {
         @include display-flexDirection(flex, column);
         width: 100%;
@@ -27,9 +16,9 @@
 
     &__containerData {
         @include display-flexDirection(flex, column);
+        border-bottom: 1px solid $cinza-medio;
         padding: 0 5%;
         width: 100%;
-        border-bottom: 1px solid $cinza-medio;
     }
 
     &__data {
@@ -47,8 +36,8 @@
     &__containerTotal {
         display: flex;
         justify-content: space-evenly;
-        width: 100%;
         padding: 5% 0;
+        width: 100%;
     }
 
     &__totalCadastros {

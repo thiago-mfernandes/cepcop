@@ -33,10 +33,10 @@
         }
 
         &___indicador {
+            @include height-width(50%, 10%);
             background-color: $azul-medio-brilhante;
             border-radius: 50%;
             box-shadow: 0px 4px 4px 0px rgba(0,0,0,.25);
-            @include height-width(50%, 10%);
         }
 
         &___indicador.verde {
@@ -53,24 +53,23 @@
 
         &___box {
             @include display-flexDirection(flex, row);
-            width: 5%;
-            height: 20vh;
+            @include height-width(20vh, 5%);
         }
 
         &___mesAtual {
+            @include height-width(15vh, 45%);
             background-color: $azul-medio-brilhante;
             border: none;
             border-radius: 8px 8px 0 0;
             box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
-            @include height-width(15vh, 45%);
         }
 
         &___mesAnterior {
+            @include height-width(10vh, 45%);
             background-color: $verde-padrao;
             border: none;
             border-radius: 8px 8px 0 0;
             box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
-            @include height-width(10vh, 45%);
         }
 
         &___nomeMes {

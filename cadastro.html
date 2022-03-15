@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="scss/style.css">
         <title>CepCop - Cadastro</title>
     </head>
-<body>
+<body class="bg-body">
     <div class="card-alerta">
         <i>
             O CEPCOP se compromete com a segurança de seus dados afim de melhorar a sua experiência de armazenamento. Todos os campos marcados com <span class="asterisco">'*'</span> devem ser preenchidos.
@@ -31,17 +31,17 @@
                 <div class="bloco__opcoes">
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="nome-completo">Nome Completo<span class="asterisco"> *</span></label>
-                        <input class="bloco__input" type="text" name="nome-completo" aria-describedby="nome-completo" required placeholder="Informe seu nome">
+                        <input class="input input--form" type="text" name="nome-completo" aria-describedby="nome-completo" required placeholder="Informe seu nome">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="email">Email<span class="asterisco"> *</span></label>
-                        <input class="bloco__input" type="email" name="email" aria-describedby="emailHelp" required placeholder="seunome@dominio.com">
+                        <input class="input input--form" type="email" name="email" aria-describedby="emailHelp" required placeholder="seunome@dominio.com">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="cpf">CPF<span class="opcional"> (opcional)</span></label>
-                        <input class="bloco__input" type="text" name="cpf" aria-describedby="textHelp" placeholder="000.000.000-00">
+                        <input class="input input--form" type="text" name="cpf" aria-describedby="textHelp" placeholder="000.000.000-00">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="container-telefone">
@@ -51,30 +51,30 @@
                         
                             <div class="bloco__conteudo-box telefone" data-display-telefone>
                                 <label class="bloco__label">Telefone<span class="asterisco"> *</span></label>
-                                <input id="inputTelefone" class="bloco__input telefone" type="text" name="telefone[]" aria-describedby="textHelp" placeholder="(XX)XXXXX-XXXX">
-                                <button class="botao-addTelefone" type="button">+</button>
+                                <input id="inputTelefone" class="input input--form telefone" type="text" name="telefone[]" aria-describedby="textHelp" placeholder="(XX)XXXXX-XXXX">
+                                <button class="btn botao--add-telefone" type="button">+</button>
                             </div>
                         </div>
                     </div>
     
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="nome-pai">Nome do pai<span class="opcional"> (opcional)</span></label>
-                        <input class="bloco__input" type="text" name="nome-pai" aria-describedby="textHelp" placeholder="Nome Completo">
+                        <input class="input input--form" type="text" name="nome-pai" aria-describedby="textHelp" placeholder="Nome Completo">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="profissao-pai">Profissão do Pai<span class="opcional"> (opcional)</span></label>
-                        <input class="bloco__input" type="text" name="profissao-pai" aria-describedby="textHelp" placeholder="Ex.: Motorista">
+                        <input class="input input--form" type="text" name="profissao-pai" aria-describedby="textHelp" placeholder="Ex.: Motorista">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="nome-mae">Nome da Mãe<span class="opcional"> (opcional)</span></label>
-                        <input class="bloco__input" type="text" name="nome-mae" aria-describedby="textHelp" placeholder="Nome Completo">
+                        <input class="input input--form" type="text" name="nome-mae" aria-describedby="textHelp" placeholder="Nome Completo">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="profissao-mae">Profissão da Mãe<span class="opcional"> (opcional)</span></label>
-                        <input class="bloco__input" type="text" name="profissao-mae" aria-describedby="textHelp" placeholder="Ex.:Advogada">
+                        <input class="input input--form" type="text" name="profissao-mae" aria-describedby="textHelp" placeholder="Ex.:Advogada">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="container-nascimento">
@@ -82,7 +82,7 @@
                         <div class="bloco__conteudo-box nascimento">
                             <div class="bloco__conteudo-box dia-mes-ano">
                                 <label class="bloco__label">Dia</label>
-                                <select class="bloco__selecao" name="dia" required>
+                                <select class="input input--form" name="dia" required>
                                     <option value="01">01</option>
                                     <option value="02">02</option>
                                     <option value="03">03</option>
@@ -118,7 +118,7 @@
                             </div>
                             <div class="bloco__conteudo-box dia-mes-ano">
                                 <label class="bloco__label">Mês</label>
-                                <select class="bloco__selecao" name="mes" required>
+                                <select class="input input--form" name="mes" required>
                                     <option value="01">Janeiro</option>
                                     <option value="02">Fevereiro</option>
                                     <option value="03">Março</option>
@@ -135,7 +135,7 @@
                             </div>
                             <div class="bloco__conteudo-box dia-mes-ano">
                                 <label class="bloco__label">Ano</label>
-                                <select class="bloco__selecao" name="ano" required>
+                                <select class="input input--form" name="ano" required>
                                     <option value='2021'>2021</option>
                                     <option value='2020'>2020</option>
                                     <option value='2019'>2019</option>
@@ -264,12 +264,12 @@
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="profissao">Responsável<span class="opcional"> (opcional)</span></label>
-                        <input class="bloco__input" type="text" name="nomeresponsavel" aria-describedby="textHelp" placeholder="Ex.: Avó Materna">
+                        <input class="input input--form" type="text" name="nomeresponsavel" aria-describedby="textHelp" placeholder="Ex.: Avó Materna">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="">Relação de Parentesco<span> (Responsável)</span></label>
-                        <select class="bloco__selecao" formcontrolname="parentescoresponsavel">
+                        <select class="input input--form" formcontrolname="parentescoresponsavel">
                             <option value>-- Selecione --</option>
                             <option value="Cônjugue">Cônjugue</option>
                             <option value="Filho/Filha">Filho/Filha</option>
@@ -286,7 +286,7 @@
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="escolaridade">Escolaridade<span class="opcional"> (opcional)</span></label>
-                        <select class="bloco__selecao" name="escolaridade">
+                        <select class="input input--form" name="escolaridade">
                             <option value="">-- Selecione --</option>
                                 <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
                                 <option value="Ensino Médio Completo">Ensino Médio Completo</option>
@@ -299,12 +299,12 @@
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="profissao">Profissão<span class="opcional"> (opcional)</span></label>
-                        <input class="bloco__input" type="text" name="profissao" aria-describedby="textHelp" placeholder="Ex.: Estudante">
+                        <input class="input input--form" type="text" name="profissao" aria-describedby="textHelp" placeholder="Ex.: Estudante">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="ocupacao">Ocupação Atual<span class="opcional"> (opcional)</span></label>
-                        <input class="bloco__input" type="text" name="ocupacao" aria-describedby="textHelp" placeholder="Secretária">
+                        <input class="input input--form" type="text" name="ocupacao" aria-describedby="textHelp" placeholder="Secretária">
                         <p class="msg-adicional"></p>
                     </div>
                 </div>
@@ -320,32 +320,32 @@
                 <div class="bloco__opcoes">
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="estado">CEP<span class="asterisco"> *</span></label>
-                        <input class="bloco__input" type="text" name="endpessoalcep" aria-describedby="textHelp" required placeholder="XXXXX-XXX">
+                        <input class="input input--form" type="text" name="endpessoalcep" aria-describedby="textHelp" required placeholder="XXXXX-XXX">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="estado">Estado<span class="asterisco"> *</span></label>
-                        <input class="bloco__input" type="text" name="endpessoalestado" aria-describedby="textHelp" required placeholder="Ex.: Rio de Janeiro">
+                        <input class="input input--form" type="text" name="endpessoalestado" aria-describedby="textHelp" required placeholder="Ex.: Rio de Janeiro">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="cidade">Cidade<span class="asterisco"> *</span></label>
-                        <input class="bloco__input" type="text" name="endpessoalcidade" aria-describedby="textHelp" required placeholder="São Paulo">
+                        <input class="input input--form" type="text" name="endpessoalcidade" aria-describedby="textHelp" required placeholder="São Paulo">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="bairro">Bairro<span class="asterisco"> *</span></label>
-                        <input class="bloco__input" type="text" name="endpessoalbairro" aria-describedby="textHelp" required placeholder="Santa Cecília">
+                        <input class="input input--form" type="text" name="endpessoalbairro" aria-describedby="textHelp" required placeholder="Santa Cecília">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="logradouro">Endereço<span class="asterisco"> *</span></label>
-                        <input class="bloco__input" type="text" name="endpessoallogradouro" aria-describedby="TextHelp" required placeholder="Ex.: Rua José da Silva, 123">
+                        <input class="input input--form" type="text" name="endpessoallogradouro" aria-describedby="TextHelp" required placeholder="Ex.: Rua José da Silva, 123">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="complemento">Complemento<span class="opcional"> (opcional)</span></label>
-                        <input class="bloco__input" type="text" name="endpessoalcomplemento" aria-describedby="textHelp" placeholder="Ex.: Bloco 01 Apartamento 01">
+                        <input class="input input--form" type="text" name="endpessoalcomplemento" aria-describedby="textHelp" placeholder="Ex.: Bloco 01 Apartamento 01">
                         <p class="msg-adicional"></p>
                     </div>
                 </div>
@@ -362,32 +362,32 @@
                 <div class="bloco__opcoes">
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="estado">CEP<span class="asterisco"> *</span></label>
-                        <input class="bloco__input" type="text" name="endpessoalcep" aria-describedby="textHelp" required placeholder="XXXXX-XXX">
+                        <input class="input input--form" type="text" name="endpessoalcep" aria-describedby="textHelp" required placeholder="XXXXX-XXX">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="estado">Estado<span class="asterisco"> *</span></label>
-                        <input class="bloco__input" type="text" name="endpessoalestado" aria-describedby="textHelp" required placeholder="Ex.: Rio de Janeiro">
+                        <input class="input input--form" type="text" name="endpessoalestado" aria-describedby="textHelp" required placeholder="Ex.: Rio de Janeiro">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="cidade">Cidade<span class="asterisco"> *</span></label>
-                        <input class="bloco__input" type="text" name="endpessoalcidade" aria-describedby="textHelp" required placeholder="São Paulo">
+                        <input class="input input--form" type="text" name="endpessoalcidade" aria-describedby="textHelp" required placeholder="São Paulo">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="bairro">Bairro<span class="asterisco"> *</span></label>
-                        <input class="bloco__input" type="text" name="endpessoalbairro" aria-describedby="textHelp" required placeholder="Santa Cecília">
+                        <input class="input input--form" type="text" name="endpessoalbairro" aria-describedby="textHelp" required placeholder="Santa Cecília">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="logradouro">Endereço<span class="asterisco"> *</span></label>
-                        <input class="bloco__input" type="text" name="endpessoallogradouro" aria-describedby="TextHelp" required placeholder="Ex.: Rua José da Silva, 123">
+                        <input class="input input--form" type="text" name="endpessoallogradouro" aria-describedby="TextHelp" required placeholder="Ex.: Rua José da Silva, 123">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="complemento">Complemento<span class="opcional"> (opcional)</span></label>
-                        <input class="bloco__input" type="text" name="endpessoalcomplemento" aria-describedby="textHelp" placeholder="Ex.: Bloco 01 Apartamento 01">
+                        <input class="input input--form" type="text" name="endpessoalcomplemento" aria-describedby="textHelp" placeholder="Ex.: Bloco 01 Apartamento 01">
                         <p class="msg-adicional"></p>
                     </div>
                 </div>
@@ -403,17 +403,17 @@
                 <div class="bloco__opcoes">
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="">Quem indicou a Clínica da USU?</label>
-                        <input class="bloco__input" type="text" name="quem indicou" aria-describedby="textHelp" required placeholder="Ex.: Amigo da Faculdade - Professor Fulano de Tal">
+                        <input class="input input--form" type="text" name="quem indicou" aria-describedby="textHelp" required placeholder="Ex.: Amigo da Faculdade - Professor Fulano de Tal">
                         <p class="msg-adicional"></p>
                     </div>
                     <div class="bloco__conteudo-box">
                         <label class="bloco__label" name="">Melhor horário para atendimento<span class="asterisco"> *</span></label>
-                        <input class="bloco__input" type="text" name="horariodisponivel" aria-describedby="textHelp" required placeholder="Ex.: Manhã - Tarde - Noite">
+                        <input class="input input--form" type="text" name="horariodisponivel" aria-describedby="textHelp" required placeholder="Ex.: Manhã - Tarde - Noite">
                         <p class="msg-adicional"></p>
                     </div>
                 </div>
             </section>
-            <button class="botao-cadastrar" type="submit">Cadastrar</button>
+            <button class="btn botao--cadastrar" type="submit">Cadastrar</button>
         </form>
     
     </div>

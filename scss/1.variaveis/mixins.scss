@@ -45,3 +45,29 @@
         font-weight: $fontWeight;
     } 
 }
+
+//representa o valor padrão do container de todos os modais
+%container-modal {
+    //container de todos os modais com display none inicialmente
+    @include alignItens-justifyContent(center, center);
+    @include display-flexDirection(none, row);
+    @include height-width(100vh, 100vw);
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+        left: 0px;
+        top: 0px;
+    z-index: 10;
+}
+
+%modal-config {
+    @include display-flexDirection(flex, column);
+    @include height-width(90vh, 70%);
+    @extend %mont;
+    background-color: $cinza-claro;
+    border-radius: 16px;
+    box-shadow: 0 4px 50px 0 rgba(0,0,0,.15);
+    min-width: 650px;
+    overflow: auto;
+    padding: 5%;
+    position: relative;
+}
