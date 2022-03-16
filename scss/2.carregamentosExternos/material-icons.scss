@@ -3,6 +3,11 @@
     @include color-fontSize($cinza-escuro, .8rem);
     padding: 0 7.5%;
 
+    //---------------------------------------------------->
+    @include mobile {
+        padding: 0;
+    }
+
     &.config-icon {
         @include color-fontSize($cinza-escuro, 2.25rem);
     }

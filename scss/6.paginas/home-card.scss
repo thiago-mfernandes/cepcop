@@ -9,4 +9,17 @@
     grid-template-rows: repeat(2, auto);
     padding: 2.5% 10%;
     margin: 2.5% auto;
+
+    //--------------------------------------------->
+    @include mobile {
+        @include display-flexDirection(flex, column);
+        background-color: unset;
+        box-shadow: none;
+        gap: none;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        padding: 0 5%;
+        margin: 0;
+        width: 100%;
+    }
 }

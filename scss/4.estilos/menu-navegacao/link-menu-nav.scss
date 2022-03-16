@@ -3,4 +3,10 @@
     @extend %lato;
     text-decoration: none;
     width: 100%;
+
+    //-------------------------------------------->
+    @include mobile {
+        width: 75%;
+        padding-left: 10%;
+    }
 }

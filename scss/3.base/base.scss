@@ -8,4 +8,12 @@ body {
     display: grid;
     grid-template-columns: 15% 85%;
     background-color: $cinza-claro;
+    transition: background-color .5s ease-in-out;
+
+    @include mobile {
+        display: block;
+        grid-template-columns: none;
+        background-color: $branco-bg;
+        transition: background-color .5s ease-in-out;
+    }
 }

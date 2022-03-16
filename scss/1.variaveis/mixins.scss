@@ -71,3 +71,10 @@
     padding: 5%;
     position: relative;
 }
+
+//de 375px até a medida máxima de 768px;
+@mixin mobile {
+    @media (min-width:300px) and (max-width: 768px) {
+        @content;
+    } 
+}
