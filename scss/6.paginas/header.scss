@@ -54,7 +54,7 @@
         @include mobile {
             @include alignItens-justifyContent(flex-end, null);
             @include display-flexDirection(flex, row);
-            @include height-width(20vh, 100%);
+            @include height-width(25vh, 100%);
             border: none;
             overflow-x: auto;
         }   
@@ -87,8 +87,8 @@
                     flex-direction: row-reverse;
                     justify-content: space-between;
                     margin-top: 0;
-                    position: fixed;
-                        top: 3%;
+                    position: absolute; //trocar para absolute amanha!
+                        top: 5%;
                         left: 0;
                     width: 100vw;
                 }

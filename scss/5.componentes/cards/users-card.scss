@@ -5,4 +5,10 @@
     box-shadow: 4px 4px 20px 0 rgb(0 0 0 / 25%);
     margin: 2.5% auto;
     overflow: auto;
+
+    //--------------------------------------------------->
+    @include mobile {
+        @include height-width(100%, 100%);
+        border-radius: 0;
+    }
 }

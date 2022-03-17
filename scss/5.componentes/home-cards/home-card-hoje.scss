@@ -8,10 +8,21 @@
     grid-column: 1 / 2;
     grid-row: 1 / 4;
     width: 100%;
+
+    //--------------------------------------------->
+    @include mobile {
+        grid-column: 1 / 5;
+        grid-row: 1 / 3;
+    }
     
     &__containerInfo {
         @include display-flexDirection(flex, column);
         width: 100%;
+
+        //--------------------------------------------->
+        @include mobile {
+            @include display-flexDirection(flex, row);
+        }
     }
 
     &__containerData {
@@ -19,18 +30,35 @@
         border-bottom: 1px solid $cinza-medio;
         padding: 0 5%;
         width: 100%;
+
+        //--------------------------------------------->
+        @include mobile {
+            @include alignItens-justifyContent(flex-start, center);
+            border-bottom: none;
+        }
     }
 
     &__data {
         @include color-fontSize($cinza-escuro, .5rem);
         @include fontStyle-fontWeight(italic, lighter);
         padding: 5% 0%;
+
+        //--------------------------------------------->
+        @include mobile {
+            font-size: .75rem;
+            padding: 2.5% 0;
+        }
     }
 
     &__diaSemana {
         @include color-fontSize($cinza-escuro, 1rem);
         @include fontStyle-fontWeight(italic, lighter);
         padding: 5% 0% 10%;
+
+        //--------------------------------------------->
+        @include mobile {
+            padding: 5% 0 0;
+        }
     }
 
     &__containerTotal {
@@ -38,22 +66,44 @@
         justify-content: space-evenly;
         padding: 5% 0;
         width: 100%;
+
+        //--------------------------------------------->
+        @include mobile {
+            padding: 2.5% 0;
+        }
     }
 
     &__totalCadastros {
         @extend %lato;
         @include color-fontSize($cinza-escuro, 2rem);
         font-weight: bold;
+
+        //--------------------------------------------->
+        @include mobile {
+            font-size: 2.25rem;
+        }
     }
 
     &__containerTotal .material-icons{
         font-size: 2rem;
         padding: 0 0;
+
+        //--------------------------------------------->
+        @include mobile {
+            font-size: 2.5rem;
+        }
     }
 
     &__pessoa {
         @include color-fontSize($cinza-escuro, .9rem);
         padding: 2.5% 0;
         margin: 0 7.5%;
+
+        //--------------------------------------------->
+        @include mobile {
+            font-size: 1rem;
+            text-align: left;
+            width: 90%;
+        }
     }
 }

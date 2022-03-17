@@ -1,6 +1,11 @@
 .titulo-modal {
     @include color-fontSize($cinza-escuro, 1.75rem);
     @extend %fjala;
+
+    //---------------------------------------------------------->
+    @include mobile {
+        font-size: 1.5rem;
+    }
 }
 
 //titulo do modal de avaliacoes do html de estagiarios e analisantes

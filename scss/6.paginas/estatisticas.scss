@@ -6,6 +6,12 @@
     grid-column: 1 / 5;
     width: 100%;
 
+    //----------------------------------------------------->
+    @include mobile {
+        grid-row: 6 / 9;
+        box-shadow: 0 4px 50px 0 rgba(0,0,0,.15);
+    }
+
     &__titulo {
         @include color-fontSize($branco-bg, 1.25rem);
         background-color: $cinza-escuro;
@@ -14,6 +20,11 @@
         padding: 2.5%;
         margin-bottom: 1.5%;
         text-align: center;
+
+        //-------------------------------------------------->
+        @include mobile {
+            height: 7.5vh;
+        }
     }
 
     &__container-legenda {
@@ -37,6 +48,12 @@
             background-color: $azul-medio-brilhante;
             border-radius: 50%;
             box-shadow: 0px 4px 4px 0px rgba(0,0,0,.25);
+
+            //-------------------------------------------->
+            @include mobile {
+                height: 35px;
+                width: 35px;
+            }
         }
 
         &___indicador.verde {

@@ -8,25 +8,58 @@
     table-layout: fixed;
     width: 97%;
     word-wrap: break-word;
+
+    //--------------------------------------------------->
+    @include mobile {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
 }
 
 .tabela__header {
-    height: 5vh;           
+    height: 5vh;
+    
+    //--------------------------------------------------->
+    @include mobile {
+        display: none;
+        width: 100%;
+    }
     
     &___tr {
         @include color-fontSize($branco-bg, .75rem);
         background-color: rgba(18, 18, 224, .7);
         text-align: center;
+
+        //--------------------------------------------------->
+        @include mobile {
+            display: block;
+            width: 100%;
+        }
     }    
 }
 
 .tabela__body {
+
+    //--------------------------------------------------->
+    @include mobile {
+        display: block;
+        width: 100%;
+    }
     
     &___tr {
         //linha impar, cor azul
         @include color-fontSize($azul-medio-brilhante, 1rem);
         @extend %mont;
         border-bottom: 1px solid $cinza-medio;
+
+        //--------------------------------------------------->
+        @include mobile {
+            display: block;
+            width: 100%;
+            margin:5% 0;
+            border-bottom: 3px solid $azul-medio-brilhante;
+        }
     }
     //linha par, cor cinza
     &___tr:nth-of-type(even) {

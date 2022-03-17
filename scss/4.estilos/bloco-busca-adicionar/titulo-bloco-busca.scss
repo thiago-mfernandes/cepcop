@@ -1,5 +1,10 @@
 .titulo-bloco-busca {
     @include color-fontSize($cinza-escuro, 1.75rem);
     @extend %fjala;
-    padding-left: 5%
+    padding-left: 5%;
+
+    //---------------------------------------------->
+    @include mobile {
+        font-size: 1.5rem;
+    }
 }

@@ -2,6 +2,11 @@
     @include height-width(5vh, 70%);
     margin: 7.5% auto 15%;
 
+    //---------------------------------------------->
+    @include mobile {
+        margin: 7.5% auto;
+    }
+
     & a{
         @include color-fontSize($branco-bg, .75rem);
         @extend %mont;

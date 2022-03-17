@@ -8,10 +8,28 @@
     grid-row: 3 / 4;
     width: 100%;
 
+    //------------------------------------------------------>
+    @include mobile {
+        grid-row: 5 / 6;
+        
+        & > .titulo-home-card {
+            font-size: .75rem;
+            padding-top: 25%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
+
     &__valor {
         @include color-fontSize($cinza-escuro, 2.75rem);
         align-self: center;
         font-weight: 700;
         margin-top: 7.5%;
+
+        //-------------------------------------------------->
+        @include mobile {
+            margin-top: 75%;
+            font-size: 2.75rem;
+        }
     }
 }

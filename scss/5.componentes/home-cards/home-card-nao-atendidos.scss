@@ -8,6 +8,18 @@
     grid-row: 1 / 2;
     width: 100%;
 
+    //----------------------------------------------------------->
+    @include mobile {
+        grid-column: 3 / 5;
+        grid-row: 4 / 5;
+        //tratamento especial para o titulo deste card:
+        & > .titulo-home-card{
+            word-wrap: wrap;
+            padding: 0 7.5%;
+            padding-top: 5%;
+        }
+    }
+
     &__box {
         @include display-flexDirection(flex, row);
         @include alignItens-justifyContent(center, space-around);

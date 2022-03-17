@@ -7,6 +7,11 @@
     margin: 5% auto 2.5%;
     padding: 10% 5%;
     width: 80%;   
+
+    //----------------------------------------------------------->
+    @include mobile {
+        width: 90%
+    }
 }
 
 .form {
@@ -37,6 +42,11 @@
     &__conteudo-box {
         width: 48%;
         @include display-flexDirection(flex, column);
+
+        //------------------------------------------------------>
+        @include mobile {
+            width: 100%;
+        }
     } 
     
     &__conteudo-box.telefone{
@@ -63,16 +73,30 @@
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
-        
+
+        //------------------------------------------------------>
+        @include mobile {
+            @include display-flexDirection(flex, column);
+        }        
     }
 }
 
 .asterisco {
     color: $vermelho-padrao;
+
+    //---------------------------------------------------------->
+    @include mobile {
+        padding-left: 2%;
+    }
 }
 
 .opcional {
-    color: $verde-padrao
+    color: $verde-padrao;
+
+    //---------------------------------------------------------->
+    @include mobile {
+        padding-left: 2%;
+    }
 }
 
 .container-nascimento, .container-telefone {

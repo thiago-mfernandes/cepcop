@@ -7,4 +7,9 @@
 //label específico para a pagina de login:
 .label--login {
     margin: 2% 0;
+
+    //-------------------------------------------------->
+    @include mobile {
+        margin: 5% 0;
+    }
 }

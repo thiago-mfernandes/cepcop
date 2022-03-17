@@ -6,11 +6,23 @@
     margin-bottom: 2.5%;
     padding: 5% 0 .75%;
     width: 100%;
+
+    //--------------------------------------------------------->
+    @include mobile {
+        border-radius: 0 0 16px 16px;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,.25);
+        margin-bottom: 10%
+    }
     
     &__container {
         @include alignItens-justifyContent(center, flex-start);
         @include display-flexDirection(flex, row);
         margin-bottom: 2.5%;
+
+        //---------------------------------------------------------->
+        @include mobile {
+            justify-content: space-between;
+        }
         
         //estilo especial para a pagina de configurações do administrador:
         &.config {
@@ -38,6 +50,13 @@
         @include display-flexDirection(flex, row);
         @include alignItens-justifyContent(center, flex-end);
         margin: 0 5%;
+
+        //------------------------------------------------------->
+        @include mobile {
+            justify-content: flex-start;
+            margin: 2.5%;
+            margin-left: 5%;
+        }
     }
     //estilo especial para a pagina de configurações do administrador:
     &__container.config:last-of-type {

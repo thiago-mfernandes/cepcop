@@ -12,12 +12,10 @@
 
     //--------------------------------------------->
     @include mobile {
-        @include display-flexDirection(flex, column);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, auto);
         background-color: unset;
         box-shadow: none;
-        gap: none;
-        grid-template-columns: none;
-        grid-template-rows: none;
         padding: 0 5%;
         margin: 0;
         width: 100%;
