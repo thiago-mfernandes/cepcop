@@ -10,6 +10,9 @@
 
     &.config-icon {
         @include color-fontSize($cinza-escuro, 2.25rem);
+
+        //--------------------------------------------->
+        @include color-fontSize($cinza-escuro, 1.5rem);
     }
 }
 
@@ -20,10 +23,22 @@
 
 .material-icons.edit {
     @include color-fontSize($verde-padrao, 1.25rem);
+
+    //---------------------------------------------->
+    @include mobile {
+        font-size: 1;
+        margin: 0 5%;
+    }
 }
 
 .material-icons.delete {
     @include color-fontSize($vermelho-padrao, 1.25rem);
+
+    //---------------------------------------------->
+    @include mobile {
+        font-size: 1.5rem;
+        margin: 0 5%;
+    }
 }
 //padrão do botões de ação das tabelas
 .material-icons.edit, .material-icons.delete, .material-icons.ver-mais:hover {
@@ -51,6 +66,12 @@
 
 .material-icons.ver-mais {
     @include color-fontSize($cinza-escuro, 1.25rem);
+
+    //---------------------------------------------->
+    @include mobile {
+        font-size: 1.5rem;
+        margin: 0 0 0 5%;
+    }
 }
 
 .material-icons.phone {

@@ -9,4 +9,9 @@
     &:hover {
         cursor: pointer;
     }
+
+    //--------------------------------------------->
+    @include mobile {
+        margin: 0 5%;
+    }
 }

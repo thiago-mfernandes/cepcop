@@ -20,11 +20,21 @@
     &.modalAddNovo-Card-container.telefones {
         margin: 10% 0;
     }
+
+    //------------------------------------------------------------>
+    @include mobile {
+        @include display-flexDirection(flex, column);
+    }
 }
 
 .modalAddNovo {
     @extend %modal-config;
     @include height-width(80vh, 70%);
+
+    //----------------------------------------------------------->
+    @include mobile {
+        @include height-width(90vh, 90%);
+    }
 
     &__title-box {
         @include alignItens-justifyContent(center, space-between);
@@ -32,6 +42,11 @@
         border-bottom: 1px solid $cinza-medio;
         padding-bottom: 5%;
         width: 100%;
+
+        //----------------------------------------------------------->
+        @include mobile {
+            margin-bottom: 7.5%;
+        }
     }
 
     &__input-container {
@@ -40,11 +55,20 @@
         flex-wrap: wrap;
         margin-bottom: 10%;
         width: 100%;
+
+        //-------------------------------------------------------->
+        @include mobile {
+            @include display-flexDirection(flex, column);
+        }
     }
 
     &__input-box {
         @include display-flexDirection(flex, column);
-        width: 48%;        
+        width: 48%; 
+        //-------------------------------------------------------->
+        @include mobile {
+            width: 100%;
+        }       
     }
 
     &__card-add-tel {
@@ -53,6 +77,14 @@
         border-radius: 16px;
         margin-right: 4%;
         width: 48%;
+
+        //--------------------------------------------------------->
+        @include mobile {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 10%;
+        }
+
         //configuração especial para este input
         & > .modalAddNovo__input-box {
             margin: 5% auto;
@@ -90,6 +122,11 @@
         background-color: $cinza-medio;
         border-radius: 16px;
         width: 48%;
+
+        //--------------------------------------------------------->
+        @include mobile {
+            width: 100%;
+        }
     }
 
     &__card-permissoes-box {

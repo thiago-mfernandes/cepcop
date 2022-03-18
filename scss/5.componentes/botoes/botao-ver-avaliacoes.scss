@@ -14,4 +14,11 @@
         border: 1px solid $azul-escuro-fosco;
         transition: all .3s ease-in-out;
     }
+
+    //-------------------------------------------------------->
+    @include mobile {
+        @include height-width(4vh, 35%);
+        margin-top: 0;
+        margin-left: 5%;
+    }
 }

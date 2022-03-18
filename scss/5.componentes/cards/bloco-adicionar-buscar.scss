@@ -27,6 +27,11 @@
         //estilo especial para a pagina de configurações do administrador:
         &.config {
             @include alignItens-justifyContent(center, space-between);
+
+            //------------------------------------------------------>
+            @include mobile {
+                padding: 0 5% 0 0;
+            }
         }        
         
         &___conteudo {
@@ -43,6 +48,15 @@
 
         & span {
             color: $vermelho-padrao;
+        }
+
+        //------------------------------------------------------>
+        @include mobile {
+            padding-bottom: 5%;
+
+            & span {
+                padding-left: 0;
+            }
         }
     }
     

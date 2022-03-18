@@ -46,6 +46,13 @@
     } 
 }
 
+//de 375px até a medida máxima de 768px;
+@mixin mobile {
+    @media (min-width:300px) and (max-width: 768px) {
+        @content;
+    } 
+}
+
 //representa o valor padrão do container de todos os modais
 %container-modal {
     //container de todos os modais com display none inicialmente
@@ -70,11 +77,11 @@
     overflow: auto;
     padding: 5%;
     position: relative;
+
+    //-------------------------------------------------->
+    @include mobile {
+        min-width: unset;        
+    }
 }
 
-//de 375px até a medida máxima de 768px;
-@mixin mobile {
-    @media (min-width:300px) and (max-width: 768px) {
-        @content;
-    } 
-}
+

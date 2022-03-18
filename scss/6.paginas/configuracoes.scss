@@ -4,6 +4,13 @@
     grid-template-rows: repeat(8, 1fr);
     gap: 16px;
     padding: 5% 2.5%;
+
+    //------------------------------------------------------>
+    @include mobile {
+        @include display-flexDirection(flex, column);
+        @include height-width(100%, 90%);
+        margin: 0 auto;
+    }
 }
 
 .config-page-card {
@@ -41,7 +48,10 @@
         grid-column: 2 / 3;
         grid-row: 7 / 9;
     }
-    //------------------------------------------------//
+    //---------------------------------------------------->
+    @include mobile {
+        margin: 5% 0;
+    }
 
     &__header {
         @include display-flexDirection(flex, row);
@@ -79,6 +89,12 @@
                 cursor: pointer;
                 box-shadow: 4px 0px 10px 3px rgba(18, 18, 224,.5);
             }
+
+            //-------------------------------------------------->
+            @include mobile {
+                @include height-width(5vh, 35%);
+            }
         }
+
     }
 }

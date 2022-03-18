@@ -16,8 +16,9 @@
     //-------------------------------------------->
     @include mobile {
         display: block;
-        width: 100%;        
-        padding: 5%;
+        width: 100%;   
+        //esses 30% protege o texto de fazer sobreposição no data-label   
+        padding: 5% 5% 5% 30%;
         text-align: right;
         position: relative;
         border-right: none;
@@ -32,6 +33,7 @@
             font-size: .75rem;
             font-weight: bold;
             text-align: left;
+            vertical-align: middle;
         }
 
         &:last-of-type {

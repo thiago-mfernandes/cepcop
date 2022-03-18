@@ -15,9 +15,20 @@
         border: 1px solid $azul-escuro-fosco;
         transition: all .3s ease-in-out;
     }
+}
 
-    //------------------------------------------------------->
-    @include mobile {
-        //@include height-width(4vh, 40%);
+@include mobile {
+    //configuração especial da pagnia de analisantes no MOBILE
+
+    .btn.botao-adicionar-novo {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 25%;
+    }
+
+    .btn.botao--alterar-ordem {
+        @include height-width(4vh, 30%);
+        margin-right: 2%;
+        margin-left: 0%;
     }
 }

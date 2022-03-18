@@ -1,6 +1,7 @@
 .botao-fechar-modal {
     @include height-width(50px, 50px);
     @include color-fontSize($branco-bg, 1rem);
+    @extend %mont;  
     position: absolute;
         top: 5px;
         right: 5px;
@@ -8,6 +9,13 @@
     border: 2px solid $branco-bg;
     background-color: $cinza-escuro;
     box-shadow: -3px 5px 15px 0px rgba(0,0,0,.45);
-    font-family: "Montserrat", sans-serif;    
     cursor: pointer;
+
+    //--------------------------------------------------->
+    @include mobile {
+        @include height-width(40px, 40px);
+        position: absolute;
+            right: 10px;
+            top: 10px;
+    }
 }

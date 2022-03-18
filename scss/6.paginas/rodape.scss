@@ -11,16 +11,32 @@
         @include height-width(100%, 30%);
         padding: 0 2%;
 
+        //---------------------------------------------------------->
+        @include mobile {
+            @include height-width(100%, 30%);
+            padding: 0;
+            margin-right: 2.5%;
+        }
         &:first-of-type{
             @include alignItens-justifyContent(center, flex-start);
             @include height-width(100%,50%);
+            //------------------------------------------------------->
+            @include mobile {
+                @include height-width(100%, 70%);
+            }
         }
+
     }
     &__info {
         @include color-fontSize($cinza-escuro, .75rem);
         @include fontStyle-fontWeight(italic, lighter);
         @extend %mont;
         margin: 0 2%;
+
+        //---------------------------------------------------------->
+        @include mobile {
+            font-size: .7rem;
+        }
     }
 }
 
@@ -31,4 +47,9 @@
     border: none;
     background-color: $branco;
     border-radius: 16px;
+
+    //------------------------------------------------------->
+    @include mobile {
+        @include height-width(2vh, 8vw);
+    }
 }

@@ -28,6 +28,11 @@
   padding: 5%;
   position: relative;
 }
+@media (min-width: 300px) and (max-width: 768px) {
+  .alterar-ordem, .modal-avaliacoes, .modal-mais-info, .modalAddNovo {
+    min-width: unset;
+  }
+}
 
 .login-box__titulo, .bloco__label, .bloco__titulo, .config-page-card, .label, .alterar-ordem__subtitulo, .titulo-modal, .modalAddNovo__card-permissoes-box___titulo, .modalAddNovo__card-add-tel--titleBox, .tabela-header-th, .titulo-bloco-busca {
   font-family: "Fjalla One", sans-serif;
@@ -37,7 +42,7 @@
   font-family: "Lato", sans-serif;
 }
 
-.botao-addTelefone, .botao-cadastrar, .tabela__body___tr, .rodape__info, .estatisticas, .config-page-card__input-button-box___button, .input, .card-turmas, .card-totalAnalisantes, .card-naoAtendidos, .card-atendidos, .card-filaEspera, .card-cadHoje, .modalAddNovo__box-supervisor-anterior___nome, .modalAddNovo__card-permissoes-box___label, .card-alerta, .botao-ok-modal-detalhes, .botao-ver-avaliacoes, .botao-ver-analisantes a, .btn, body, .alterar-ordem, .modal-avaliacoes, .modal-mais-info, .modalAddNovo {
+.botao-addTelefone, .botao-cadastrar, .tabela__body___tr, .rodape__info, .estatisticas, .config-page-card__input-button-box___button, .input, .card-turmas, .card-totalAnalisantes, .card-naoAtendidos, .card-atendidos, .card-filaEspera, .card-cadHoje, .modalAddNovo__box-supervisor-anterior___nome, .modalAddNovo__card-permissoes-box___label, .card-alerta, .botao-ok-modal-detalhes, .botao-ver-avaliacoes, .botao-ver-analisantes a, .botao-fechar-modal, .botao-cancelar, .btn, body, .alterar-ordem, .modal-avaliacoes, .modal-mais-info, .modalAddNovo {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -72,6 +77,8 @@
 .material-icons.config-icon {
   color: #787887;
   font-size: 2.25rem;
+  color: #787887;
+  font-size: 1.5rem;
 }
 
 .material-icons--config {
@@ -84,10 +91,22 @@
   color: #6de195;
   font-size: 1.25rem;
 }
+@media (min-width: 300px) and (max-width: 768px) {
+  .material-icons.edit {
+    font-size: 1;
+    margin: 0 5%;
+  }
+}
 
 .material-icons.delete {
   color: #f47c57;
   font-size: 1.25rem;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .material-icons.delete {
+    font-size: 1.5rem;
+    margin: 0 5%;
+  }
 }
 
 .material-icons.edit, .material-icons.delete, .material-icons.ver-mais:hover {
@@ -121,6 +140,12 @@
 .material-icons.ver-mais {
   color: #787887;
   font-size: 1.25rem;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .material-icons.ver-mais {
+    font-size: 1.5rem;
+    margin: 0 0 0 5%;
+  }
 }
 
 .material-icons.phone {
@@ -279,7 +304,7 @@ body {
   .tabela-body-td {
     display: block;
     width: 100%;
-    padding: 5%;
+    padding: 5% 5% 5% 30%;
     text-align: right;
     position: relative;
     border-right: none;
@@ -294,6 +319,7 @@ body {
     font-size: 0.75rem;
     font-weight: bold;
     text-align: left;
+    vertical-align: middle;
   }
   .tabela-body-td:last-of-type {
     text-align: right;
@@ -332,6 +358,21 @@ body {
   border: 1px solid #0a0a84;
   transition: all 0.3s ease-in-out;
 }
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .btn.botao-adicionar-novo {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 25%;
+  }
+
+  .btn.botao--alterar-ordem {
+    height: 4vh;
+    width: 30%;
+    margin-right: 2%;
+    margin-left: 0%;
+  }
+}
 .botao-adicionar-novo {
   height: 6vh;
   width: 15%;
@@ -361,7 +402,6 @@ body {
   border: none;
   border-radius: 24px;
   box-shadow: 4px 10px 20px 0 rgba(244, 124, 87, 0.2);
-  font-family: "Montserrat", sans-serif;
   margin-left: 10%;
   transition: all 0.3s ease-in-out;
 }
@@ -370,6 +410,12 @@ body {
   font-size: 0.95rem;
   border: 1px solid darkred;
   transition: all 0.3s ease-in-out;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .botao-cancelar {
+    height: 4vh;
+    width: 15%;
+  }
 }
 
 .botao-fechar-modal {
@@ -384,8 +430,16 @@ body {
   border: 2px solid #fafefd;
   background-color: #787887;
   box-shadow: -3px 5px 15px 0px rgba(0, 0, 0, 0.45);
-  font-family: "Montserrat", sans-serif;
   cursor: pointer;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .botao-fechar-modal {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
 }
 
 .botao-rodape-navegacao {
@@ -399,6 +453,11 @@ body {
 }
 .botao-rodape-navegacao:hover {
   cursor: pointer;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .botao-rodape-navegacao {
+    margin: 0 5%;
+  }
 }
 
 .botao--salvar {
@@ -455,6 +514,14 @@ body {
   border: 1px solid #0a0a84;
   transition: all 0.3s ease-in-out;
 }
+@media (min-width: 300px) and (max-width: 768px) {
+  .botao-ver-avaliacoes {
+    height: 4vh;
+    width: 35%;
+    margin-top: 0;
+    margin-left: 5%;
+  }
+}
 
 .botao-ok-modal-detalhes {
   color: white;
@@ -506,6 +573,11 @@ body {
 .botao--alterar-ordem:hover {
   width: 25%;
 }
+@media (min-width: 300px) and (max-width: 768px) {
+  .botao--alterar-ordem {
+    width: 10%;
+  }
+}
 
 .bloco-adicionarBuscar {
   background-color: rgba(231, 231, 233, 0.7);
@@ -538,6 +610,11 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media (min-width: 300px) and (max-width: 768px) {
+  .bloco-adicionarBuscar__container.config {
+    padding: 0 5% 0 0;
+  }
+}
 .bloco-adicionarBuscar__container___conteudo {
   color: #787887;
   font-size: 0.75rem;
@@ -553,6 +630,14 @@ body {
 }
 .bloco-adicionarBuscar___alerta-config span {
   color: #f47c57;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .bloco-adicionarBuscar___alerta-config {
+    padding-bottom: 5%;
+  }
+  .bloco-adicionarBuscar___alerta-config span {
+    padding-left: 0;
+  }
 }
 .bloco-adicionarBuscar__container:last-of-type {
   display: flex;
@@ -580,6 +665,15 @@ body {
   border-radius: 48px 48px 8px 8px;
   box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.25);
   margin: 2.5% auto;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .config-card {
+    height: 95%;
+    width: 100%;
+    background-color: unset;
+    box-shadow: none;
+    border-radius: 16px;
+  }
 }
 
 .users-card {
@@ -631,10 +725,22 @@ body {
 .modalAddNovo-Card-container.modalAddNovo-Card-container.telefones {
   margin: 10% 0;
 }
+@media (min-width: 300px) and (max-width: 768px) {
+  .modalAddNovo-Card-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .modalAddNovo {
   height: 80vh;
   width: 70%;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .modalAddNovo {
+    height: 90vh;
+    width: 90%;
+  }
 }
 .modalAddNovo__title-box {
   align-items: center;
@@ -645,6 +751,11 @@ body {
   padding-bottom: 5%;
   width: 100%;
 }
+@media (min-width: 300px) and (max-width: 768px) {
+  .modalAddNovo__title-box {
+    margin-bottom: 7.5%;
+  }
+}
 .modalAddNovo__input-container {
   align-items: center;
   justify-content: space-between;
@@ -654,10 +765,21 @@ body {
   margin-bottom: 10%;
   width: 100%;
 }
+@media (min-width: 300px) and (max-width: 768px) {
+  .modalAddNovo__input-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .modalAddNovo__input-box {
   display: flex;
   flex-direction: column;
   width: 48%;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .modalAddNovo__input-box {
+    width: 100%;
+  }
 }
 .modalAddNovo__card-add-tel {
   display: flex;
@@ -666,6 +788,13 @@ body {
   border-radius: 16px;
   margin-right: 4%;
   width: 48%;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .modalAddNovo__card-add-tel {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10%;
+  }
 }
 .modalAddNovo__card-add-tel > .modalAddNovo__input-box {
   margin: 5% auto;
@@ -702,6 +831,11 @@ body {
   background-color: #c4c4c4;
   border-radius: 16px;
   width: 48%;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .modalAddNovo__card-permissoes {
+    width: 100%;
+  }
 }
 .modalAddNovo__card-permissoes-box {
   border-bottom: 1px solid rgba(120, 120, 135, 0.5);
@@ -1335,6 +1469,15 @@ body {
   gap: 16px;
   padding: 5% 2.5%;
 }
+@media (min-width: 300px) and (max-width: 768px) {
+  .config-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 
 .config-page-card {
   display: flex;
@@ -1365,6 +1508,11 @@ body {
 .config-page-card:last-of-type {
   grid-column: 2/3;
   grid-row: 7/9;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .config-page-card {
+    margin: 5% 0;
+  }
 }
 .config-page-card__header {
   display: flex;
@@ -1407,6 +1555,12 @@ body {
 .config-page-card__input-button-box___button:hover {
   cursor: pointer;
   box-shadow: 4px 0px 10px 3px rgba(18, 18, 224, 0.5);
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .config-page-card__input-button-box___button {
+    height: 5vh;
+    width: 35%;
+  }
 }
 
 .estatisticas {
@@ -1683,11 +1837,25 @@ body {
   width: 30%;
   padding: 0 2%;
 }
+@media (min-width: 300px) and (max-width: 768px) {
+  .rodape__container {
+    height: 100%;
+    width: 30%;
+    padding: 0;
+    margin-right: 2.5%;
+  }
+}
 .rodape__container:first-of-type {
   align-items: center;
   justify-content: flex-start;
   height: 100%;
   width: 50%;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .rodape__container:first-of-type {
+    height: 100%;
+    width: 70%;
+  }
 }
 .rodape__info {
   color: #787887;
@@ -1695,6 +1863,11 @@ body {
   font-style: italic;
   font-weight: lighter;
   margin: 0 2%;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .rodape__info {
+    font-size: 0.7rem;
+  }
 }
 
 .caixa-exibir {
@@ -1707,6 +1880,12 @@ body {
   border: none;
   background-color: white;
   border-radius: 16px;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .caixa-exibir {
+    height: 2vh;
+    width: 8vw;
+  }
 }
 
 .tabela-container {
