@@ -12,5 +12,9 @@
     @include mobile {
         @include height-width(4vh, 30%);
         margin-right: 5%;
+
+        &:hover {
+            @include height-width(4vh, 30%);
+        }
     }
 }

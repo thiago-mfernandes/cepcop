@@ -5,6 +5,16 @@
 .modal-mais-info {
     @include height-width(90vh, 70%);
     @extend %modal-config;
+
+    //------------------------------------------------------------->
+    @include mobile {
+        @include height-width(fit-content, 90%);
+
+        & > .botao-ok-modal-detalhes {
+            min-height: 5vh;
+            margin: 5% auto;
+        }
+    }
     
     
     &__conteudo {
@@ -13,11 +23,28 @@
         &:last-of-type{
             margin-bottom: 5%;
         }
+
+        //----------------------------------------------->
+        @include mobile {
+
+            padding: 2.5% 0;
+            border-bottom: 1px solid $cinza-medio;
+
+            & span {
+                font-weight: bold;
+                padding: 0;
+                text-align: right;
+            }
+        }
     }
     //config do form de analisantes
     &.analisantes {        
         height: 110vh;
         overflow: auto;
+
+        //--------------------------------------------------------->
+        @include height-width(90vh,90%);
+        overflow: scrool;
     }
 }
 //a classe criada sobrepoe o display none e exibe o modal:

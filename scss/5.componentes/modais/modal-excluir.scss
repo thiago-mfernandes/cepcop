@@ -23,7 +23,12 @@
     @include height-width(60%, 40%);    
     background-color: $cinza-claro;
     border-radius: 16px;
-    position: relative;    
+    position: relative;  
+    
+    //----------------------------------------------------------------->
+    @include mobile {
+        @include height-width(50%, 90%);
+    }
 }
 
 .botao-adicionar-novo.sim, .botao-cancelar.nao {

@@ -9,5 +9,9 @@
     //------------------------>
     @include mobile {
         width: 10%;
+
+        &:hover {
+            width: unset;
+        }
     }
 }

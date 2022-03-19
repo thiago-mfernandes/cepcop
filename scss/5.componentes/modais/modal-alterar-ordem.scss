@@ -4,6 +4,22 @@
 
 .alterar-ordem {
     @extend %modal-config;
+
+    //--------------------------------------------------------------->
+    @include mobile {
+        @include height-width(90vh, 90%);
+        @include display-flexDirection(flex, column);
+        justify-content: space-between;
+    }
+
+    &__container-input {
+
+        //------------------------------------------------------------>
+        @include mobile {
+            @include display-flexDirection(flex, column);
+
+        }
+    }
     
     &__subtitulo {
         @include color-fontSize($cinza-escuro, 1rem);
@@ -11,6 +27,11 @@
         margin: 2.5% 0;
         padding-bottom: 1.5%;
         text-align: center;
+
+        //--------------------------------------------------------------->
+        @include mobile {
+            margin-bottom: 5%;
+        }
     }
 
     &__btn-container {

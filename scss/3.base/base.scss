@@ -9,6 +9,7 @@ body {
     grid-template-columns: 15% 85%;
     background-color: $cinza-claro;
     transition: background-color .5s ease-in-out;
+    min-height: 100vh;
 
     @include mobile {
         display: block;

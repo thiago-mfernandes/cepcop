@@ -1,3 +1,11 @@
 .bg-body {
     background: linear-gradient(155deg, rgba(85,131,238,1) 0%, rgba(65,216,221,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    //------------------------------------------------------->
+    @include mobile { 
+        min-height: 100vh;       
+        height: 100%;
+    }
 }

@@ -20,5 +20,10 @@
         @include height-width(4vh, 35%);
         margin-top: 0;
         margin-left: 5%;
+
+        //---------------------------------------------------->
+        &:hover {
+            @include height-width(4vh, 35%);
+        }
     }
 }

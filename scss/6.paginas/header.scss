@@ -21,7 +21,7 @@
         width: 100%;
 
         &___title {
-            @include color-fontSize($cinza-escuro, .6rem);
+            @include color-fontSize($cinza-escuro, 75%);
             @include fontStyle-fontWeight(italic, 300);
             @extend %lato;
             text-align: center;
@@ -44,6 +44,7 @@
         @include mobile {
             filter: drop-shadow(14px 14px 50px rgba(0,0,0,.5));
             width: 15%;
+            max-width: 65px;
         }
     }
 
@@ -62,7 +63,7 @@
         &___item {
             
             @include alignItens-justifyContent(center, flex-start);
-            @include display-flexDirection(flex, row-reverse);
+            @include display-flexDirection(flex, row);
             @include height-width(10vh, 100%); 
             border-bottom: 1px solid $cinza-medio;    
 

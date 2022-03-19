@@ -4,6 +4,13 @@
     &:hover {
         font-size: 1.5rem;
     }
+
+    //------------------------------------>
+    @include mobile {
+        &:hover {
+            font-size: 1.25rem;
+        }
+    }
 }
 
 .botao--add-telefone-form {

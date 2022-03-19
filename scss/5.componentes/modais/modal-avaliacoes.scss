@@ -5,6 +5,11 @@
 .modal-avaliacoes {
     @include height-width(80vh, 70%);
     @extend %modal-config;  
+
+    //--------------------------------------------------------------->
+    @include mobile {
+        @include height-width(80vh, 90%);
+    }
 }
 
 //a classe criada sobrepoe o display none e exibe o modal:

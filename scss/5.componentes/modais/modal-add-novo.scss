@@ -164,18 +164,34 @@
         @include alignItens-justifyContent(center, flex-start);
         @include display-flexDirection(flex, row);
         border-bottom: 1px solid $cinza-escuro;
+
+        //----------------------------------------------------->
+        @include mobile {
+            padding: 5% 0;
+        }
         &:last-of-type{
             border-bottom: none;
         }
 
         //dentro do box-supervisor, onde tenha um input deste tipo
         & > input[type="checkbox" i] {
-            margin: 3%;   
+            margin: 3%; 
+            
+            //-------------------------------------------------->
+            @include mobile {
+                height: 18px;
+                width: 18px;
+            }
         }
 
         &___nome {
             @include color-fontSize($cinza-escuro, .75rem);
             @extend %mont;
+
+            //--------------------------------------------------->
+            @include mobile {
+                font-size: .85rem;
+            }
         }
     }
 }

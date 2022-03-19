@@ -21,4 +21,9 @@
 //titulo do modal de mais informações do html de analisantes
 .titulo-modal--mais-info {
     border-bottom: 1px solid $cinza-medio;
+
+    //------------------------------------------------------->
+    @include mobile {
+        margin-bottom: 10%;
+    }
 }
