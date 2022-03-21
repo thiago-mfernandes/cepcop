@@ -1,4 +1,4 @@
-//import { deletarLinha } from './deletarPaciente.js'
+
 
 //execução do preenchimento do modal
 const botaoAdd = document.querySelector('#botao-add');
@@ -19,16 +19,12 @@ botaoAdd.addEventListener("click", function(event) {
 })
 
 //----------FUNÇÔES----------//
+
+//----------MODEL------------//
 function obtemPacienteDoFormulario(formulario) {
 
     //passo um formulario como parametro para a função;
-    //extraio cada info em uma variavel
-    var nomeValue = document.querySelector(".js-input-nome").value;
-    var cursoValue = document.querySelector(".js-input-curso").value;
-    var cpfValue = document.querySelector(".js-input-cpf").value;
-    var emailValue = document.querySelector(".js-input-email").value;
-    var telefoneValue = document.querySelector(".js-input-telefone").value;
-    
+        
     var permissoaoSupervisorValue = document.querySelector('input[name="supervisor"]:checked').value;
     var permissoaoEstagiarioValue = document.querySelector('input[name="estagiario"]:checked').value;
     var permissoaoAnalisantesValue = document.querySelector('input[name="analisantes"]:checked').value;
@@ -42,11 +38,11 @@ function obtemPacienteDoFormulario(formulario) {
     
     //crio um objeto formValue preenchido com as informações do formulário
     var formValue = {
-        nome: nomeValue,
-        curso: cursoValue,
-        cpf: cpfValue,
-        email: emailValue,
-        telefone: telefoneValue,
+        nome: document.querySelector(".js-input-nome").value,
+        curso: document.querySelector(".js-input-curso").value,
+        cpf: document.querySelector(".js-input-cpf").value,
+        email: document.querySelector(".js-input-email").value,
+        telefone: document.querySelector(".js-input-telefone").value,
         permissao: permissoesValue,
         data: obterDataHora()
     };
@@ -54,6 +50,8 @@ function obtemPacienteDoFormulario(formulario) {
     return formValue;
 }
 
+
+//VIEW
 //crio uma função de montagem de dado na tabela
 function montaTd(dado, classe){
     var td = document.createElement("td");
@@ -62,6 +60,7 @@ function montaTd(dado, classe){
     return td;
 }
 
+//VIEW
 //função para montagem de um paciente
 //recebe como parametro o formValue que contem os valores dos input preenchidos pelo usuario
 function montaTr(formValue){
@@ -82,6 +81,7 @@ function montaTr(formValue){
     return pacienteLinha;
 }
 
+//VIEW
 function adicionaPacienteNaTabela(paciente) {
     
     var pacienteLinha = montaTr(paciente);
@@ -90,9 +90,10 @@ function adicionaPacienteNaTabela(paciente) {
     tabela.appendChild(pacienteLinha);
 }
 
+//CONTROLLER
 function fechaModal() {
     //selecionar o modal
-    const modal = document.querySelector('.modal-container');
+    const modal = document.querySelector('#modal-container');
 
     //se a classe for selecionada sem erro, executa..
     if(modal) {
@@ -105,6 +106,7 @@ function fechaModal() {
     }
 }
 
+//MODEL
 function obterDataHora() {
     var data = new Date();
 
@@ -133,6 +135,7 @@ function obterDataHora() {
 
 //função verifica se o tempo é menor que 10:
 //se for, será colocado um 0 string para exibir a informação formatada
+//MODEL
 function formataTempo(tempo) {
     //early return
     if(tempo > 10) {
@@ -143,6 +146,7 @@ function formataTempo(tempo) {
     }
 }
 
+//MODEL
 function botoesDeAcao() {
     //criar uma td botoesAcao e colocar a classe
     const botoesAcao = document.createElement("td");
